@@ -27,7 +27,7 @@
      1 [,2] = Ah!\z{806,f} Came to play, huh?
      2	= Right now, in \z{605,5},\n
 	+ it's \z{603,3}:\z{603,4} \z{1204,4100,4d002f0050004d00} on\n
-	+ \z{603,1} \z{603,2}, \z{603,0}.\n
+	+ \z{603,2} \z{603,1}, \z{603,0}.\n
 	+ \n
 	+ How about we get started?\z{e07,2,4007900060007}\n
 	+ Yeah!\n
@@ -76,7 +76,7 @@
 	+ If you've been living in\n
 	+ \z{8ff,800}Animal Crossing: Wild\n
 	+ World\z{8ff,0} for the \z{8ff,100}Nintendo DS\z{8ff,0},\n
-	+ you can move houses\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ you can move from there\z{806,5}.\z{806,5}.\z{806,5}.\n
 	+ \z{602,b}Do you want to start fresh,\z{806,a}\n
 	+ or move over from the DS?\z{c07,5001100b50005}\n
 	+ Start fresh!\n
@@ -287,8 +287,10 @@
 	+ Crossing: Wild World\z{8ff,100} \z{8ff,0}Game\n
 	+ Card into the \z{8ff,100}Nintendo DS\z{8ff,0}.\n
 	+ Now, be a pal and turn on\n
-	+ your \z{8ff,100}Nintendo DS\z{8ff,0}, OK?\z{a07,9b002c}\n
-	+ Done!\n
+	+ your \z{8ff,100}Nintendo DS\z{8ff,0}, then\n
+	+ activate \z{8ff,200}DS Download \n
+	+ Play\z{8ff,0}, OK?\z{a07,9b002c}\n
+	+ Okay!\n
 	+ Never mind.
     2c	= Hang on, you changed your\n
 	+ mind?\z{a07,40003009b}\n
@@ -526,16 +528,16 @@
 	+ \n
 	+ \n
 	+ In this game,\z{806,5} you can\n
-	+ communicate with friends'\n
+	+ communicate with friends\n
 	+ by connecting to \z{8ff,100}other Wii\n
 	+ systems\z{8ff,0} via \z{8ff,200}RiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to friends\n
 	+ who are registered on your\n
-	+ friend roster...\n
+	+ \z{8ff,200}Friend Roster\z{8ff,0}...\n
 	+ Or you can send messages to\n
-	+ the \z{8ff,200}Wii Message Boards \z{8ff,0}of\n
-	+ friends whose\z{8ff,200} Wii numbers\z{8ff,0}\n
+	+ the \z{8ff,200}Wii Message Boards\z{8ff,0} of\n
+	+ friends whose \z{8ff,200}Wii Numbers\z{8ff,0}\n
 	+ you have registered.\n
 	+ On top of that, \z{806,a}out of the\n
 	+ blue, your friends' neighbors\n
@@ -560,16 +562,15 @@
 	+ \z{8ff,200}RiiConnect24 \z{8ff,0}settings on\n
 	+ your \z{8ff,100}Wii \z{8ff,0}aren't set to ON...\n
 	+ So,\z{806,f}\z{602,b} why don't you start by\n
-	+ checking the \z{8ff,200}RiiConnect24\z{8ff,0}\n
+	+ checking the \z{8ff,200}WiiConnect24\z{8ff,0}\n
 	+ settings in your Wii Options.
     5d [,5e/4] = Oh,\z{806,f} but your network settings\n
 	+ are restricted, so you can't\n
 	+ change these settings!\n
 	+ \n
 	+ Please start by checking your\n
-	+ network\z{8ff,200} \z{8ff,0}settings in the Wii\n
-	+ Options and your \z{8ff,200}Parental\n
-	+ Control\z{8ff,0} settings.
+	+ \z{8ff,200}Parental Control \z{8ff,0}settings in\n
+	+ the Wii Options.
     5e	= Your \z{8ff,200}RiiConnect24 \z{8ff,0}settings\n
 	+ are currently set to ON.\z{806,a} What\n
 	+ would you like to do?\z{c07,100620062005b}\n
@@ -960,8 +961,8 @@
 	+ \n
 	+ First off\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Insert your\n
 	+ \z{8ff,800}Animal Crossing: Wild\n
-	+ World\z{8ff,0} Game Card into your\n
-	+ \z{8ff,100}Nintendo DS\z{8ff,0}.\n
+	+ World\z{8ff,0} Game Card...\n
+	+ \n
 	+ Now,\z{806,5} would you go ahead\n
 	+ and turn on the power on\n
 	+ the \z{8ff,100}Nintendo DS\z{8ff,0} and touch\n
