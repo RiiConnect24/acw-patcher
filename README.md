@@ -13,6 +13,11 @@ Place your image in the folder with the WBFS/ISO and run the create-image script
 - [ ] Patch URLs to remove requirement of DNS (need to contact Wiimm)
 - [ ] Make BMG list global
 
+## Credits
+- @larsenv for offsets  
+- PokeAcer549 for actual script creation  
+- Wiimm for WIT and SZS tools (both of which are used in my patcher)  
+
 ## Changelog
 v1.2 (first GitHub version):
 - Add all region patches.
