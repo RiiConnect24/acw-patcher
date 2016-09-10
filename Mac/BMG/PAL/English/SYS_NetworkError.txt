@@ -120,7 +120,7 @@
 	+ temporarily unavailable.\n
 	+ Please try again later.\n
 	+ <\z{803,b0000}>
-    19	= The RiiConnect24 setting\n
+    19	= The WiiConnect24 setting\n
 	+ is not turned on. Please\n
 	+ check the settings under\n
 	+ Wii Options. Refer to the\n
