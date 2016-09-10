@@ -6,7 +6,7 @@
 #  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
 #
 #------------------------------------------------------------------------------
-# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+# Parameters begins with an '@'. Unknown parameters are ignored on scanning.
 
 # Size of each element of section 'INF0' (MKW: 8).
 # Set it first, because it defines defaults for other parameters.
@@ -390,7 +390,7 @@
 	+ In this game,\z{806,5} you can\n
 	+ communicate with friends by\n
 	+ connecting to \z{8ff,100}Wii systems\n
-	+ \z{8ff,0}over\z{8ff,200} RiiConnect24\z{8ff,0}.\n
+	+ \z{8ff,0}over\z{8ff,200} WiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to\n
 	+ friends who are registered\n
@@ -414,7 +414,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ the RiiConnect24 Team.\n
+	+ Nintendo.\n
 	+ \z{602,43}Are you interested in using\n
 	+ this feature?\z{606,1} Of course, \z{806,a}you\n
 	+ can always change your\n
@@ -473,7 +473,7 @@
 	+ In this game,\z{806,5} you can\n
 	+ communicate with friends by\n
 	+ connecting to other \z{8ff,100}Wii\n
-	+ systems\z{8ff,0} via \z{8ff,200}RiiConnect24\z{8ff,0}.\n
+	+ systems\z{8ff,0} via \z{8ff,200}WiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to\n
 	+ friends who are registered\n
