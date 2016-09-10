@@ -1,0 +1,1080 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = SYS_Start_tra_us.gmm
+     1 [,2] = Hallo!\z{806,f} Schön, dich zu\n
+	+ sehen!
+     2	= In \z{605,5} haben wir\n
+	+ jetzt \z{603,3}:\z{603,4} Uhr, am\n
+	+ \z{603,2} \z{60c,2}\z{603,1} \z{603,0}!\n
+	+ Kann es losgehen?\z{e07,2,4007900060007}\n
+	+ Ja!\n
+	+ DS-Koffer.\n
+	+ Vor dem Spiel...\n
+	+ Sonstiges.
+     3	= Aaalso\z{806,5}.\z{806,5}.\z{806,5}. Willst du\n
+	+ anfangen?\z{e07,2,4007900060007}\n
+	+ Ja!\n
+	+ DS-Koffer.\n
+	+ Vor dem Spiel...\n
+	+ Sonstiges.
+     4	= Hey, warte mal\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,b}Wer bist du?
+     5	= Also,\z{806,a} was willst du tun?\z{e07,2,4007900060007}\n
+	+ Loslegen!\n
+	+ DS-Koffer.\n
+	+ Vor dem Spiel...\n
+	+ Sonstiges.
+     6 [/b] = Ah, du möchtest dich erst\n
+	+ noch vorbereiten.\z{806,a} Kein\n
+	+ Problem. Was soll's sein?
+     7	= Sonstiges, wie? Ziemlich\n
+	+ vage\z{806,5}.\z{806,5}.\z{806,5}. Was genau\z{806,a}\z{602,b} meinst\n
+	+ du?\z{e07,6,c001e00260003}\n
+	+ Datum/Zeit ändern.\n
+	+ Haus abreißen.\n
+	+ Stadt neu bauen.\n
+	+ Vergiss es.
+     8	= Oh, \z{806,5}natürlich!\n
+	+ \z{806,f}\z{60c,3}\z{605,0}! Ich hab's\n
+	+ gewusst! Mann!\z{606,1} Also\n
+	+ dann\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Legen wir los!
+     9	= Alles bereit! \z{806,f}\z{602,14}Viel Spaß in\n
+	+ \z{605,5}!
+     a	= \z{806,5}.\z{806,5}.\z{806,5}.\z{602,14}Dachte ich mir!\z{606,1} Ich\n
+	+ war mir ziemlich sicher,\n
+	+ dass ich dich zum ersten\n
+	+ Mal sehe!\n
+	+ \z{602,0}Und, lebst du zum ersten\n
+	+ Mal allein?\n
+	+ \n
+	+ \n
+	+ Wenn du schon \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0} für\n
+	+ das \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}gespielt hast\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Dann kannst du einfach\n
+	+ umziehen.\n
+	+ \n
+	+ \n
+	+ \z{602,b}Willst du von vorne\n
+	+ anfangen\z{806,a} oder lieber\n
+	+ umziehen?\z{c07,5001100b50005}\n
+	+ Neu anfangen!\n
+	+ Vom DS umziehen!\n
+	+ Vergiss es.
+     b [/,,12] = Alles klar, du kannst\n
+	+ loslegen!\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5}\z{602,4}Boah!\z{806,f} \z{602,0}Fast
+	+  hätte ich es\n
+	+ vergessen! Ich muss noch\n
+	+ was erledigen. Was\n
+	+ ganz Wichtiges!\n
+	+ Weißt du was? Ich nehm\n
+	+ dich ein Stück mit.\z{806,a}\n
+	+ \z{602,14}Na komm!
+     c [,d/,,b] = Du willst Datum und Uhrzeit\n
+	+ anpassen, was?
+     d [,3/14] = Alles klar, ist eingestellt!
+     e	= Wie sollen die Stimmen\n
+	+ klingen, wenn die Leute\n
+	+ reden?\z{c07,1000f000f000f}\n
+	+ Animalisisch.\n
+	+ Bebebisisch.\n
+	+ Lautlos.
+     f	= Alles klar, also\n
+	+ \z{8ff,200}\z{1204,101005600,4f00490043004500}\z{8ff,0}.\z{806,5} Das
+	+  wird\n
+	+ sich ungefähr so anhören.\n
+	+ In Ordnung?\z{a07,400030010}\n
+	+ Super!\n
+	+ Nein, warte!
+    10 [,e] = Alles klar. Dann noch mal\n
+	+ von vorne\z{806,5}.\z{806,5}.\z{806,5}.
+    11 [,65/,,10] = Oh,\z{806,5} verstehe.\z{606,1} Immerhin\n
+	+ ziehst du in eine komplett\n
+	+ neue Gegend.\n
+	+ \n
+	+ \z{602,14}Und du willst natürlich\n
+	+ einen sauberen Neuanfang!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Daher \z{806,f}muss ich mich noch\n
+	+ um einige Dinge kümmern.\z{806,f}\n
+	+ Warte kurz\z{806,5}.\z{806,5}.\z{806,5}.
+    12 [/,,12] = Danke, dass du gewartet\n
+	+ hast\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,4}Boah!\z{606,1} Wir
+	+  sollten\n
+	+ jetzt nicht mehr\n
+	+ herumtrödeln!\n
+	+ \z{602,0}Komm!\z{806,a} Ich muss auch in die\n
+	+ Richtung,\z{806,a} \z{602,14}also los!
+    13	= Sag mal\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Willst du lieber\n
+	+ \z{8ff,200}Kanji\z{8ff,0} lesen? Oder lieber\n
+	+ nur \z{8ff,200}Hiragana\z{8ff,0}?\z{8ff,200}\z{a07,150014}\n
+	+ Kanji geht klar!\n
+	+ Nur Hiragana!
+    14 [,16] = Dann also Kanji! Super!\n
+    15 [,16] = Also nur Hiragana! Super!
+    16	= Aaalso\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Wie würdest du\n
+	+ den Text gerne eingeben?\z{a07,170018}\n
+	+ Tastatur-Stil.\n
+	+ Handy-Stil.
+    17 [,3] = Gebongt! \z{8ff,200}Tastatur-Stil \z{8ff,0}also!
+    18 [,3] = Klingt gut! Also \z{8ff,200}Handy-Stil\z{8ff,0}!
+    19	= Sollen Erläuterungen zu\n
+	+ Menü-Symbolen und\n
+	+ Fenstern angezeigt\n
+	+ werden?\z{a07,4001a001b}\n
+	+ Klar!\n
+	+ Nein danke.
+    1a [,3] = Kann nicht schaden, was?\z{606,1}\n
+	+ Gut, ich stelle sie für dich\n
+	+ ein!
+    1b [,3] = Brauchst du nicht, was?\z{606,1}\n
+	+ Alles klar, du wirst keine zu\n
+	+ Gesicht bekommen!
+    1c	= 
+    1d [/16] = Das Haus von\n
+	+ \z{60c,3}\z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{8ff,0}?\n
+	+ \n
+	+ \n
+	+ Oh! Wie es aussieht, ist\n
+	+ \z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{8ff,0}\z{806,a}\n
+	+ weggegangen.\n
+	+ \n
+	+ Wenn du dieses Haus\n
+	+ zerstörst,\z{806,a} wird\n
+	+ \z{8ff,500}\z{1404,1020050004c00,4100590045005200} \z{8ff,0}nicht mehr\n
+	+ zurückkehren können\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Willst du dieses Haus GANZ\n
+	+ SICHER abreißen?\z{a07,230024}\n
+	+ Lieber nicht...\n
+	+ Abrissbirne!
+    1e	= \z{e08,a,1f002000200020}
+    1f [/2] = Was?!? Du willst dein Haus\n
+	+ abreißen?!?\n
+	+ \n
+	+ \n
+	+ BOAH, \z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{8ff,0}!\n
+	+ Denk noch mal darüber\n
+	+ nach. Dein Haus ist das\n
+	+ einzige in \z{605,5}!\n
+	+ Wenn wir es abreißen, wirst\n
+	+ du nie wieder in\n
+	+ \z{605,5} wohnen\n
+	+ können! Niemals!\n
+	+ Jede Erinnerung an\n
+	+ \z{605,5} wird\n
+	+ komplett ausgelöscht sein!\n
+	+ Das ist die harte Realität!\n
+	+ Also\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Noch einmal tief\n
+	+ durchatmen. Willst du es\n
+	+ immer noch tun?\z{a07,230021}\n
+	+ Nicht abreißen!\n
+	+ Weg damit!
+    20 [/2] = Moment mal! Was?!? Du\n
+	+ willst ein Haus abreißen?!?\z{606,1}\n
+	+ Nun, wenn du wirklich\n
+	+ willst\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Wessen Haus willst du denn\n
+	+ abreißen?
+    21 [,6d/16,,10] = Wow\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Du machst ernst\z{806,5}.
+	+ \z{806,5}.\z{806,5}.\z{806,5}\n
+	+ Ich bin platt.\n
+	+ \n
+	+ \n
+	+ Alles klar! Dann werde ich\n
+	+ alles dem Erdboden\n
+	+ gleichmachen\z{806,5}.\z{806,5}.\z{806,5}.
+    22 [/16] = Du willst also das Haus von\n
+	+ \z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{8ff,0} abreißen,\n
+	+ was?\n
+	+ \n
+	+ Dann verlierst du auch alle\n
+	+ Daten von \z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{8ff,0}
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{606,1}\n
+	+ Bist du dir sicher? Soll ich\n
+	+ es wirklich abreißen?\z{a07,230024}\n
+	+ Nein, doch nicht!\n
+	+ Nieder damit!
+    23 [,3/4] = Du hast es dir anders\n
+	+ überlegt, was? Puh!\n
+	+ Gut so\z{806,5}.\z{806,5}.\z{806,5}.
+    24 [,66/,,10] = In Ordnung! Du bist der\n
+	+ Boss. Zeit, das Haus von\n
+	+ \z{8ff,500}\z{1404,1020050004c00,4100590045005200} 
+	+ \z{8ff,0}abzureißen!\n
+	+ \z{606,1}Momentchen noch.
+    25 [,3] = Tja, das Haus von\n
+	+ \z{8ff,500}\z{1404,1020050004c00,4100590045005200}\z{806,5}\z{8ff,0}.
+	+ \z{806,5}.\z{806,5}.\z{806,5} ist nur\n
+	+ noch eine ferne\n
+	+ Erinnerung\z{806,5}.\z{806,5}.\z{806,5}.\z{606,1}\n
+	+ \z{602,9}Leb wohl, \z{8ff,500}\z{1404,1020050004c00,4100590045005200}
+	+ \z{8ff,0}\z{806,5}.\z{806,5}.\z{806,5}.
+    26 [,27/2] = \z{8ff,10096}WAAAS?!?
+    27 [/16] = Ist\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Ist das dein Ernst?!?
+	+ \z{606,1}\n
+	+ Weißt du, was das heißt,\n
+	+ neu aufbauen?!? Das\n
+	+ heißt\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Du willst \z{605,5},\n
+	+ wie wir es kennen,\n
+	+ komplett auslöschen?!?\n
+	+ \n
+	+ Alle werden weg sein!\n
+	+ Futsch! Einfach so! Alle in\n
+	+ \z{605,5}\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}\n
+	+ W-E-G, WEG!\n
+	+ All die hart erarbeiteten\n
+	+ Sternis! All die Möbel in\n
+	+ all den wunderschönen\n
+	+ Zimmern\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Alles futsch! Für immer\n
+	+ ausgelöscht! Wie ein\n
+	+ Traum, aus dem du\n
+	+ aufgewacht bist!\n
+	+ Wow\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Willst du das\n
+	+ wirklich?\z{a07,280029}\n
+	+ Nee, doch nicht!\n
+	+ Neu aufbauen!
+    28 [,3] = Du willst die Stadt also\n
+	+ NICHT neu aufbauen!\z{606,1} Puh!\n
+	+ Was für 'ne Erleichterung!\n
+	+ \n
+	+ Du hast die richtige\n
+	+ Entscheidung getroffen!\z{606,1}\n
+	+ Danke, dass du noch mal\n
+	+ drüber nachgedacht hast!\n
+	+ Das war\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} schon kurz vor\n
+	+ knapp! Ich weiß nicht, was\n
+	+ ich ohne das gute alte\n
+	+ \z{605,5} tun würde\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Ich glaub, das wär zu viel\n
+	+ für mich!
+    29 [,67/16,,10] = Wow\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Du machst ernst\z{806,5}.
+	+ \z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ Alles klar! Jetzt gibt's kein\n
+	+ Zurück mehr. \z{60c,3}\z{605,5}\n
+	+ wird nun in der Versenkung\n
+	+ verschwinden\z{806,5}.\z{806,5}.\z{806,5}.
+    2a [/,,13] = Weg ist es!\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}Und tschüss!
+    2b	= In Ordnung, es funktioniert\n
+	+ so: Stecke dein \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Spiel\n
+	+ in dein \z{8ff,100}Nintendo DS-System\z{8ff,0}.\n
+	+ Jetzt sei so gut und schalte\n
+	+ das \z{8ff,100}Nintendo DS-System\z{8ff,0} ein.\n
+	+ Wähle dann \z{8ff,200}DS-Download-\n
+	+ Spiel\z{8ff,0}, in Ordnung?\z{a07,9b002c}\n
+	+ Fertig!\n
+	+ Vergiss es.
+    2c	= Moment mal, du hast es dir\n
+	+ anders überlegt?\z{a07,40003009b}\n
+	+ Ja. Ich hör auf!\n
+	+ Nein. Fortfahren!
+    2d	= \z{806,5}.\z{806,5}.\z{806,5}.Hä?\z{606,1} \z{60c,3}\z{8ff,500}
+	+ \z{1a04,104004400,53005f0050004c00,4100590045005200}\z{8ff,0} aus\n
+	+ \z{8ff,800}\z{1c04,1030044005300,5f00560049004c00,4c00410047004500}
+	+ \z{8ff,0} wohnt schon\n
+	+ in \z{605,5}!\z{8ff,500}\z{a07,400a00003}\n
+	+ \z{8ff,0}Andere Stadt.\n
+	+ Aufhören.
+    2e	= \z{806,5}.\z{806,5}.\z{806,5}.Hä?\z{606,1} Aber \z{8ff,500}
+	+ \z{1a04,104004400,53005f0050004c00,4100590045005200}\z{8ff,0}\n
+	+ wohnt schon in\n
+	+ \z{605,5}!\z{a07,4009c009e}\n
+	+ Anderer Spieler.\n
+	+ Aufhören.
+    2f [,3/4] = Oje!\z{606,1} Hey, das ist mehr oder\n
+	+ weniger unmöglich. Es gibt\n
+	+ gerade keine leeren Häuser\n
+	+ in \z{605,5}\z{806,5}.\z{806,5}.\z{806,5}.
+    30	= \z{e08,a,2b002b002b002f}
+    31 [///,,,1] = 
+    32	= 
+    33 [,65/,,10] = Ich hatte recht! Mann, bin\n
+	+ ich clever!\z{606,1} Ich WUSSTE,\n
+	+ ich hab dich schon mal\n
+	+ gesehen. Ich WUSSTE es.\n
+	+ Na, wie findest du\n
+	+ \z{605,5} denn so?\z{606,1}\n
+	+ Gefällt es dir?\n
+	+ \n
+	+ \z{602,14}Na ja, hoffentlich lebst du\n
+	+ dich schnell ein\z{806,a} und findest\n
+	+ viele Freunde in der Stadt!\n
+	+ \n
+	+ \z{602,0}Alles klar!\z{806,f} Ich bereite alles\n
+	+ vor. Eine Sekunde!
+    34 [,65/,,10] = Ich wusste es! Junge, bin\n
+	+ ich CLEVER!\z{606,1} Ich wusste,\n
+	+ dass ich dich schon mal\n
+	+ gesehen habe!\n
+	+ Wie ist es so in\n
+	+ \z{605,5}?\z{606,1} Gefällt's\n
+	+ dir?\n
+	+ \n
+	+ \z{602,14}Na ja, hoffentlich lebst du\n
+	+ dich gut ein\z{806,a} und freundest\n
+	+ dich mit allen Nachbarn an!\n
+	+ \n
+	+ \z{602,0}Alles klar!\z{806,f} Ich bereite alles\n
+	+ vor. Eine Sekunde!
+    35	= Na so was, da ist ja\n
+	+ \z{605,0}! Und es ist\n
+	+ dein Geburtstag!\z{a08,300360037}
+    36 [,38] = Alles Gute!\z{606,1} Vielleicht\n
+	+ täusche ich mich ja, aber\n
+	+ du siehst irgendwie reifer\n
+	+ aus\z{806,f}.\z{806,5}.\z{806,5}.\z{806,f} Ja!
+    37 [,38] = Alles Gute!\z{606,1} Ich bin viel zu\n
+	+ höflich, um 'ne Dame nach\n
+	+ ihrem Alter zu fragen, aber\n
+	+ ich sag dir was\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Du siehst aus wie eine\n
+	+ Million Sternis!\n
+    38 [,65/,,10] = In \z{605,5} warten\n
+	+ bestimmt schon alle auf\n
+	+ den Ehrengast, was?\n
+	+ \n
+	+ Nur 'ne Sekunde, ich muss\n
+	+ noch ein paar Dinge klären!
+    39	= \z{a08,3e003f}
+    3a	= \z{a08,400041}
+    3b	= \z{c08,1004200430044}
+    3c	= \z{c08,1004500460047}
+    3d	= \z{c08,100480049004a}
+    3e [,65/,,10] = Ja, ja, das hab ich mir\n
+	+ gedacht!\z{606,1} Wow\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Ist schon\n
+	+ 'ne Weile her\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} 'ne ganz\n
+	+ schön LANGE Weile!\n
+	+ Ich wette, dass jeder in\n
+	+ \z{605,5} total\n
+	+ überrascht sein wird, dich\n
+	+ zu sehen, \z{605,0}!\n
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}Oh! Tut mir leid! Ich\n
+	+ quatsche wieder zu viel!\n
+	+ Ich bereite gleich alles vor!
+    3f [,65/,,10] = \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\z{806,5}.\z{806,1e}\z{605,0}!\z{606,1}\n
+	+ Boah! Wo hast du gesteckt?\n
+	+ Alles in Ordnung?!?\n
+	+ \n
+	+ Alle in \z{605,5} haben\n
+	+ sich Sorgen gemacht! Im\n
+	+ Ernst, sie wollten schon\n
+	+ 'nen Suchtrupp schicken!\n
+	+ Tja! Gut zu wissen, dass\n
+	+ es dich noch gibt. Warte,\n
+	+ ich mach alles startklar.
+    40 [,65/,,10] = Oh, gut! Das dachte ich mir\n
+	+ schon, aber es ist so lange\n
+	+ her!\n
+	+ \n
+	+ In Ordnung, ich mach alles\n
+	+ startklar für dich!
+    41 [,65/,,10] = Ach, stimmt ja! Tut mir\n
+	+ leid! \z{60c,3}\z{605,0}.\n
+	+ Natürlich!\n
+	+ \n
+	+ Ich treffe jeden Tag so\n
+	+ viele Leute, dass ich sie\n
+	+ vergesse, wenn ich sie mir\n
+	+ nicht ganz genau ansehe!\n
+	+ \z{602,c}Junge, ich\z{806,5}.\z{806,5}.\z{806,5}.\z{806,1e} Ach,
+	+  vergiss\n
+	+ es! Legen wir los\z{806,5}.\z{806,5}.\z{806,5}.
+    42 [,65/,,10] = Ja! Ja! Natürlich!\n
+	+ \z{60c,3}\z{605,0}, richtig?\z{606,1}\n
+	+ Dann bereiten wir mal alles\n
+	+ vor!
+    43 [,65/,,10] = Das war nur 'n kleiner\n
+	+ Scherz!\z{606,1} Ich weiß noch,\n
+	+ wer du bist, \z{605,0}!\n
+	+ \n
+	+ Aaalso, dann\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Äh, ja.\n
+	+ Dann schick ich dich mal\n
+	+ los, was?
+    44 [,65/,,10] = Ach jaaaaaa!\n
+	+ \z{60c,3}\z{605,0}!\z{606,1} Ich wusste\n
+	+ noch ALLES außer dem\n
+	+ Namen! \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}Jep.\n
+	+ Aaalso, \z{605,0}, hör\n
+	+ zu. Wartest du kurz,\n
+	+ während ich alles\n
+	+ vorbereite?
+    45 [,65/,,10] = Miahaha, nur ein Scherz!\n
+	+ Ich vergesse das doch nicht\n
+	+ nach nur EINEM Tag!\n
+	+ Na komm schon!\n
+	+ Alles klar, dann legen wir\n
+	+ mal los!
+    46 [,65/,,10] = Ich muss schon sagen, es\n
+	+ ist 'ne feine Sache, dich\n
+	+ jeden Tag zu sehen!\n
+	+ \n
+	+ In Ordnung! Ich bereite\n
+	+ dann mal alles vor!
+    47 [,65/,,10] = Richtig. Ich wusste es. Das\n
+	+ passt zu dir. Könnte nicht\n
+	+ besser passen.\n
+	+ \n
+	+ Wäre witzig gewesen, wenn\n
+	+ jemand so getan hätte, als\n
+	+ wäre er du. \z{160c,4,450069006e0000,450069006e0065}\n
+	+ Möchtegern-\z{605,0}!\n
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}Na gut, Spaß beiseite.\n
+	+ Ich mach alles startklar.
+    48 [,65/,,10] = Oh! \z{806,a}Willkommen zurück\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}\n
+	+ SCHON WIEDER!\n
+	+ \n
+	+ \n
+	+ Ich mach dich startklar\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}\n
+	+ SCHON WIEDER!\n
+	+ \z{602,3}Miahahahau!
+    49 [,65/,,10] = Bei dir ist es heute ein\n
+	+ ständiges Raus und Rein,\n
+	+ \z{605,0}!\n
+	+ \n
+	+ Schätze, das macht meinen\n
+	+ Job weniger langweilig\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}\n
+	+ Tja, äh, danke!\n
+	+ \n
+	+ Sekunde, ich hab in null\n
+	+ Komma nichts alles\n
+	+ vorbereitet!
+    4a [,65/,,10] = Du lässt dich heute oft\n
+	+ blicken, \z{605,0}.\z{606,1}\n
+	+ Hast du was in\n
+	+ \z{605,5} vergessen?\n
+	+ Tja, egal. Ich mach dich\n
+	+ ratzfatz startklar!
+    4b [,65/4,,10] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Ach ja!\z{606,1} Du bist es!\n
+	+ \z{60c,3}\z{605,0}! Du hast am\n
+	+ 29. Geburtstag, stimmt's?!?\n
+	+ \n
+	+ \z{602,0}Wir haben zwar kein\n
+	+ Schaltjahr, aber trotzdem\z{806,5}.\z{806,5}.\z{806,5}.\z{806,1e}\n
+	+ \z{602,14}ALLES GUTE ZUM\n
+	+ GEBURTSTAG!\n
+	+ \z{602,0}Na komm!\z{806,f} Ich glaube, in\n
+	+ \z{605,5} warten\n
+	+ schon alle\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ Ich bereite schnell alles\n
+	+ vor! Nur einen Moment!
+    4c [///,,,1] = 
+    4d [///,,,1] = 
+    4e [///,,,1] = 
+    4f	= \z{806,5}.\z{806,5}.\z{806,5}.Hä?\z{606,1} \z{602,e}Komisch,\n
+	+ \z{605,0}! Ich hätte\n
+	+ schwören können, dass du\n
+	+ weggegangen bist\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Hör mal, wenn ich dich\n
+	+ jetzt reinlasse, werden die\n
+	+ Daten des \z{8ff,200}DS-Koffers\z{8ff,0}\n
+	+ gelöscht\z{806,5}.\z{806,5}.\z{806,5}. In Ordnung?\z{a07,400650005}\n
+	+ Kein Problem.\n
+	+ Vergiss es!
+    50	= 
+    51	= \z{c08,1005300540055}
+    52	= \z{c08,1005600570058}
+    53 [/14,,11] = Wir sind startklar!\n
+	+ Viel Spaß in \z{605,5}!
+    54 [/14,,11] = Sorry, dass du warten\n
+	+ musstest! Amüsier dich gut\n
+	+ in \z{605,5}!
+    55 [/14,,11] = Alles klar! Hau auf den\n
+	+ Putz in \z{605,5}!
+    56 [/14,,11] = Alles klar\z{806,5}.\z{806,5}.\z{806,5}. Wir sind bereit!\n
+	+ Lass alle Sorgen hinter dir!
+    57 [/14,,11] = Danke, dass du gewartet\n
+	+ hast! Mach dir 'ne feine\n
+	+ Zeit in \z{605,5}!
+    58 [/14,,11] = Bereit? Alles klar!\n
+	+ Bis bald!
+    59 [///,,,1] = 
+    5a	= 
+    5b	= Gerne!\z{606,1} Diese Informationen\n
+	+ sind schließlich wichtig! Ich\n
+	+ wiederhole sie für dich, so\n
+	+ oft du möchtest. \n
+	+ \z{602,0}In Ordnung\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ In diesem Spiel\z{806,5} kannst du\n
+	+ mit den Städten deiner\n
+	+ Freunde kommunizieren.\n
+	+ Dazu musst du dich über\n
+	+ \z{8ff,200}RiiConnect24 \z{8ff,0}mit \z{8ff,100}anderen\n
+	+ Wii-Systemen \z{8ff,0}verbinden.\n
+	+ \n
+	+ Mit dieser Funktion kannst\n
+	+ du Freunden, die auf deiner\n
+	+ \z{8ff,200}Freundesliste \z{8ff,0}registriert\n
+	+ sind, Briefe schreiben.\n
+	+ Oder ihnen Nachrichten\n
+	+ an ihre \z{8ff,200}Wii-Pinnwände\n
+	+ \z{8ff,0}schicken, wenn ihre \z{8ff,200}Wii-\n
+	+ Nummern\z{8ff,0} registriert sind.\n
+	+ Es kann auch passieren,\z{806,a}\n
+	+ dass die Bewohner deiner\n
+	+ befreundeten Städte in\n
+	+ deine Stadt umziehen\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Oder sie erzählen dir\n
+	+ Geschichten aus den\n
+	+ Städten deiner Freunde!\n
+	+ \n
+	+ Auch wenn ihr nicht spielt,\z{806,a}\n
+	+ ist es so, als würden eure\n
+	+ Städte weiterhin in\n
+	+ Verbindung bleiben!\n
+	+ Nicht nur das - \z{806,a}du kannst\n
+	+ außerdem regelmäßig\n
+	+ Briefe und Geschenke von\n
+	+ Nintendo erhalten.\n
+	+ So, \z{806,a}jetzt weißt du über\n
+	+ alle Zusatzfunktionen\n
+	+ Bescheid\z{806,5}.\z{806,5}.\z{806,5}.
+    5c [,5e/4] = Oh,\z{806,f} du kannst deine\n
+	+ Einstellungen nicht ändern,\n
+	+ wenn dein \z{8ff,200}WiiConnect24\z{8ff,100}\n
+	+ \z{8ff,0}ausgeschaltet ist\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,b}Warum überprüfst du nicht\n
+	+ einmal die \z{8ff,200}WiiConnect24\z{8ff,0}-\n
+	+ Einstellungen in den\n
+	+ Wii-Optionen?
+    5d [,5e/4] = Oh, \z{806,f}mit eingeschränkten\n
+	+ Netzwerkeinstellungen\n
+	+ kannst du diese Ein-\n
+	+ stellungen nicht ändern\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Überprüfe bitte die\n
+	+ Einstellungen der \n
+	+ \z{8ff,200}Altersbeschränkungen\z{8ff,100}\n
+	+ \z{8ff,0}in den Wii-Optionen.
+    5e	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}EIN\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,100620062005b}\n
+	+ So lassen!\n
+	+ Ausschalten!\n
+	+ Erklären, bitte!
+    5f	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}AUS\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,100620062005b}\n
+	+ Einschalten!\n
+	+ So lassen!\n
+	+ Erklären, bitte!
+    60	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}EIN\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,100620062005b}\n
+	+ So lassen!\n
+	+ Ausschalten!\n
+	+ Erklären, bitte!
+    61	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}AUS\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,100620062005b}\n
+	+ Einschalten!\n
+	+ So lassen!\n
+	+ Erklären, bitte!
+    62 [,3] = Alles klar!\z{606,1} Wie du willst!
+    63 [/,,11] = Jetzt, wo das geklärt ist\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{806,5}Willkommen zurück,\n
+	+ \z{605,0}!
+    64	= 
+    65 [/,,,14] = \z{8ff,100}Vorbereitung läuft.\n
+	+ Berühre nicht den\n
+	+ POWER-Schalter oder den\n
+	+ RESET-Knopf!\z{806,b001e}
+    66 [/,,,14] = \z{8ff,100}Haus wird abgerissen.\n
+	+ Berühre nicht den\n
+	+ POWER-Schalter oder den\n
+	+ RESET-Knopf!\z{806,b001e}
+    67 [/,,,14] = \z{8ff,100}Stadt wird gelöscht.\n
+	+ Berühre nicht den\n
+	+ POWER-Schalter oder den\n
+	+ RESET-Knopf!\z{806,b001e}
+    68 [/,,,14//,,,1] = 
+    69 [/,,,14//,,,1] = 
+    6a [/,,,14] = \z{8ff,100}Suche läuft... Bitte warten.\n
+	+ \n
+	+ Drücke \z{8ff,0}\z{601,2}\z{8ff,100}, um\n
+	+ den Vorgang abzubrechen.\z{806,b001e}
+    6b [/,,,14//,,,1] = 
+    6c [/,,,14] = \z{8ff,100}Umzug wird vorbereitet.\n
+	+ Bitte warten.\z{806,b001e}
+    6d [/,,,14] = \z{8ff,100}Stadt und Häuser werden\n
+	+ gelöscht. Berühre nicht den\n
+	+ POWER-Schalter oder den\n
+	+ RESET-Knopf!\z{806,b001e}
+    6e [/,,,14//,,,1] = 
+    6f [/,,,14] = \z{8ff,100}Verbindung zum Nintendo\n
+	+ DS-System wird herge-\n
+	+ stellt. Drücke \z{8ff,0}\z{601,2}\z{8ff,100}, um den\n
+	+ Vorgang abzubrechen.\z{806,b001e}
+    70 [/,,,14] = \z{8ff,100}Übertragung läuft...\n
+	+ Bitte warten.\z{806,b001e}
+    71 [/,,,14] = \z{8ff,100}Übertragung läuft...\n
+	+ Bitte warten.\z{806,b001e}
+    72 [/,,,14//,,,1] = 
+    73 [/,,,14//,,,1] = 
+    74 [/,,,14//,,,1] = 
+    75 [/,,,14//,,,1] = 
+    76 [/,,,14//,,,1] = 
+    77	= 
+    78	= 
+    79	= Also\z{806,5}.\z{806,5}.\z{806,5}. Kannst du\n
+	+ sicherstellen, dass die\n
+	+ \z{8ff,200}Verbindung \z{8ff,0}zwischen dem\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} mit\n
+	+ Besucherinformationen und\n
+	+ dem \z{8ff,100}Wii-System \z{8ff,0}hergestellt\z{8ff,200}\n
+	+ \z{8ff,0}wurde?\z{a07,4006f0005}\n
+	+ Alles klar!\n
+	+ Vergiss es.
+    7a	= Ja, ich kann \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200}\n
+	+ \z{8ff,0}sehen! Ist das richtig so?\z{a07,400000000}\n
+	+ Ja!\n
+	+ Nein!
+    7b	= Ja, genau, \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200}\n
+	+ \z{8ff,0}aus \z{8ff,800}\z{1c04,1030044005300,5f00560049004c00,4c00410047004500}
+	+ \z{8ff,0},\n
+	+ stimmt's?\z{a07,4007d0000}\n
+	+ Ja!\n
+	+ Nein!
+    7c	= Warte\z{806,5}.\z{806,5}.\z{806,5}. Was?!? Im Ernst?\n
+	+ Das stimmt nicht?\n
+	+ \n
+	+ \n
+	+ Gut. Vergewissere dich,\n
+	+ dass die \z{8ff,200}Verbindung\z{8ff,0}\n
+	+ zwischen dem \z{8ff,100}Nintendo\n
+	+ DS-System\z{8ff,0} mit Besucher-\n
+	+ informationen und dem\n
+	+ \z{8ff,100}Wii-System \z{8ff,0}erneut\n
+	+ hergestellt wird.\z{a07,4006f0005}\n
+	+ In Ordnung!\n
+	+ Vergiss es.
+    7d	= Hey, \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200}!
+	+ \z{8ff,0}\z{806,5}\n
+	+ Willkommen in\n
+	+ \z{605,5}!
+    7e	= Willkommen zurück!\z{806,5} Und?\n
+	+ Spaß gehabt?
+    7f [,5/1d] = Hä?\z{806,5} \z{8ff,500}\z{60c,3}\z{1a04,104004400,53005f0050004c00,4100590045005200}
+	+ \z{8ff,0} ist\n
+	+ schon in der Stadt\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,16}Wer schon zurück ist, kann\n
+	+ nicht NOCH MAL\n
+	+ zurückkommen\z{806,5}.\z{806,5}.\z{806,5}. Das sind\n
+	+ die Gesetze der Physik!
+    80 [,5/1d] = Warte mal\z{806,5}.\z{806,5}.\z{806,5}. Hä?\z{806,5} Also ist\n
+	+ \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200} 
+	+ \z{8ff,0}schon\n
+	+ wieder zurück in der Stadt,\n
+	+ aber\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{8ff,500}\z{60c,3}\z{1a04,104004400,53005f0050004c00,4100590045005200}
+	+  \z{8ff,0}kehrt gerade\n
+	+ in die Stadt zurück.\n
+	+ \z{602,16}Ich glaub, ich werd langsam\n
+	+ plemplem\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Man kann doch nicht an\n
+	+ denselben Ort zurück-\n
+	+ kehren, an dem man\n
+	+ schon ist!
+    81	= Äh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Was? Nicht?\n
+	+ \n
+	+ \n
+	+ \n
+	+ Es gab einen Verbindungs-\n
+	+ fehler mit dem \z{8ff,100}Nintendo\n
+	+ DS-System\z{8ff,0}.\n
+	+ \n
+	+ Wenn du erneut beginnst,\n
+	+ \z{806,5}werden die Daten von\n
+	+ \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200}\z{8ff,0}
+	+  im \z{8ff,100}Nintendo\n
+	+ DS-System\z{8ff,0} gelöscht.\n
+	+ In Ordnung?\z{a07,400820000}\n
+	+ Ja, in Ordnung!\n
+	+ Nein, weiterspielen.
+    82	= Kannst du dich bitte\n
+	+ vergewissern, dass die\n
+	+ \z{8ff,200}Verbindung \z{8ff,0}zwischen dem\n
+	+ \z{8ff,100}Nintendo DS-System \z{8ff,0}mit\n
+	+ Besucherinformationen und\n
+	+ dem \z{8ff,100}Wii-System \z{8ff,0}hergestellt \n
+	+ ist?\z{a07,4006f0005}\n
+	+ In Ordnung!\n
+	+ Vergiss es.
+    83 [,65/,,10] = Gut. Du kannst das\n
+	+ \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}jetzt ausschalten.
+    84	= Hmmm\z{806,5}.\z{806,5}.\z{806,5}. Seltsam.\n
+	+ Ich konnte mit keinem\n
+	+ \z{8ff,100}Nintendo DS-System \z{8ff,0}in\n
+	+ Verbindung treten.\n
+	+ Noch mal versuchen?\z{a07,400790005}\n
+	+ Ja bitte!\n
+	+ Nein danke.
+    85	= Wie es aussieht, gab es\n
+	+ einen Verbindungsfehler\n
+	+ mit dem \z{8ff,100}Nintendo DS-\n
+	+ System\z{8ff,0}. Potzblitz!\z{8ff,100}\n
+	+ \z{8ff,0}Sollen wir es noch mal\n
+	+ versuchen?\z{8ff,100}\z{a07,400790005}\n
+	+ \z{8ff,0}Ja!\n
+	+ Vergiss es.
+    86 [,65/,,10] = Ups\z{806,5}.\z{806,5}.\z{806,5}. Es gab einen\n
+	+ Verbindungsfehler mit\n
+	+ dem \z{8ff,100}Nintendo DS-System\z{806,5}\z{8ff,0}.\z{806,5}.
+	+ \z{806,5}.\n
+	+ \n
+	+ Aber wir können das Spiel\n
+	+ trotzdem starten, du kannst\n
+	+ das \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}also ausschalten.
+    87 [,5] = Hä?\z{806,5} Ich dachte, du weißt,\n
+	+ dass \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200} 
+	+ \z{8ff,0}diese\n
+	+ Stadt schon verlassen hat\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ Und wenn jemand erst mal\n
+	+ weg ist, kann er nicht\n
+	+ zurückkommen\z{806,5}.\z{806,5}.\z{806,5}.
+    88	= Was?\z{806,a} Du willst aufhören?\z{a07,4006f0005}\n
+	+ Weitermachen.\n
+	+ Aufhören.
+    89 [///,,,1] = 
+    8a [///,,,1] = 
+    8b [///,,,1] = 
+    8c [///,,,1] = 
+    8d [///,,,1] = 
+    8e [///,,,1] = 
+    8f [///,,,1] = 
+    90 [///,,,1] = 
+    91 [///,,,1] = 
+    92 [///,,,1] = 
+    93 [///,,,1] = 
+    94 [///,,,1] = 
+    95 [///,,,1] = 
+    96	= 
+    97	= Hey!\z{806,f} Tut mir leid, dass du\n
+	+ warten musstest!\z{606,1} Ich hab\n
+	+ gehört, du ziehst um?\z{806,a}\n
+	+ \n
+	+ Ich bin hier, um dich\n
+	+ abzuholen! \z{806,a}Nett von mir,\n
+	+ was?\n
+	+ \n
+	+ Ach, \z{806,f}ganz allein und auf\n
+	+ sich selbst gestellt zu\n
+	+ sein\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Ich weiß, wie du dich\n
+	+ fühlst!\n
+	+ Niemand,\z{806,5} der dir sagt,\z{806,5} was\n
+	+ du tun sollst!\z{806,a} Du kannst tun\n
+	+ und lassen, was du willst!\n
+	+ \z{806,a}Tja, beneidenswert!\n
+	+ \z{602,19}Ach ja! Ein neues Haus,\z{806,a}\n
+	+ neue Nachbarn, \z{806,a}neue\n
+	+ Freunde\z{806,5}.\z{806,5}.\z{806,5}. \n
+	+ \n
+	+ \z{602,0}Ein frischer Neuanfang \z{806,5}und\n
+	+ eine Welt voll ungeahnter\n
+	+ Begegnungen erwarten\n
+	+ dich!\z{806,a} Ich meine\z{806,a}\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,14}\z{806,f}Hört sich das gut an?!?\n
+	+ Für meine Ohren\z{806,5}.\z{806,5}.\z{806,5}. \z{606,4}\z{806,19}
+	+ \z{602,4}\z{806,28}\z{606,5}\z{602,0}OH JA!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Also los! Bist du bereit für\n
+	+ einen Neuanfang?\z{606,1} Bereit,\n
+	+ die Karten neu mischen zu\n
+	+ lassen?\n
+	+ \z{602,b}Oder\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} willst du dein
+	+  Leben\n
+	+ aus \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0} vom \z{8ff,100}Nintendo DS-\n
+	+ System \z{8ff,0}übernehmen?\z{a07,980099}\n
+	+ Neuanfang!\n
+	+ Übernehmen!
+    98 [/19,,12] = Hey, ich steh hinter dir!\z{606,1}\n
+	+ \z{602,0}Ich meine, du pinselst dir\n
+	+ ein komplett neues Leben\n
+	+ zurecht, stimmt's?\n
+	+ \z{602,14}Und wie sollte das besser\n
+	+ funktionieren als auf einer\n
+	+ funkelnagelneuen\n
+	+ Leinwand? Oh ja!\n
+	+ \z{602,0}.\z{806,5}.\z{806,5}.\z{806,5}\z{602,4}Wow!\z{806,f} 
+	+ \z{602,0}Der Bus wird\n
+	+ jetzt jeden Moment\n
+	+ ankommen!\z{806,a} Junge, wie die\n
+	+ Zeit verfliegt!\n
+	+ \z{602,14}Alles klar! Gehen wir!
+    99 [/14] = Hey, ich versteh dich!\z{806,14} \z{602,0}Du\n
+	+ hast's in diesem Leben weit\n
+	+ gebracht! Da will man nicht\n
+	+ einfach Lebewohl sagen!\n
+	+ \z{602,14}Du musst dieses Leben\n
+	+ immer weiter verschönern\n
+	+ und garnieren wie einen\n
+	+ leckeren Kuchen!\n
+	+ \z{602,0}Aaalso\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Ich quatsche zu\n
+	+ viel! Wir sollten dich jetzt\n
+	+ für den großen Umzug\n
+	+ bereit machen.\n
+	+ Als Erstes\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Stecke dein\n
+	+ \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0}-Spiel in dein\n
+	+ \z{8ff,100}Nintendo DS-System\z{806,5}\z{8ff,0}.\z{806,5}.\z{806,5}.\n
+	+ Und nun schalte dein\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} ein.\z{a07,9b009a}\n
+	+ Gemacht!\n
+	+ Vergiss es.
+    9a	= Gut, versuchen wir's noch\n
+	+ mal\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ Willst du in dein neues\n
+	+ Leben\z{806,a} mit einem komplett\n
+	+ neuen Ich starten?\n
+	+ \n
+	+ \z{602,b}Oder\z{806,5}.\z{806,5}.\z{806,5}. willst du's lieber \n
+	+ aus \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0} von deinem \z{8ff,100}Nintendo\n
+	+ DS-System \z{8ff,0}übernehmen?\z{8ff,100}\z{a07,980099}\n
+	+ \z{8ff,0}Neues Ich!\n
+	+ Übernehmen!
+    9b [,ab] = Lade den \z{8ff,200}Umzugsvan\z{806,a} \z{8ff,0}auf\n
+	+ dein \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}herunter!
+    9c	= Also, wer kommt zu Besuch\n
+	+ aus \z{8ff,800}\z{1c04,1030044005300,5f00560049004c00,4c00410047004500}\z{8ff,0}?
+    9d [/b] = Wird es \z{8ff,500}\z{1a04,104004400,53005f0050004c00,4100590045005200}
+	+  \z{8ff,0}aus\n
+	+ \z{8ff,800}\z{1c04,1030044005300,5f00560049004c00,4c00410047004500}
+	+ \z{8ff,0} sein?\z{a07,400a1009e}\n
+	+ Ja!\n
+	+ Vergiss es.
+    9e	= Was? Du willst aufhören?\z{c07,5000000a0009a}\n
+	+ Weitermachen.\n
+	+ Andere Stadt.\n
+	+ Aufhören.
+    9f	= Was? Du willst aufhören?\z{a07,4009b009a}\n
+	+ Weitermachen.\n
+	+ Aufhören.
+    a0 [/b] = Oh, aus einer anderen\n
+	+ Stadt?\n
+	+ \n
+	+ \n
+	+ \z{602,0}Gut, \z{806,a}dann schalte bitte das\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} aus\n
+	+ und fange von vorn an.
+    a1 [/,,12] = Alles klar! \z{806,f}Danke, dass du\n
+	+ gewartet hast!\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5}\z{602,4}Oh!\z{806,f} \z{602,0}Das hab ich
+	+  total\n
+	+ vergessen! Ich muss heute\n
+	+ noch was erledigen. Was\n
+	+ extrem Wichtiges!\n
+	+ Ich kann dich aber ein\n
+	+ Stück mitnehmen.\z{806,a} \z{602,14}Na los!
+    a2	= Hmmm, ich habe kein\n
+	+ \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}gefunden, mit dem ich\n
+	+ kommunizieren konnte.\n
+	+ Willst du es noch mal\n
+	+ versuchen?\z{a07,400a3009a}\n
+	+ Jawohl.\n
+	+ Aufhören.
+    a3	= So! Also\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Schalte das\n
+	+ \z{8ff,100}Nintendo DS-System \z{8ff,0}mit\n
+	+ deinem \z{8ff,800}Animal Crossing:\n
+	+ Wild World\z{8ff,0}-Spiel ein.\z{a07,9b009a}\n
+	+ Gemacht!\n
+	+ Vergiss es.
+    a4 [,9a] = \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}\z{602,b}Huch?\z{806,f}\n
+	+ \z{602,0}Dieses \z{8ff,800}Animal Crossing:\n
+	+ Wild World \z{8ff,0}scheint keine\n
+	+ Stadtdaten zu enthalten.\n
+	+ Verwende ein \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Spiel,\n
+	+ auf dem Einwohner\n
+	+ gespeichert sind!
+    a5 [,9a] = \z{602,4}Oh nein!\z{806,f} Die Stadtdaten\n
+	+ des \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0}-Spiels sind\n
+	+ beschädigt!\n
+	+ Sie können nicht\n
+	+ gelesen werden!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Vergewissere dich, dass du\n
+	+ ein \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0}-Spiel mit unbeschä-\n
+	+ digten Daten verwendest!
+    a6 [,9a] = \z{806,5}.\z{806,5}.\z{806,5}.\z{602,b}Huch? Es lebt niemand in\n
+	+ \z{8ff,800}\z{1c04,1030044005300,5f00560049004c00,4c00410047004500}
+	+ \z{8ff,0}!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Verwende ein \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Spiel,\n
+	+ auf dem Einwohner\n
+	+ gespeichert sind!
+    a7	= \z{806,5}.\z{806,5}.\z{806,5}.\z{602,b}Huch? Es scheint sich\n
+	+ keine DS-Karte im \z{8ff,100}Nintendo\n
+	+ DS-System\z{8ff,0} zu befinden.\n
+	+ \n
+	+ Verwende ein \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Spiel,\n
+	+ auf dem Einwohner\n
+	+ gespeichert sind!\n
+	+ Schalte das \z{8ff,100}Nintendo DS-\n
+	+ System \z{8ff,0}aus und versuche\n
+	+ es noch einmal!
+    a8	= \z{806,5}.\z{806,5}.\z{806,5}.\z{602,b}Huch? Ich glaube, du\n
+	+ verwendest nicht die\n
+	+ richtige DS-Karte.\n
+	+ \n
+	+ \z{602,0}Verwende ein \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Spiel,\n
+	+ auf dem Einwohner\n
+	+ gespeichert sind!\n
+	+ Schalte das \z{8ff,100}Nintendo DS-\n
+	+ System \z{8ff,0}aus und versuche\n
+	+ es noch einmal!
+    a9	= \z{806,5}.\z{806,5}.\z{806,5}.\z{602,16}Huch? Aus irgendeinem\n
+	+ Grund konnte die DS-Karte\n
+	+ nicht gelesen werden\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,0}Schalte das \z{8ff,100}Nintendo DS-\n
+	+ System \z{8ff,0}aus und versuche\n
+	+ es noch einmal!
+    aa	= Fertig! Du kannst das\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} nun\n
+	+ ausschalten!
+    ab	= Wenn du aufhören willst,\z{806,5}\n
+	+ drücke \z{601,2} auf der\n
+	+ \z{8ff,100}Wii-Fernbedienung\z{8ff,0}.\z{806,b001e}
+    ac [///,,,1] = 
+    ad [///,,,1] = 
+    ae [///,,,1] = 
+    af [///,,,1] = 
+    b0 [///,,,1] = 
+    b1 [///,,,1] = 
+    b2 [///,,,1] = 
+    b3 [///,,,1] = 
+    b4 [///,,,1] = 
+    b5	= Ich verstehe!\z{806,14} \z{602,0}Du hast dir\n
+	+ hier schließlich Einiges\n
+	+ aufgebaut.\z{806,14} Das willst du\n
+	+ nicht einfach so aufgeben!\n
+	+ \z{602,14}Man sollte sein Leben\n
+	+ immer weiter ausbauen!\z{806,14}\z{602,e}\n
+	+ Vom kleinen Häuschen\z{806,5}.\z{806,5}.\z{806,5}.\z{806,14}\z{602,c}
+	+ \z{806,f}\n
+	+ bis hin zur Villa!\n
+	+ \z{602,0}Also\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Dann bereiten wir\n
+	+ dich besser mal auf den\n
+	+ großen Umzug vor!\n
+	+ \n
+	+ Als Erstes\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} stecke deine\n
+	+ \z{8ff,800}Animal Crossing: Wild\n
+	+ World\z{8ff,0}-Karte in dein\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0}\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Und jetzt\z{806,5} schalte bitte das\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} ein\n
+	+ und berühre \z{8ff,200}DS-Download-\n
+	+ Spiel\z{8ff,0}.\z{a07,9b00b6}\n
+	+ In Ordnung!\n
+	+ Vergiss es.\n
+    b6	= \z{602,b}Huch?\z{806,a} Du willst aufhören?\z{a07,400b70005}\n
+	+ Nein!\n
+	+ Richtig!
+    b7	= In Ordnung!\z{806,f} Versuchen wir\n
+	+ es noch mal.\n
+	+ \n
+	+ \n
+	+ Stecke deine \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,0}-Karte\n
+	+ in dein \z{8ff,100}Nintendo DS-\n
+	+ System\z{8ff,0}.\n
+	+ Und jetzt\z{806,5} schalte bitte das\n
+	+ \z{8ff,100}Nintendo DS-System\z{8ff,0} ein\n
+	+ und berühre \z{8ff,200}DS-Download-\n
+	+ Spiel\z{8ff,0}.\z{a07,9b00b6}\n
+	+ In Ordnung!\n
+	+ Vergiss es.
+    b8	= In Ordnung, versuchen wir\n
+	+ es noch mal\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ Willst du dein neues Leben\z{806,a}\n
+	+ mit einem neuen Ich\n
+	+ beginnen?\n
+	+ \n
+	+ \z{602,b}Oder\z{806,a} willst du aus \z{8ff,800}Animal\n
+	+ Crossing: Wild World\z{8ff,100} \z{8ff,0}für\n
+	+ das \z{8ff,100}Nintendo DS-System\n
+	+ \z{8ff,0}umziehen?\z{8ff,100}\z{c07,5001100b70005}\n
+	+ \z{8ff,0}Neues Ich!\n
+	+ Vom DS umziehen!\n
+	+ Vergiss es.
+    b9 [///,,,1] = 
+    ba [///,,,1] = 
+    bb [///,,,1] = 
+    bc [///,,,1] = 
+    bd [///,,,1] = 
+    be [///,,,1] = 
+    bf [///,,,1] = 
+    c0 [///,,,1] = 
+    c1 [///,,,1] = 
+    c2 [///,,,1] = 
+    c3 [///,,,1] = 
+    c4 [///,,,1] = 
+    c5 [///,,,1] = 
+    c6 [///,,,1] = 
+    c7 [///,,,1] = 
+    c8 [///,,,1] = 
+
