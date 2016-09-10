@@ -6,7 +6,7 @@
 #  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
 #
 #------------------------------------------------------------------------------
-# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+# Parameters begins with an '@'. Unknown parameters are ignored on scanning.
 
 # Size of each element of section 'INF0' (MKW: 8).
 # Set it first, because it defines defaults for other parameters.
@@ -158,23 +158,23 @@
 	+ occurred. Please refer to the\n
 	+ Wii Operations Manual.\n
 	+ <\z{803,b0000}>
-    20 [0] = 
-    21 [0] = 
-    22 [0] = 
-    23 [0] = 
-    24 [0] = 
-    25 [0] = 
-    26 [0] = 
-    27 [0] = 
-    28 [0] = 
-    29 [0] = 
-    2a [0] = 
-    2b [0] = 
-    2c [0] = 
-    2d [0] = 
-    2e [0] = 
-    2f [0] = 
-    30 [0] = 
-    31 [0] = 
-    32 [0] = 
+    20 [0] /
+    21 [0] /
+    22 [0] /
+    23 [0] /
+    24 [0] /
+    25 [0] /
+    26 [0] /
+    27 [0] /
+    28 [0] /
+    29 [0] /
+    2a [0] /
+    2b [0] /
+    2c [0] /
+    2d [0] /
+    2e [0] /
+    2f [0] /
+    30 [0] /
+    31 [0] /
+    32 [0] /
 

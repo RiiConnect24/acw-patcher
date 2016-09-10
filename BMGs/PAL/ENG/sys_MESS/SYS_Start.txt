@@ -530,7 +530,7 @@
 	+ In this game,\z{806,5} you can\n
 	+ communicate with friends\n
 	+ by connecting to \z{8ff,100}other Wii\n
-	+ systems\z{8ff,0} via \z{8ff,200}WiiConnect24\z{8ff,0}.\n
+	+ systems\z{8ff,0} via \z{8ff,200}RiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to friends\n
 	+ who are registered on your\n
@@ -556,13 +556,13 @@
 	+ letters and presents from\n
 	+ Nintendo.\n
 	+ So that's the deal with all\n
-	+ this \z{8ff,200}WiiConnect24\z{8ff,0} stuff.
+	+ this \z{8ff,200}RiiConnect24\z{8ff,0} stuff.
     5c [,5e/4] = Oh,\z{806,f} but you can't change\n
 	+ your settings if the\n
-	+ \z{8ff,200}WiiConnect24 \z{8ff,0}settings on\n
+	+ \z{8ff,200}RiiConnect24 \z{8ff,0}settings on\n
 	+ your \z{8ff,100}Wii \z{8ff,0}aren't set to ON...\n
 	+ So,\z{806,f}\z{602,b} why don't you start by\n
-	+ checking the \z{8ff,200}WiiConnect24\z{8ff,0}\n
+	+ checking the \z{8ff,200}RiiConnect24\z{8ff,0}\n
 	+ settings in your Wii Options.
     5d [,5e/4] = Oh,\z{806,f} but your network settings\n
 	+ are restricted, so you can't\n
@@ -571,25 +571,25 @@
 	+ Please start by checking your\n
 	+ \z{8ff,200}Parental Control \z{8ff,0}settings in\n
 	+ the Wii Options.
-    5e	= Your \z{8ff,200}WiiConnect24 \z{8ff,0}settings\n
+    5e	= Your \z{8ff,200}RiiConnect24 \z{8ff,0}settings\n
 	+ are currently set to ON.\z{806,a} What\n
 	+ would you like to do?\z{c07,100620062005b}\n
 	+ Keep them on!\n
 	+ Turn them off!\n
 	+ Please explain!
-    5f	= Your \z{8ff,200}WiiConnect24 \z{8ff,0}settings\n
+    5f	= Your \z{8ff,200}RiiConnect24 \z{8ff,0}settings\n
 	+ are currently set to OFF.\z{806,a}\n
 	+ What would you like to do?\z{c07,100620062005b}\n
 	+ Turn them on!\n
 	+ Keep them off!\n
 	+ Please explain!
-    60	= Your \z{8ff,200}WiiConnect24 \z{8ff,0}settings\n
+    60	= Your \z{8ff,200}RiiConnect24 \z{8ff,0}settings\n
 	+ are currently set to ON.\z{806,a} What\n
 	+ would you like to do?\z{c07,100620062005b}\n
 	+ Keep them on!\n
 	+ Turn them off!\n
 	+ Please explain!
-    61	= Your \z{8ff,200}WiiConnect24 \z{8ff,0}settings\n
+    61	= Your \z{8ff,200}RiiConnect24 \z{8ff,0}settings\n
 	+ are currently set to OFF.\z{806,a}\n
 	+ What would you like to do?\z{c07,100620062005b}\n
 	+ Turn them on!\n

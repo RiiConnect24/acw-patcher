@@ -30,7 +30,7 @@
      3 [,5] = 
      4 [,5] = 
      5	= Hey, if you don't mind my\n
-	+ asking...\z{806,a} \z{602,43}Is it \z{603,1} \z{603,2},\n
+	+ asking...\z{806,a} \z{602,43}Is it \z{603,2} \z{603,1},\n
 	+ \z{603,0}, today?\z{806,a} And is it\n
 	+ \z{603,3}:\z{603,4} \z{1204,4100,4d002f0050004d00} right now?
 	+ \z{a07,90006}\n
@@ -39,10 +39,10 @@
      6 [,7/,,b] = \z{602,42}What?!\z{806,a} It's not?!\z{606,1} Then what\n
 	+ do I have wrong?!
      7	= Okeydokey, so it's\n
-	+ \z{603,1} \z{603,2}, \z{603,0},\z{806,5} at\n
+	+ \z{603,2} \z{603,1}, \z{603,0}\z{806,5} at\n
 	+ \z{603,3}:\z{603,4} \z{1204,4100,4d002f0050004d00}\z{606,1} 
-	+ \z{602,43}Please tell me\n
-	+ THAT'S right!\z{a07,a0008}\n
+	+ \z{602,43}Please tell\n
+	+ me THAT'S right!\z{a07,a0008}\n
 	+ Perfect!\n
 	+ NO!
      8 [,7/,,b] = \z{602,42}Huh?\z{806,f} Did I hear you wrong?\n
@@ -332,10 +332,10 @@
 	+ \n
 	+ \n
 	+ \n
-	+ \z{602,0}There's been a housing boom\n
-	+ in \z{605,5}, and homes\n
-	+ are popping up everywhere!\n
-	+ \n
+	+ \z{602,0}There's been a housing\n
+	+ boom in \z{605,5} and\n
+	+ homes are popping up\n
+	+ everywhere!\n
 	+ I've got a feeling it's going\n
 	+ to become a popular spot\n
 	+ for folks like yourself to\n
@@ -390,15 +390,15 @@
 	+ In this game,\z{806,5} you can\n
 	+ communicate with friends by\n
 	+ connecting to \z{8ff,100}Wii systems\n
-	+ \z{8ff,0}over\z{8ff,200} WiiConnect24\z{8ff,0}.\n
+	+ \z{8ff,0}over\z{8ff,200} RiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to\n
 	+ friends who are registered\n
-	+ on your \z{8ff,200}friend roster\z{8ff,0}...\n
+	+ on your \z{8ff,200}Friend Roster\z{8ff,0}...\n
 	+ Or you can send messages\n
 	+ to the \z{8ff,200}Wii Message Boards\n
 	+ \z{8ff,0}of friends whose \z{8ff,200}Wii\n
-	+ numbers\z{8ff,0} you have. \n
+	+ Numbers\z{8ff,0} you have. \n
 	+ On top of that, \z{806,a}out of the\n
 	+ blue, your friends' neighbors\n
 	+ can move to your town and\n
@@ -414,7 +414,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ Nintendo.\n
+	+ the RiiConnect24 Team.\n
 	+ \z{602,43}Are you interested in using\n
 	+ this feature?\z{606,1} Of course, \z{806,a}you\n
 	+ can always change your\n
@@ -438,8 +438,8 @@
 	+ anything personal or rude in\n
 	+ your letters, OK?\n
 	+ \n
-	+ Oh,\z{806,5} and if you ever want to\n
-	+ turn this feature off,\z{806,a} just\n
+	+ If you ever want to turn\n
+	+ this feature off,\z{806,a} just\n
 	+ choose "\z{8ff,200}Before playing...\z{8ff,0}" at\n
 	+ the start of the game.\n
 	+ Or, you can call me on the\n
@@ -460,8 +460,8 @@
 	+ \z{8ff,200}telephone \z{8ff,0}in the\z{8ff,200} attic\z{8ff,0} of\n
 	+ your house.\n
 	+ \n
-	+ \z{602,46}So, \z{806,a}on that note...\z{606,1} Have fun\n
-	+ hanging out in the city!
+	+ \z{602,46}So, \z{806,a}on that note...\z{606,1}\n
+	+ Have fun shopping in the city!
     4e	= \z{602,46}Of course!\z{606,1} This is very\n
 	+ important info, so I'll repeat\n
 	+ it as many times as you need\n
@@ -471,17 +471,17 @@
 	+ \n
 	+ \n
 	+ In this game,\z{806,5} you can\n
-	+ communicate with friends' by\n
+	+ communicate with friends by\n
 	+ connecting to other \z{8ff,100}Wii\n
-	+ systems\z{8ff,0} via \z{8ff,200}WiiConnect24\z{8ff,0}.\n
+	+ systems\z{8ff,0} via \z{8ff,200}RiiConnect24\z{8ff,0}.\n
 	+ Using this feature, you can\n
 	+ send letters directly to\n
 	+ friends who are registered\n
-	+ on your \z{8ff,200}friend roster\z{8ff,0}...\n
+	+ on your \z{8ff,200}Friend Roster\z{8ff,0}...\n
 	+ Or you can send messages\n
 	+ to the \z{8ff,200}Wii Message Boards\n
 	+ \z{8ff,0}of friends whose \z{8ff,200}Wii\n
-	+ numbers\z{8ff,0} you have. \n
+	+ Numbers\z{8ff,0} you have. \n
 	+ On top of that, \z{806,a}out of the\n
 	+ blue, your friends' neighbors\n
 	+ can move to your town and\n
@@ -509,10 +509,10 @@
 	+ Use it!\n
 	+ I'll pass.\n
 	+ Come again?
-    4f [///,,,1] = Messages can also be sent\z{806,a}\n
-	+ to \z{8ff,200}Wii Message Boards \z{8ff,0}of\n
-	+ friends in your\z{8ff,200} Wii Message\n
-	+ Board\z{8ff,0}'s address book.
+    4f [///,,,1] = You can also send \n
+	+ messages to friends' \z{8ff,200}Wii \n
+	+ Message Boards\z{8ff,0} if they're\n
+	+ in your \z{8ff,200}Wii Address Book\z{8ff,0}.
     50 [///,,,1] = 
     51 [///,,,1] = 
     52 [///,,,1] = 
