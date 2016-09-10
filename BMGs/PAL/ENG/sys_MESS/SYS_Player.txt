@@ -1,0 +1,258 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = SYS_Player.gmm
+     1 [/,,,12] = \z{606,4}To open the \z{8ff,200}map\z{8ff,0}, point the\n
+	+ \z{8ff,100}Wii Remote\z{8ff,0} at the screen\n
+	+ and select \z{600,9} from the\n
+	+ menu with \z{601,1}.\z{806,3c}\z{606,5}
+     2 [/,,,9] = \n
+	+ \z{606,c}Wahooo! \z{600,3}\n
+	+ \n
+	+ \n
+	+ \n
+	+ I'm all done with work!\n
+	+ Now I'm free!
+     3 [/,,,9] = \n
+	+ \z{606,c}Yahoo!\n
+	+ \n
+	+ \n
+	+ \n
+	+ No more debt for me!\n
+	+ My house is all paid off! \z{600,3}
+     4	= Head on over to the \z{8ff,800}town\n
+	+ hall\z{8ff,0} before you do anything\n
+	+ else!\z{606,1} Bye-bye!
+     5	= 
+     6	= 
+     7	= 
+     8	= 
+     9 [/,,,9] = \n
+	+ WAHOOOOOOO!\n
+	+ \n
+	+ \n
+	+ All the cockroaches are\n
+	+ gone! Now everything is\z{806,5}\n
+	+ ALL BETTER!
+     a	= 
+     b [/,,,9] = Look at that!\z{806,5}\n
+	+ I dug up \z{1004,30030,a230a430c630e000}!
+     c [/,,,7] = But my pockets are full!\z{806,5}\n
+	+ What should I do?\z{a07,400000000}\n
+	+ Swap it!\n
+	+ Bury it again.
+     d [/,,,7] = Oh, hang on a second!\z{806,5}\n
+	+ My pockets are full.\z{806,a}\n
+	+ What should I do with it?\z{a07,400000000}\n
+	+ Swap it!\n
+	+ Drop it!
+     e [/,,,7] = My pockets are full, so I'll\n
+	+ have to leave this right\n
+	+ where it is.
+     f [/,,,9] = Check it out! I found a\n
+	+ \z{8ff,700}four-leaf clover\z{8ff,0}!\n
+	+ Does this mean I'll \n
+	+ be really lucky now?
+    10 [/,,,9] = Awwww!\z{806,5}\n
+	+ \n
+	+ I broke my axe...
+    11 [/,,,9] = Itchy itchy itchy!\z{806,5}\n
+	+ \n
+	+ I got bit by a mosquito...
+    12 [/,,,9] = I got stung by a bee!\n
+	+ \n
+	+ Ow! Ow ow ow!
+    13 [/,,,7] = What's this?\z{806,5} Your pockets\n
+	+ are full, so you can't put\n
+	+ your equipment away.
+    14	= 
+    15 [/,,,10] = Swap this for another bed?\z{a07,0}\n
+	+ Swap it!\n
+	+ Never mind.
+    16 [/,,,10] = \z{8ff,700}\z{60c,3}\z{60c,2}\z{1204,301004d00,5500530049004300}
+	+ \z{8ff,0}...
+    17 [/,,,10] = \n
+	+ There's no music in\n
+	+ the stereo.
+    18	= 
+    19	= 
+    1a	= 
+    1b	= 
+    1c	= 
+    1d [/,,,10] = \n
+	+ \z{60c,9}\z{8ff,700}\z{60c,2}\z{1004,3005b,b65177540dff1100}\z{8ff,0}\n
+	+ \z{60c,9}\z{8ff,700}\z{60c,2}\z{1004,3015b,b65177540dff1200}
+    1e	= 
+    1f	= I can learn \z{8ff,200}\z{1204,2024eca89,8b305f30cd30bf00}\z{8ff,0},\n
+	+ but I'll have to forget\n
+	+ an old emotion first. Is\n
+	+ that all right?\z{a07,400000000}\n
+	+ Sounds good!\n
+	+ Never mind.
+    20	= Which emotion should I\n
+	+ swap it out with?
+    21	= 
+    22	= 
+    23	= 
+    24	= 
+    25	= 
+    26	= 
+    27	= 
+    28	= 
+    29 [/,,,9] = \n
+	+ Yayyy!\n
+	+ \n
+	+ \n
+	+ \n
+	+ I got the \z{8ff,700}golden net\z{8ff,0}.\n
+	+ I'd better take care of it! \z{600,0}
+    2a [/,,,9] = \n
+	+ Yayyy!\n
+	+ \n
+	+ \n
+	+ \n
+	+ I got the \z{8ff,700}golden fishing\n
+	+ rod\z{8ff,0}! Look out, fishies!
+    2b [/,,,9] = \n
+	+ Awesome!\n
+	+ \n
+	+ \n
+	+ \n
+	+ I got the \z{8ff,700}golden axe\z{8ff,0}!\n
+	+ It's unbreakable!
+    2c [/,,,9] = \n
+	+ Look at this!\n
+	+ \n
+	+ \n
+	+ \n
+	+ I got the \z{8ff,700}golden shovel\z{8ff,0}!\n
+	+ Few know its true worth!
+    2d [/,,,9] = \n
+	+ Yayyy!\n
+	+ \n
+	+ \n
+	+ I got the \z{8ff,700}golden watering\n
+	+ can\z{8ff,0}! Now I can water in\n
+	+ style!
+    2e [/,,,9] = \n
+	+ Yayyy!\n
+	+ \n
+	+ \n
+	+ I got the\z{8ff,700} golden slingshot\z{8ff,0}!\n
+	+ Now I can shoot 3 pellets\n
+	+ at once!
+    2f [/,,,9] = \n
+	+ WHOA!\n
+	+ \n
+	+ \n
+	+ I thought it was just a\n
+	+ mushroom,\z{806,5} but it was really\n
+	+ \z{8ff,700}\z{1404,30030ad30ce30,b35bb65177540d00}\z{8ff,0}!
+    30	= 
+    31	= 
+    32	= 
+    33 [/,,,10] = You cannot move items\n
+	+ when you have guests over!
+    34 [/,,,10] = You cannot pick up items\n
+	+ when you have guests over!
+    35	= 
+    36	= 
+    37	= 
+    38	= 
+    39	= 
+    3a	= 
+    3b	= 
+    3c	= 
+    3d	= 
+    3e	= 
+    3f	= 
+    40	= 
+    41	= 
+    42	= 
+    43	= 
+    44	= 
+    45	= 
+    46	= 
+    47	= 
+    48	= 
+    49	= 
+    4a	= 
+    4b	= 
+    4c	= 
+    4d	= 
+    4e	= 
+    4f	= 
+    50	= 
+    51	= 
+    52	= 
+    53	= 
+    54	= 
+    55	= 
+    56	= 
+    57	= 
+    58	= 
+    59	= 
+    5a	= 
+    5b	= 
+    5c	= 
+    5d	= 
+    5e	= 
+    5f	= 
+    60	= 
+    61	= 
+    62	= 
+    63	= 
+    64	= 
+    65 [/,,,18] = \z{8ff,100}Getting ready...\n
+	+ \n
+	+ Please do not turn the\n
+	+ power off!\z{806,b001e}
+    66	= 
+    67	= 
+    68 [/,,,18] = \z{8ff,100}Wii system memory has\n
+	+ been corrupted, so the\n
+	+ game cannot begin.\n
+	+ \n
+	+ For more information,\n
+	+ please see the Wii\n
+	+ Operations Manual.
+    69 [/,,,18] = \z{8ff,100}Unable to save, therefore\n
+	+ unable to get ready.\n
+	+ \n
+	+ \n
+	+ If you are repeatedly\n
+	+ unable to save, please\n
+	+ consult your Wii System\n
+	+ Operations Manual.\n
+	+ Would you like to try\n
+	+ again?\z{a07,0}\n
+	+ Get ready!\n
+	+ Never mind.
+    6a	= 
+    6b	= 
+    6c	= 
+    6d	= 
+    6e	= 
+

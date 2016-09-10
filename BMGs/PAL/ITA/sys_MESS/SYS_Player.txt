@@ -1,0 +1,252 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = SYS_Player.gmm
+     1 [/,,,12] = \z{606,4}Per aprire la \z{8ff,200}mappa\z{8ff,0}, punta\n
+	+ il \z{8ff,100}telecomando Wii\z{8ff,0} verso lo\n
+	+ schermo e seleziona \z{600,9} dal\n
+	+ menu con \z{601,1}.\z{806,3c}\z{606,5}
+     2 [/,,,9] = \n
+	+ \z{606,c}Evviva! \z{600,3}\n
+	+ \n
+	+ \n
+	+ Ho finito di lavorare!\n
+	+ Sono liber\z{c0c,4006f00000061}!
+     3 [/,,,9] = \n
+	+ \z{606,c}Evviva!\n
+	+ \n
+	+ \n
+	+ Ho pagato il mutuo!\n
+	+ Finalmente, non ho più\n
+	+ debiti! \z{600,3}
+     4	= Mi raccomando, prima di\n
+	+ fare qualunque cosa, passa\n
+	+ dal \z{8ff,800}municipio\z{8ff,0}!\z{606,1} Ciao ciao!
+     5	= 
+     6	= 
+     7	= 
+     8	= 
+     9 [/,,,9] = \n
+	+ EVVIVA!\n
+	+ \n
+	+ \n
+	+ Non ci sono più scarafaggi!\n
+	+ Adesso va tutto\z{806,5}\n
+	+ MOLTO MEGLIO!
+     a	= 
+     b [/,,,9] = Guarda cos'ho trovato...\z{806,5}\n
+	+ \z{1004,30030,a230a430c630e000}!
+     c [/,,,7] = Ma ho le tasche piene!\z{806,5}\n
+	+ Che faccio?\z{a07,400000000}\n
+	+ Scambia!\n
+	+ Riseppellisci.
+     d [/,,,7] = Oh, un attimo!\z{806,5}\n
+	+ Ho le tasche piene.\z{806,a}\n
+	+ Cosa faccio?\z{a07,400000000}\n
+	+ Scambia!\n
+	+ Butta via!
+     e [/,,,7] = Ho le tasche piene, perciò\n
+	+ mi tocca lasciare questo\n
+	+ oggetto dov'è.
+     f [/,,,9] = Ehi, guarda! Ho trovato\n
+	+ un \z{8ff,700}quadrifoglio\z{8ff,0}!\n
+	+ Significa che ora sarò\n
+	+ davvero fortunat\z{c0c,4006f00000061}?
+    10 [/,,,9] = Oh, capperi!\z{806,5}\n
+	+ \n
+	+ Ho rotto la mia ascia...
+    11 [/,,,9] = Prude prude prudeee!\z{806,5}\n
+	+ \n
+	+ Mi ha punto una zanzara...
+    12 [/,,,9] = Mi ha punto un'ape!\n
+	+ \n
+	+ Ahi! Ahi ahi ahi!
+    13 [/,,,7] = Oh, no!\z{806,5} Ho le tasche piene,\n
+	+ perciò non posso riporre\n
+	+ il mio equipaggiamento!
+    14	= 
+    15 [/,,,10] = Vuoi scambiarlo con un\n
+	+ altro letto?\z{a07,0}\n
+	+ Scambia!\n
+	+ Lascia stare.
+    16 [/,,,10] = \z{8ff,700}\z{60c,3}\z{60c,2}\z{1204,301004d00,5500530049004300}
+	+ \z{8ff,0}!
+    17 [/,,,10] = \n
+	+ Non c'è musica\n
+	+ nello stereo.
+    18	= 
+    19	= 
+    1a	= 
+    1b	= 
+    1c	= 
+    1d [/,,,10] = \n
+	+ \z{60c,9}\z{8ff,700}\z{60c,2}\z{1004,3005b,b65177540dff1100}\z{8ff,0}\n
+	+ \z{60c,9}\z{8ff,700}\z{60c,2}\z{1004,3015b,b65177540dff1200}
+    1e	= 
+    1f	= Se imparo \z{8ff,200}\z{1204,2024eca89,8b305f30cd30bf00}\z{8ff,0}\n
+	+ dovrò dimenticare un'emo-\n
+	+ zione precedente. Va bene?\z{a07,400000000}\n
+	+ OK!\n
+	+ Lascia stare.
+    20	= Quale emozione dovrei\n
+	+ dimenticare?
+    21	= 
+    22	= 
+    23	= 
+    24	= 
+    25	= 
+    26	= 
+    27	= 
+    28	= 
+    29 [/,,,9] = \n
+	+ Evviva!\n
+	+ \n
+	+ \n
+	+ Ho il \z{8ff,700}retino d'oro\z{8ff,0}.\n
+	+ Me lo terrò ben stretto! \z{600,0}
+    2a [/,,,9] = \n
+	+ Evviva!\n
+	+ \n
+	+ \n
+	+ Ho la \z{8ff,700}canna da pesca\n
+	+ d'oro\z{8ff,0}! Attenti, pesciolini!
+    2b [/,,,9] = \n
+	+ Fantastico!\n
+	+ \n
+	+ \n
+	+ Ho l'\z{8ff,700}ascia d'oro\z{8ff,0}!\n
+	+ È indistruttibile!
+    2c [/,,,9] = \n
+	+ Guarda qua!\n
+	+ \n
+	+ \n
+	+ Ho la \z{8ff,700}pala d'oro\z{8ff,0}!\n
+	+ In pochi conoscono\n
+	+ il suo vero valore...
+    2d [/,,,9] = \n
+	+ Evviva!\n
+	+ \n
+	+ \n
+	+ Ho l'\z{8ff,700}innaffiatoio d'oro\z{8ff,0}!\n
+	+ Ora posso innaffiare\n
+	+ con stile!
+    2e [/,,,9] = \n
+	+ Evviva!\n
+	+ \n
+	+ \n
+	+ Ho la\z{8ff,700} fionda d'oro\z{8ff,0}!\n
+	+ Ora posso lanciare\n
+	+ 3 biglie alla volta!
+    2f [/,,,9] = \n
+	+ UHAO!\n
+	+ \n
+	+ \n
+	+ Credevo fosse un fungo,\z{806,5}\n
+	+ e invece è proprio\n
+	+ \z{8ff,700}\z{1404,30030ad30ce30,b35bb65177540d00}\z{8ff,0}!
+    30	= 
+    31	= 
+    32	= 
+    33 [/,,,10] = Non puoi spostare le tue\n
+	+ cose quando hai ospiti!
+    34 [/,,,10] = Non puoi raccogliere le tue\n
+	+ cose quando hai ospiti!
+    35	= 
+    36	= 
+    37	= 
+    38	= 
+    39	= 
+    3a	= 
+    3b	= 
+    3c	= 
+    3d	= 
+    3e	= 
+    3f	= 
+    40	= 
+    41	= 
+    42	= 
+    43	= 
+    44	= 
+    45	= 
+    46	= 
+    47	= 
+    48	= 
+    49	= 
+    4a	= 
+    4b	= 
+    4c	= 
+    4d	= 
+    4e	= 
+    4f	= 
+    50	= 
+    51	= 
+    52	= 
+    53	= 
+    54	= 
+    55	= 
+    56	= 
+    57	= 
+    58	= 
+    59	= 
+    5a	= 
+    5b	= 
+    5c	= 
+    5d	= 
+    5e	= 
+    5f	= 
+    60	= 
+    61	= 
+    62	= 
+    63	= 
+    64	= 
+    65 [/,,,18] = \z{8ff,100}Preparativi in corso...\n
+	+ \n
+	+ Non spegnere la console!\z{806,b001e}
+    66	= 
+    67	= 
+    68 [/,,,18] = \z{8ff,100}La memoria della\n
+	+ console Wii è danneggiata,\n
+	+ il gioco non può iniziare.\n
+	+ \n
+	+ Per maggiori informazioni,\n
+	+ consulta il manuale di\n
+	+ istruzioni della console Wii.
+    69 [/,,,18] = \z{8ff,100}Impossibile salvare la\n
+	+ partita. Impossibile\n
+	+ procedere.\n
+	+ \n
+	+ Se continui a non riuscire\n
+	+ a salvare, consulta il\n
+	+ manuale di istruzioni della\n
+	+ console Wii.\n
+	+ Vuoi riprovare?\z{a07,0}\n
+	+ Proviamo!\n
+	+ Non importa.
+    6a	= 
+    6b	= 
+    6c	= 
+    6d	= 
+    6e	= 
+

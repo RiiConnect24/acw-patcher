@@ -1,0 +1,141 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [/,,,14]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = SYS_Save_and_Load.gmm
+     1 [0] = 
+     2 [/,,,18] = The \z{8ff,100}Animal Crossing:\n
+	+ City Folk\z{8ff,0} file cannot be\n
+	+ used because the data is\n
+	+ corrupted.\n
+	+ Would you like to delete\n
+	+ the file and create a new\n
+	+ town?\z{a07,30000}\n
+	+ Yes.\n
+	+ No.
+     3 [,4/,,,14] = \z{8ff,100}Deleting data. Please\n
+	+ do not touch the Power\n
+	+ Button or RESET.\z{806,b005a}
+     4	= \n
+	+ \z{8ff,100}Data has been deleted.
+     5 [,7/,,,18] = There is not enough available\n
+	+ space in Wii system memory.\n
+	+ \n
+	+ \n
+	+ Create \z{803,70000} blocks of free\n
+	+ space either by moving data\n
+	+ to an SD Card...\n
+	+ \n
+	+ Or by deleting data in the\n
+	+ Wii console's Data\n
+	+ Management screen.
+     6 [,7/,,,18] = There is not enough\n
+	+ available space in Wii\n
+	+ system memory.\n
+	+ \n
+	+ Either move data to an SD\n
+	+ Card or delete data in the\n
+	+ Wii console's Data\n
+	+ Management screen.
+     7 [/,,,18] = Want to go to the Wii Data\n
+	+ Management screen?\z{a07,0}\n
+	+ Yes.\n
+	+ No.
+     8 [ff,fe/,,,18] = There is no more available\n
+	+ space in Wii system\n
+	+ memory.\n
+	+ \n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.
+     9 [ff,fe/,,,18] = There is no more available\n
+	+ space in Wii system\n
+	+ memory.\n
+	+ \n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.
+     a	= \z{8ff,100}Saving... Please do not\n
+	+ touch the Power Button\n
+	+ or RESET.
+     b [/,,,1] = Would you like to quit now?\z{a07,4ffff0000}\n
+	+ Save and quit.\n
+	+ Keep playing!
+     c [ff,fe/,,,18] = The Wii system memory\n
+	+ has been damaged.\n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.
+     d	= \z{8ff,100}Saving... Please do not\n
+	+ touch RESET or the\n
+	+ Power Button.\z{806,a0000}
+     e	= \z{8ff,100}Save completed!\z{606,1}\n
+	+ \n
+	+ Please come back and\n
+	+ play anytime.
+     f [/,,,18] = 
+    10 [/,,,18] = 
+    11 [/,,,18] = 
+    12 [ff,fe/,,,18] = Could not access Wii\n
+	+ system memory.\n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.
+    13 [ff,fe/,,,18] = Could not access Wii system\n
+	+ memory. Refer to the Wii\n
+	+ Operations Manual for details.
+    14 [/,,,18] = Hm...\z{806,f} Looks like you can't\n
+	+ save just yet.
+    15	= What would you like to do?\z{c07,50000ffff0000}\n
+	+ End the party!\n
+	+ Save.\n
+	+ Never mind.
+    16	= Confirming...\n
+	+ Please wait.\z{806,a003c}
+    17	= It seems you are quitting.
+    18	= Preparing to save...
+    19	= Please try again later.
+    1a	= Quitting now.
+    1b	= \z{8ff,100}Saving...\n
+	+ \n
+	+ Please do not touch the\n
+	+ Power Button or RESET.\z{806,a0000}
+    1c	= Before saving, please move\n
+	+ the furniture that's blocking\n
+	+ your front door.
+    1d [/,,,14//,,,1] = 
+    1e	= \z{60c,3}\z{8ff,500}\z{1404,1000050004c00,4100590045005200} \z{8ff,0}has
+	+  come over\n
+	+ to play.\z{806,a003c}
+    1f [/,,,14//,,,1] = 
+    20	= \z{60c,3}\z{8ff,500}\z{1404,1000050004c00,4100590045005200} \z{8ff,0}is
+	+  going home.\z{806,a003c}
+    21 [/,,,18] = Unable to read the save\n
+	+ data on the Mii Channel.\n
+	+ Please check the Mii\n
+	+ Channel.
+    22 [0] = 
+    23 [0] = 
+    24 [0] = 
+    25 [0] = 
+    26 [0] = 
+    27 [0] = 
+    28 [0] = 
+

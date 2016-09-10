@@ -1,0 +1,534 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = SYS_Bus.gmm
+     1 [,2] = \z{602,46}Nous voici dans le bus qui\n
+	+ va te conduire vers ton\n
+	+ nouveau chez-toi!
+     2	= 
+     3 [,5] = 
+     4 [,5] = 
+     5	= Hmmm, attends! J'ai comme\n
+	+ un trou de mémoire...\z{806,a} \z{602,43}On\n
+	+ est bien le \z{603,2} \z{603,1}\n
+	+ \z{603,0}?\z{806,a}\n
+	+ Et il est \z{603,3}:\z{603,4}, c'est ça?\z{a07,90006}\n
+	+ C'est ça!\n
+	+ Pas du tout!
+     6 [,7/,,b] = \z{602,42}Quoi?!\z{806,a} Sérieux?! Où est-ce\n
+	+ que je me suis trompé?!
+     7	= OK, d'ac', alors on est le\n
+	+ \z{603,2} \z{603,1} \z{603,0}\z{806,5} et\n
+	+ il est \z{603,3}:\z{603,4}. \z{602,43}J'ai raison,\n
+	+ cette fois?\z{a07,a0008}\n
+	+ Yep!\n
+	+ Toujours pas!
+     8 [,7/,,b] = \z{602,43}Hein?\z{806,f} J'ai mal compris?\n
+	+ J'ai les oreilles bouchées,\n
+	+ on dirait.\n
+	+ \n
+	+ \z{602,0}Excuse-moi, \z{806,a}tu veux bien\n
+	+ répéter encore une fois?
+     9 [,b] = \z{602,46}C'est bien ça?\z{806,a} Parfait.
+     a [,b] = Merci! \z{602,47}Ma pauvre montre\n
+	+ n'a plus les aiguilles en\n
+	+ face des trous on dirait...
+     b [/,,11] = Alors,\z{806,a} euh\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,42}\z{806,f}Ah, oui!\z{806,f} J'aurais dû\n
+	+ commencer par ça!\n
+	+ Comment tu t'appelles?
+     c	= Oh,\z{806,a} \z{605,0}, c'est ça?\z{606,1}\n
+	+ \z{602,46}Joli nom! Ça me plaît bien!\z{c07,100100011000e}\n
+	+ C'est cool, non?\n
+	+ C'est mignon, hein?\n
+	+ C'est pas ça.
+     d [/,,11] = \z{602,45}Non?!\z{806,a} Sans blague?! Tu\n
+	+ parles d'une coïncidence!\z{806,a}\n
+	+ Je connais quelqu'un qui a\n
+	+ le même nom que toi!\n
+	+ \z{602,0}\z{602,47}D'ailleurs, pour être\n
+	+ franc, ça va me mêler. T'as\n
+	+ pas un deuxième nom ou un\n
+	+ surnom que tu aimes?
+     e [/,,11] = \z{602,43}Quoi?\z{806,f} J'ai mal entendu?\n
+	+ Il faut vraiment que je\n
+	+ m'achète de nouvelles\n
+	+ oreilles.\n
+	+ \z{602,0}Écoute, \z{806,a}je suis désolé. \n
+	+ Tu veux bien répéter?
+     f	= Ah, \z{605,0},\z{806,a} compris.\z{606,1}\n
+	+ \z{602,46}C'est pas mal! J'aime bien!\z{c07,100100011000e}\n
+	+ C'est cool, non?\n
+	+ C'est mignon, hein?\n
+	+ C'EST PAS ÇA!
+    10	= \z{602,48}Ouaip, carrément!\z{806,f}\n
+	+ Cool et très masculin,\n
+	+ un peu comme toi!\z{602,0}\z{a07,140012}\n
+	+ Tu l'as dit!\n
+	+ Je suis une fille!
+    11	= \z{602,48}Ouaip, carrément!\z{806,f}\n
+	+ Mignon et très féminin!\n
+	+ Ça te va à ravir!\z{602,0}\z{a07,140013}\n
+	+ Je sais!\n
+	+ Je suis un garçon!
+    12 [,14] = \z{602,47}\z{806,5}Oh, oups,\z{806,a} alors comme ça,\n
+	+ t'es une fille, hein? Désolé.\n
+	+ \z{806,f}Vraiment désolé!
+    13 [,14] = \z{602,47}\z{806,5}Comment?\z{806,f} T'es un garçon?\n
+	+ Je suis vraiment à côté de\n
+	+ la plaque, ces temps-ci.\z{806,f}\n
+	+ Désolé, mon gars!
+    14 [,15/,,10] = Dis-moi, \z{605,0},\z{806,f} cette\n
+	+ ville où tu vas emménager...\n
+	+ \z{602,43}Elle s'appelle comment?
+    15	= \z{60c,3}\z{605,5}, hein?\z{a07,170016}\n
+	+ C'est ça!\n
+	+ NON!
+    16 [,15/,,10] = \z{602,43}Gné?\z{806,f} Mes oreilles ont\n
+	+ vraiment besoin d'un bon\n
+	+ nettoyage.\n
+	+ \n
+	+ \z{602,0}Euh,\z{806,a} tu veux bien répéter?
+    17	= \z{602,46}Compris.\z{806,a} \z{60c,3}\z{605,5},\n
+	+ alors?\z{806,f} Ouais, il paraît que\n
+	+ le coin est \z{806,a}charmant.\n
+	+ \n
+	+ \z{602,43}Tu dois avoir hâte de\n
+	+ commencer ta nouvelle\n
+	+ vie là-bas!\z{a07,18001b}\n
+	+ Vraiment!\n
+	+ Pas vraiment.
+    18	= \z{602,48}Mia ha ha!\z{806,f} Comme je te\n
+	+ comprends!\z{602,0}\n
+	+ \n
+	+ \n
+	+ Mais, dis-moi,\z{806,a} tu sais déjà\n
+	+ où trouver une maison?\z{a07,19001a}\n
+	+ Ça devrait aller.\n
+	+ Aucune idée!
+    19	= \z{602,46}\z{806,f}Oh... \z{806,f}Eh ben, t'as de la\n
+	+ chance!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Il paraît que l'immobilier\n
+	+ a explosé à \z{605,5} et\n
+	+ que les maisons poussent\n
+	+ comme des champignons!\n
+	+ Alors\z{806,5} si tu comptes en\n
+	+ acheter une,\z{806,a} \z{602,43}je suppose\n
+	+ que t'as un peu d'argent?\z{a07,1f0020}\n
+	+ Un peu...\n
+	+ Pas tellement, non...
+    1a	= \z{602,45}Quoi?!\z{806,a} Tu plaisantes?!\n
+	+ \z{602,47}T'as même pas pensé à ça?\z{806,f}\n
+	+ Eh ben, c'est pas très bien\n
+	+ parti\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ Bon, \z{806,5}puisque tu sais pas\n
+	+ encore où tu vas habiter,\z{806,a}\n
+	+ j'espère que t'as ce qu'il\n
+	+ te faut côté finance\z{806,5}.\z{806,5}.\z{806,5}.\z{a07,210022}\n
+	+ Oui, c'est sûr!\n
+	+ Je verrai sur place.
+    1b	= \z{602,43}Quoi?!\z{806,a} Tu ne le penses pas\n
+	+ vraiment, non?!\z{806,14}\z{602,46} ALLEZ!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Ça se voit dans ton visage!\n
+	+ Tu es impatient\z{a0c,400000065} d'arriver!\n
+	+ \z{806,a}On n'apprend pas au vieux\n
+	+ Rover à faire la grimace!\n
+	+ Je parie que t'es en train de\n
+	+ penser à ta nouvelle maison\n
+	+ en ce moment même!\z{a07,1c001d}\n
+	+ Exactement!\n
+	+ Ça te regarde pas!
+    1c	= \z{602,41}Mia ha ha!\z{806,a} Je le savais!\z{806,14}\n
+	+ \z{602,46}Ça se voit comme les\n
+	+ moustaches au milieu\n
+	+ de la figure!\n
+	+ \z{602,0}Alors,\z{806,f}\z{602,43} c'est quoi ton plan?\n
+	+ Tu vas chercher la plus\n
+	+ grosse maison en ville et\n
+	+ en faire ton château?!\z{a07,230024}\n
+	+ C'est ça!\n
+	+ C'est un secret!
+    1d	= \z{602,42}Oh là là,\z{806,a} excuse-moi!\z{806,f}\n
+	+ Je voulais pas te fâcher...\n
+	+ \n
+	+ \n
+	+ \z{602,0}Il se trouve que \z{806,a}je connais\n
+	+ du monde à \z{605,5},\n
+	+ alors\z{806,f} je pourrais peut-être\n
+	+ te donner un coup de main.\n
+	+ \z{602,47}Parce que,\z{806,f} déménager, ça\n
+	+ s'improvise pas, tu sais?\n
+	+ Et ça coûte cher\z{806,5}.\z{806,5}.\z{806,5}.\z{a07,250026}\n
+	+ Je sais...\n
+	+ T'inquiète pas.
+    1e [///,,,1] = 
+    1f [,27] = \z{602,46}Ah bon! \z{806,f}Tu me rassures!\n
+	+ J'espère que tu trouveras\n
+	+ une maison à ton goût!\n
+	+ \n
+	+ \z{602,0}Au cas où tu le savais pas,\n
+	+ \z{806,a}la \z{8ff,800}mairie\z{8ff,0} est l'endroit idéal\n
+	+ pour trouver de précieux\n
+	+ renseignements à ce sujet!
+    20 [,27] = \z{602,45}Quoi?!\z{806,a} T'es sérieu\z{e0c,4,78000000730065}?!\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,47}Hum\z{806,5}.\z{806,5}.\z{806,5}.\z{806,14} \z{602,0}Bon,
+	+  ben\z{602,46} j'espère\n
+	+ que tout se passera bien\n
+	+ pour toi!\n
+	+ \n
+	+ \z{602,0}Et si t'as besoin d'infos,\n
+	+ \z{806,a}les employés de la \z{8ff,800}mairie\z{8ff,0}\n
+	+ sont là pour te renseigner!
+    21 [,27] = Pfiou!\z{806,a} Tu m'as fait peur!\n
+	+ T'as quand même de quoi\n
+	+ survivre!\n
+	+ \n
+	+ \z{602,46}Enfin, quoi qu'il en soit,\n
+	+ la première chose à faire,\z{806,a}\n
+	+ c'est de passer à la \z{8ff,800}mairie\z{8ff,0}!
+    22 [,27] = \z{602,47}\z{806,a}Eh ben, t'as pas froid aux\n
+	+ yeux, toi\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,0}Mais les gens comme toi\n
+	+ parviennent toujours à se\n
+	+ débrouiller d'une manière\n
+	+ ou d'une autre\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,46}C'est cool!\z{806,f} Je suis sûr que\n
+	+ tu vas très bien t'en sortir!\n
+	+ \n
+	+ \n
+	+ Et si jamais t'as besoin\n
+	+ d'aide ou de conseils,\n
+	+ passe à la \z{8ff,800}mairie\z{8ff,0},\z{806,a} ils te\n
+	+ renseigneront!
+    23 [,27] = \z{602,46}Waouh!\z{806,f} Ça y est, je suis\n
+	+ jaloux! J'espère que tu\n
+	+ trouveras la maison de tes\n
+	+ rêves!\n
+	+ \z{602,0}Oh, au fait, \z{806,a}si tu veux en\n
+	+ savoir plus sur tout ce qui\n
+	+ concerne l'immobilier, va\n
+	+ faire un tour à la \z{8ff,800}mairie\z{8ff,0}!
+    24 [,27] = \z{602,47}Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Alors comme ça,
+	+  c'est\n
+	+ un secret\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,0}Inutile de jouer la carte du\n
+	+ mystère avec moi, \z{806,f}je lis en\n
+	+ toi comme dans un livre!\n
+	+ \z{602,41}MIA HA HA HA HA!\n
+	+ \z{602,0}En tout cas,\z{806,5} tu devrais\n
+	+ commencer tes recherches\n
+	+ à la \z{8ff,800}mairie\z{8ff,0}.\z{806,a} Crois-en ma\n
+	+ vieille expérience!
+    25 [,27] = Eh oui, m\z{e0c,4,6f006e00000061} petit\z{a0c,400000065}!\n
+	+ Les premiers temps seront\n
+	+ sûrement un peu difficiles,\n
+	+ mais il faut y croire!\n
+	+ \z{602,46}Mais chaque chose en son\n
+	+ temps!\z{806,a} À ton arrivée, cours\n
+	+ à la \z{8ff,800}mairie\z{8ff,0}.\z{806,a} Ils t'aideront\n
+	+ à t'installer.
+    26 [,27] = \z{602,47}Ma foi, tu sembles assez\n
+	+ sûr\z{a0c,400000065} de toi, \z{806,f}\z{605,0}.\z{806,a}\n
+	+ T'as l'air d'être un\z{a0c,400000065} \z{1a0c,400670061,72007300000066,69006c006c0065}\n
+	+ sérieu\z{e0c,4,78000000730065}, tout ira bien!\n
+	+ \z{602,46}Si tu veux partir du bon\n
+	+ pied,\z{806,a} passe à la \z{8ff,800}mairie\z{8ff,0}.\n
+	+ Ils t'aideront à t'installer.
+    27 [,28/,,12] = Tiens,\z{806,f} regarde ça!
+    28 [,33] = Ça te sera utile! C'est une\n
+	+ carte \z{120c,f00640065,20000000640027}\z{605,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,46}Quand tu seras arrivé\z{a0c,400000065} en\n
+	+ ville,\z{806,a} sers-t'en pour trouver\n
+	+ la \z{8ff,800}mairie\z{8ff,0}.
+    29	= Alors, tu vas emménager\n
+	+ à \z{605,5} et vivre ta\n
+	+ vie tout\z{a0c,400000065} seul\z{a0c,400000065} comme un
+	+ \z{a0c,400000065}\n
+	+ grand\z{a0c,400000065}\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,46}T'en as de la chance,\z{806,a}\n
+	+ \z{605,0}!\z{806,14} Je t'envie\n
+	+ carrément!\n
+	+ \n
+	+ \z{602,0}C'est une \z{806,5}ville magnifique.\z{806,a}\n
+	+ \z{602,43}Tu dois être tout énervé\z{a0c,400000065},\n
+	+ pas vrai?!\z{a07,18001b}\n
+	+ Et comment!\n
+	+ Pas plus que ça.
+    2a [///,,,1] = 
+    2b [///,,,1] = 
+    2c [///,,,1] = 
+    2d [///,,,1] = 
+    2e [///,,,1] = 
+    2f [///,,,1] = 
+    30 [///,,,1] = 
+    31 [///,,,1] = 
+    32 [///,,,1] = 
+    33 [,34] = \z{80b,40700}Prochain arrêt...\z{806,a}\z{8ff,800}\n
+	+   \z{8ff,0}\z{60c,3}\z{8ff,800}\z{605,5}\z{8ff,0}...\z{806,a}\n
+	+     \z{60c,3}\z{8ff,800}\z{605,5}\z{8ff,0}...\z{60b,5}
+    34 [,35] = Oh!\z{806,a} Ça y est!\z{806,f} On arrive à\n
+	+ \z{605,5}!
+    35	= \z{602,46}Bon, c'est ici que nos\n
+	+ chemins se séparent!\z{806,f}\n
+	+ J'espère qu'on aura\n
+	+ l'occasion de se revoir!
+    36 [///,,,1] = 
+    37 [///,,,1] = 
+    38 [///,,,1] = 
+    39 [///,,,1] = 
+    3a [///,,,1] = 
+    3b [,1] = Fiou!\z{806,14} On a failli manquer\n
+	+ le bus!
+    3c [///,,,1] = 
+    3d [,3e/,,10] = Alors, \z{605,0},\z{806,f}\z{602,43} comment\n
+	+ s'appelle cette ville dans\n
+	+ laquelle tu vas t'installer?
+    3e	= \z{60c,3}\z{605,5}, c'est bien ça?\z{a07,40003f}\n
+	+ Ouaip!\n
+	+ Non.
+    3f [,3e/,,10] = \z{602,43}Hein?\z{806,f} Mes oreilles sont\n
+	+ endormies ou quoi?\n
+	+ \n
+	+ \n
+	+ \z{602,0}Désolé...\z{806,a} Tu veux bien\n
+	+ répéter, s'il te plaît?
+    40 [,43] = \z{602,46}Oh, cette ville-là.\z{806,a} Quel\n
+	+ timing! Tu pouvais pas\n
+	+ mieux tomber!\n
+	+ \n
+	+ \z{602,0}Il y a eu un vrai boom\n
+	+ immobilier à \z{605,5}\n
+	+ et les maisons poussent\n
+	+ comme des champignons!\n
+	+ Je sens que ça va devenir\n
+	+ un coin à la mode où tous\n
+	+ les jeunes cool comme\n
+	+ toi voudront habiter!
+    41 [///,,,1] = 
+    42 [///,,,1] = 
+    43 [,44/,,12] = \z{806,a}\z{602,42}\z{806,a}Oh, j'ai failli oublier,\n
+	+ encore une chose!\z{806,14}\n
+	+ Regarde-moi ça!
+    44 [,33] = Si t'as des questions à\n
+	+ propos de ton installation,\n
+	+ \z{806,a}rends-toi à la \z{8ff,800}mairie\z{8ff,0}.\n
+	+ \n
+	+ Je te laisse cette carte.\z{806,a}\n
+	+ Prends-la, elle est à toi!\n
+	+ \n
+	+ \n
+	+ \z{602,46}Quand tu seras arrivé\z{a0c,400000065} à\n
+	+ \z{605,5},\z{806,a} sers-t'en pour\n
+	+ localiser la \z{8ff,800}mairie\z{8ff,0}!
+    45 [,43] = Alors, tu vas emménager\n
+	+ à \z{605,5} et vivre ta\n
+	+ vie tout\z{a0c,400000065} seul\z{a0c,400000065} comme un
+	+ \z{a0c,400000065}\n
+	+ grand\z{a0c,400000065}\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,46}T'en as de la chance,\z{806,a}\n
+	+ \z{605,0}!\z{806,14} Je suis vert\n
+	+ de jalousie!\n
+	+ \n
+	+ \z{602,0}Tu me rappelles un peu la\n
+	+ dernière personne qui est\n
+	+ allée s'installer là-bas!\n
+	+ \n
+	+ On dirait \z{160c,f,71007500650020,7100750027}\z{605,5}\n
+	+ \z{806,5}est très en vogue en ce\n
+	+ moment.
+    46 [///,,,1] = 
+    47 [///,,,1] = 
+    48 [///,,,1] = 
+    49 [///,,,1] = 
+    4a [,4b] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{60c,3}\z{605,0}?
+    4b	= \z{602,46}Ha!\z{806,a} Je savais que c'était toi!\n
+	+ \z{602,43}Tu vas au centre-ville pour\z{806,5}\n
+	+ aller magasiner?\n
+	+ \n
+	+ \z{602,0}Eh bien tu tombes à pic! Je\n
+	+ voulais justement te\n
+	+ demander quelque chose.\n
+	+ \n
+	+ Bon\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} C'est assez soudain,\n
+	+ je sais, mais\z{806,a} c'est d'une\n
+	+ importance capitale, alors\n
+	+ écoute bien, OK?\n
+	+ Dans ce jeu, tu peux\z{806,5}\n
+	+ communiquer avec tes amis en\n
+	+ te connectant à leur \z{8ff,100}console\n
+	+ Wii \z{8ff,0}via \z{8ff,200}WiiConnect24\z{8ff,0}.\n
+	+ Grâce à ça, tu peux envoyer\n
+	+ des lettres aux joueurs\n
+	+ enregistrés dans ta \z{8ff,200}liste\n
+	+ d'amis\z{8ff,0}.\n
+	+ Tu peux également envoyer\n
+	+ des messages sur le \z{8ff,200}Bureau\n
+	+ Wii\z{8ff,0} des amis dont tu possèdes\n
+	+ le \z{8ff,200}code Wii\z{8ff,0}.\n
+	+ Et c'est pas tout : \z{806,a}il arrive\n
+	+ aussi que les voisins de tes\n
+	+ amis viennent emménager\n
+	+ dans ta propre ville!\n
+	+ Ils auront sûrement plein de\n
+	+ choses à raconter sur la ville\n
+	+ d'où ils viennent\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,46}Imagine...\z{806,a} Même quand vous\n
+	+ ne jouez pas, il se passe\n
+	+ des choses! Vos villes sont\n
+	+ connectées en permanence!\n
+	+ Et comme si ça ne suffisait\n
+	+ pas, \z{806,a}Nintendo pourra aussi\n
+	+ t'envoyer des lettres et des\n
+	+ cadeaux de temps en temps.\n
+	+ \z{602,0}Voilà, tu sais tout. \z{806,a}Maintenant,\n
+	+ la question, c'est :\z{602,43} est-ce que\n
+	+ tu veux utiliser ce service?\n
+	+ Tu pourras changer d'avis...\z{c07,1004c004d004e}\n
+	+ Bien sûr!\n
+	+ Non merci.\n
+	+ Pas tout compris...
+    4c	= \z{602,46}Bien reçu! Je vais faire tous\n
+	+ les préparatifs nécessaires!\n
+	+ \n
+	+ \n
+	+ \z{602,42}Oh,\z{806,14} j'ai failli oublier\n
+	+ de te dire un petit détail!\z{606,1}\z{602,0}\n
+	+ Si tu actives cette option...\n
+	+ \n
+	+ Les animaux qui habitent ta\n
+	+ ville peuvent déménager\n
+	+ dans d'autres villes...\n
+	+ \n
+	+ Et montrer les lettres que\n
+	+ tu leur as écrites à d'autres\n
+	+ joueurs.\n
+	+ \n
+	+ Alors assure-toi de ne pas\n
+	+ écrire de trucs personnels,\n
+	+ gênants ou offensants,\n
+	+ d'accord?\n
+	+ Oh\z{806,5}, et si jamais tu veux\n
+	+ désactiver cette option,\z{806,a}\n
+	+ choisis "\z{8ff,200}Configuration\z{8ff,0}" au\n
+	+ début du jeu.\n
+	+ Tu pourras aussi me passer\n
+	+ un coup de fil depuis le\n
+	+ \z{8ff,200}téléphone \z{8ff,0}dans ton \z{8ff,200}grenier\z{8ff,0}.\n
+	+ \n
+	+ \z{602,46}Bon, \z{806,a}sur ce... je te laisse.\n
+	+ Amuse-toi bien!
+    4d	= Vraiment\z{806,5}.\z{806,5}.\z{806,5}. OK, je n'activerai\n
+	+ pas cette fonctionnalité.\n
+	+ \n
+	+ \n
+	+ \z{602,0}Mais bon,\z{806,5} si tu changes\n
+	+ d'avis,\z{806,a} choisis l'option\n
+	+ "\z{8ff,200}Configuration\z{8ff,0}" quand\n
+	+ tu démarres le jeu.\n
+	+ Sinon tu peux aussi m'appeler\n
+	+ depuis le \z{8ff,200}téléphone \z{8ff,0}qui est\n
+	+ chez toi.\n
+	+ \n
+	+ \z{602,46}Bon, ben.... on a fait le tour...\n
+	+ \z{806,a}Amuse-toi bien!
+    4e	= \z{602,46}Aucun problème! C'est très\n
+	+ important, donc n'hésite pas\n
+	+ à me faire répéter autant que\n
+	+ tu veux\z{806,5}.\z{806,5}.\z{806,5}. C'est parti.\n
+	+ \z{602,0}Dans ce jeu, tu peux\z{806,5}\n
+	+ communiquer avec tes amis en\n
+	+ te connectant à leur \z{8ff,100}console\n
+	+ Wii \z{8ff,0}via \z{8ff,200}WiiConnect24\z{8ff,0}.\n
+	+ Grâce à ça, tu peux envoyer\n
+	+ des lettres aux joueurs\n
+	+ enregistrés dans ta \z{8ff,200}liste\n
+	+ d'amis\z{8ff,0}.\n
+	+ Tu peux également envoyer\n
+	+ des messages sur le \z{8ff,200}bureau\n
+	+ Wii\z{8ff,0} des amis dont tu possèdes\n
+	+ le \z{8ff,200}code Wii\z{8ff,0}.\n
+	+ Et c'est pas tout : \z{806,a}il arrive\n
+	+ aussi que les voisins de tes\n
+	+ amis viennent emménager\n
+	+ dans ta propre ville!\n
+	+ Ils auront sûrement plein de\n
+	+ choses à raconter sur la ville\n
+	+ d'où ils viennent\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,46}Imagine...\z{806,a} Même quand vous\n
+	+ ne jouez pas, il se passe\n
+	+ des choses! Vos villes sont\n
+	+ connectées en permanence!\n
+	+ Et comme si ça ne suffisait\n
+	+ pas, \z{806,a}Nintendo pourra aussi\n
+	+ t'envoyer des lettres et des\n
+	+ cadeaux de temps en temps.\n
+	+ \z{602,0}Voilà, tu sais tout. \z{806,a}Maintenant,\n
+	+ la question, c'est :\z{602,43} est-ce que\n
+	+ tu veux utiliser ce service?\n
+	+ Tu pourras changer d'avis...\z{c07,1004c004d004e}\n
+	+ Bien sûr!\n
+	+ Non merci.\n
+	+ Trop compliqué...
+    4f [///,,,1] = 
+    50 [///,,,1] = 
+    51 [///,,,1] = 
+    52 [///,,,1] = 
+    53 [///,,,1] = 
+    54 [///,,,1] = 
+    55 [///,,,1] = 
+    56 [///,,,1] = 
+    57 [///,,,1] = 
+    58 [///,,,1] = 
+    59 [///,,,1] = 
+    5a [///,,,1] = 
+    5b [///,,,1] = 
+    5c [///,,,1] = 
+    5d [///,,,1] = 
+    5e [///,,,1] = 
+    5f [///,,,1] = 
+    60 [///,,,1] = 
+    61 [///,,,1] = 
+    62 [///,,,1] = 
+    63 [///,,,1] = 
+    64 [///,,,1] = 
+

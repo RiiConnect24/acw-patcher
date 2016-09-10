@@ -1,0 +1,232 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [/,,,18]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,18//,,,1] = SYS_NetworkError.gmm
+     1	= No se ha podido acceder a\n
+	+ la Conexión Wi-Fi de\n
+	+ Nintendo. Para obtener\n
+	+ ayuda, consulta el manual\n
+	+ de instrucciones o visita el\n
+	+ sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     2	= La Conexión Wi-Fi de\n
+	+ Nintendo tiene un volumen\n
+	+ de tráfico demasiado\n
+	+ elevado o el servicio\n
+	+ se ha interrumpido.\n
+	+ Vuelve a intentar\n
+	+ conectarte más tarde.\n
+	+ \n
+	+ Para obtener ayuda, visita\n
+	+ el sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     3	= El servicio de Conexión\n
+	+ Wi-Fi de Nintendo ya no\n
+	+ está disponible para\n
+	+ este juego.\n
+	+ Visita\n
+	+ support.nintendo.com para\n
+	+ ver la lista completa de\n
+	+ juegos actualmente\n
+	+ compatibles con\n
+	+ la Conexión Wi-Fi\n
+	+ de Nintendo.\n
+	+           <\z{803,a0000}>
+     4 [ff,fe/,,,18] = No hay suficiente espacio\n
+	+ libre en la memoria de\n
+	+ la consola Wii.\n
+	+    <\z{803,a0000}>
+     5 [ff,fe/,,,18] = La memoria de la\n
+	+ consola Wii está dañada.\n
+	+ Consulta el manual de\n
+	+ instrucciones de la\n
+	+ consola Wii para obtener\n
+	+ más información.\n
+	+           <\z{803,a0000}>
+     6	= No se ha podido establecer\n
+	+ la conexión a internet.\n
+	+ \n
+	+ \n
+	+ Comprueba la\n
+	+ configuración de internet\n
+	+ de la consola Wii.\n
+	+           <\z{803,a0000}>
+     7	= No se recibe ninguna señal.\n
+	+ Puede que el otro jugador\n
+	+ se haya desconectado de la\n
+	+ Conexión Wi-Fi de Nintendo\n
+	+ o que ya no figures en su\n
+	+ lista de amigos.\n
+	+           <\z{803,a0000}>
+     8	= Error de conexión.\n
+	+ Te has desconectado\n
+	+ de la Conexión Wi-Fi\n
+	+ de Nintendo.\n
+	+ Para obtener ayuda,\n
+	+ visita el sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     9	= Error de conexión.\n
+	+ Vuelve a intentarlo.\n
+	+ \n
+	+ \n
+	+ Para obtener ayuda, visita\n
+	+ el sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     a	= Error de descarga.\n
+	+ Vuelve a intentarlo.\n
+	+ \n
+	+ \n
+	+ Para obtener ayuda, visita\n
+	+ el sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     b [ff,fe/,,,18] = Se ha producido un error y\n
+	+ no se puede usar la\n
+	+ Conexión Wi-Fi\n
+	+ de Nintendo.\n
+	+ Pulsa el Botón RESET y\n
+	+ vuelve a intentarlo.\n
+	+ \n
+	+ \n
+	+ Para obtener ayuda, visita\n
+	+ el sitio web\n
+	+ support.nintendo.com.\n
+	+           <\z{803,a0000}>
+     c	= Error de conexión.\n
+	+ Te has desconectado\n
+	+ de la Conexión Wi-Fi\n
+	+ de Nintendo.\n
+	+ Para obtener ayuda,\n
+	+ visita el sitio web\n
+	+ support.nintendo.com.
+     d	= 
+     e	= 
+     f	= 
+    10	= 
+    11	= 
+    12	= 
+    13	= El uso de la comunicación\n
+	+ en línea está restringido.\n
+	+ \n
+	+ \n
+	+ Consulta los ajustes del\n
+	+ control parental en las\n
+	+ opciones de Wii.
+    14	= 
+    15	= No se puede usar\n
+	+ WiiConnect24 debido a un\n
+	+ problema de la memoria de\n
+	+ la consola Wii. <\z{803,b0000}>
+    16	= Es necesario actualizar la\n
+	+ consola Wii para poder usar\n
+	+ WiiConnect24. Consulta el\n
+	+ manual de instrucciones de\n
+	+ la consola Wii para obtener\n
+	+ más información.\n
+	+ <\z{803,b0000}>
+    17	= Se ha producido un error y\n
+	+ no se puede usar\n
+	+ WiiConnect24.\n
+	+ \n
+	+ Reinicia la\n
+	+ consola y vuelve a\n
+	+ intentarlo.\n
+	+ <\z{803,b0000}>
+    18	= En estos momentos\n
+	+ WiiConnect24 no está\n
+	+ disponible.\n
+	+ \n
+	+ Inténtalo más tarde.\n
+	+ <\z{803,b0000}>
+    19	= WiiConnect24 no está\n
+	+ activado. Comprueba su\n
+	+ configuración en las\n
+	+ opciones de Wii. Consulta\n
+	+ el manual de instrucciones\n
+	+ de la consola Wii para\n
+	+ obtener más información.\n
+	+ <\z{803,b0000}>
+    1a	= WiiConnect24 no está\n
+	+ disponible porque no se\n
+	+ puede establecer una\n
+	+ conexión a internet.\n
+	+ Comprueba la conexión y la\n
+	+ configuración de internet.\n
+	+ Consulta el manual de\n
+	+ instrucciones de la\n
+	+ consola Wii para obtener\n
+	+ más información.\n
+	+ <\z{803,b0000}>
+    1b	= En estos momentos\n
+	+ WiiConnect24 no está\n
+	+ disponible.\n
+	+ \n
+	+ Inténtalo más tarde.\n
+	+ <\z{803,b0000}>
+    1c	= En estos momentos\n
+	+ WiiConnect24 no está\n
+	+ disponible.\n
+	+ \n
+	+ Inténtalo más tarde.\n
+	+ <\z{803,b0000}>
+    1d	= No se puede usar\n
+	+ WiiConnect24 debido a un\n
+	+ problema de la memoria de\n
+	+ la consola Wii. <\z{803,b0000}>
+    1e	= Se ha producido un error y\n
+	+ no se puede usar\n
+	+ WiiConnect24.\n
+	+ \n
+	+ Reinicia la consola\n
+	+ y vuelve a intentarlo.\n
+	+ <\z{803,b0000}>
+    1f	= Se ha producido un error y\n
+	+ no se puede usar\n
+	+ WiiConnect24.\n
+	+ <\z{803,b0000}>
+    20 [0] = 
+    21 [0] = 
+    22 [0] = 
+    23 [0] = 
+    24 [0] = 
+    25 [0] = 
+    26 [0] = 
+    27 [0] = 
+    28 [0] = 
+    29 [0] = 
+    2a [0] = 
+    2b [0] = 
+    2c [0] = 
+    2d [0] = 
+    2e [0] = 
+    2f [0] = 
+    30 [0] = 
+    31 [0] = 
+    32 [0] = 
+

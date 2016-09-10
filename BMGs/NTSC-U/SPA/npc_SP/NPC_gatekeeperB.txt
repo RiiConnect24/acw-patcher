@@ -1,0 +1,356 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = NPC_gatekeeperB.gmm
+     1 [,3/24] = Eh\z{806,3}.\z{806,3}.\z{806,3}. Bienvenid\z{c0c,4006f00000061}, 
+	+ \z{806,5}supongo\z{806,3}.\z{806,3}.\z{806,3}.
+     2 [,3] = Eh\z{806,a}, hola\z{806,3}.\z{806,3}.\z{806,3}.
+     3	= Bueno\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} La verdad es que\n
+	+ yo no\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} Mmm\z{806,3}.\z{806,3}.
+	+ \z{806,3}.\n
+	+ \n
+	+ \n
+	+ Si necesitas algo,\z{806,5}\n
+	+ es posible que ese tipo de\n
+	+ ahí pueda\z{806,3}.\z{806,3}.\z{806,3}.\z{606,1} \z{602,24}
+	+ \z{806,a}Lo\z{806,a} siento.
+     4	= Ah\z{806,5}.\z{806,5}.\z{806,5}. \z{806,f}\z{602,24}Mmm, sí, ¡hola!
+	+ \z{806,19}\n
+	+ \z{602,0}¿Qué...?\z{806,a} ¿En qué puedo\z{806,5}.\z{806,5}.
+	+ \z{806,5}.?\n
+	+ \z{602,25}¿Puedo ayudarte en algo?\z{1007,70013,e000a00060005}\n
+	+ ¿Alguna novedad?\n
+	+ ¿Objetos perdidos?\n
+	+ Cambiar bandera\n
+	+ ¿Dónde estoy?\n
+	+ En nada
+     5 [/24] = Eh..., ah.\z{806,a} ¡Lo siento mucho!
+     6 [/24] = Esto, \z{806,a}eh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,14} \z{602,0}Sí
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Bueno\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,25}¿Qué es lo que quieres que\n
+	+ te explique\z{806,5}.\z{806,5}.\z{806,5}.\z{806,5}?
+	+ \z{e07,6,7000800090005}\n
+	+ ¿Alguna novedad?\n
+	+ ¿Objetos perdidos?\n
+	+ Cambiar bandera\n
+	+ Déjalo
+     7	= Eh, \z{806,a}sí\z{806,5}.\z{806,5}.\z{806,5}.\z{806,14} Normalmente,
+	+  los\n
+	+ que vienen a \z{605,5}\n
+	+ de visita pasan por este\n
+	+ portón, así que... Mmm...\n
+	+ Cuando quieras saber si\n
+	+ algún visitante ha pasado\n
+	+ por aquí o algo...\n
+	+ \n
+	+ Supongo que podría\n
+	+ informarte sobre eso\z{8ff,10050}...\z{806,f}\n
+	+ \z{8ff,1005f}C\z{8ff,1005a}r\z{8ff,10055}e\z{8ff,10050}o...
+	+ \z{8ff,10064}\z{a07,400060005}\n
+	+ ¡Cuéntame más!\n
+	+ ¡Hasta la vista!
+     8	= Eh, sí,\z{806,a} mmm\z{806,5}.\z{806,5}.\z{806,5}.\z{806,14} Cuando
+	+  los\n
+	+ habitantes de \z{605,5}\n
+	+ encuentran cosas, pues\n
+	+ entonces...\n
+	+ Bueno, el caso es que las\n
+	+ traen aquí y nosotros las\n
+	+ cuidamos\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ Así que, eh..., \z{806,a}si quieres\n
+	+ recuperar algo perdido,\n
+	+ será mejor que vengas\n
+	+ rápido a por ello porque...\n
+	+ \z{602,24}Ah, \z{806,a}¡sí!\z{806,f} \z{602,0}Si no hay sitio para\n
+	+ más objetos, tiramos\n
+	+ primero los más\n
+	+ antiguos\z{806,3}.\z{806,3}.\z{806,3}. ¡Yuju!\n
+	+ \z{602,24}Oh, \z{806,a}lo siento mucho.\z{806,f}\n
+	+ Estaba imitando a\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}\n
+	+ \z{602,0}No voy\z{806,7} a \z{8ff,10050}hacerlo \z{8ff,1004b}nunca
+	+ \z{8ff,10046}\z{806,3}.\z{806,3}.\z{806,3}.\z{8ff,10064}
+	+ \z{a07,400060005}\n
+	+ ¡Cuéntame más!\n
+	+ ¡Hasta pronto!
+     9	= Ah, \z{806,3}eh...\z{806,14} Sí, es cierto\n
+	+ que, si sales ahí, verás una\n
+	+ bandera.\n
+	+ \n
+	+ Es la bandera de, eh...\n
+	+ \z{605,5}. Es una...\n
+	+ Como un símbolo de los\n
+	+ habitantes, ¿no? O algo...\n
+	+ Sinceramente, eh, andar\n
+	+ cambiando algo así sin ton\n
+	+ ni son, no me parece nada\n
+	+ sensato, pero\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ Bueno, hay muchas cosas\n
+	+ que no tengo muy claras...\z{806,3}\n
+	+ Tú si quieres cambiarla,\n
+	+ dímelo.\z{a07,400060005}\n
+	+ ¡Cuéntame más!\n
+	+ ¡Hasta luego!
+     a	= Eh\z{806,3}.\z{806,3}.\z{806,3}. \z{806,a}Sí,\z{806,5} ¡claro!\n
+	+ Eh,\z{806,a} tómate todo el tiempo\n
+	+ que quieras\z{806,3}.\z{806,3}.\z{806,3}.
+     b	= Ah, eh... sí. Al final\n
+	+ cambiaste de parecer, ¿no?\z{606,1}\n
+	+ Entiendo. Lo siento...
+     c	= Bueno, eh..., de acuerdo.\z{806,5}\n
+	+ Cambiaré el diseño actual\n
+	+ por este otro.\n
+	+ \n
+	+ Eh\z{806,3}.\z{806,3}.\z{806,3}. \z{806,5}No hay problema...\z{806,5}\n
+	+ Bueno, \z{8ff,1005f}eh\z{8ff,1005a}...\z{806,f} \z{8ff,10055}Cr
+	+ \z{8ff,10050}eo\z{8ff,1004b}\z{806,3}.\z{806,3}.\z{806,3}.
+     d	= Eh, \z{806,3}me temo que\z{806,3}.\z{806,3}.\z{806,3}.\z{806,3}\n
+	+ no hemos encontrado\n
+	+ ningún objeto perdido.\n
+	+ \n
+	+ \z{602,24}¡Lo siento mucho!\n
+	+ \z{602,0}Tendré\z{806,7}\z{8ff,10055} más cuidado\n
+	+ \z{8ff,1004b}en el futuro\z{8ff,1003c}\z{806,3}.\z{806,3}.\z{806,3}.
+     e	= Mmm, \z{806,3}sí, creo que tenemos\n
+	+ algunos objetos perdidos\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ Eso creo, al menos.\n
+	+ \n
+	+ O sea, que sí, que tenemos\n
+	+ \z{8ff,200}\z{803,70000}\z{8ff,0}. \z{8ff,1005f}Mmmm\z{8ff,1005a}
+	+ \z{806,3}.\z{806,3}.\z{806,3}.\z{806,f} \z{806,f}\z{8ff,10055}cr
+	+ \z{8ff,10050}eo\z{8ff,1004b}\z{806,3}.\z{806,3}.\z{806,3}.
+     f	= Ah, bueno... ¿Has cambiado\n
+	+ de parecer?\z{606,1} Lo... Lo siento\n
+	+ mucho...
+    10	= ¿Entonces te llevas\n
+	+ \z{60c,1}\z{8ff,700}\z{1404,3000049005400,45004d005f004e00}\z{8ff,0}?\n
+	+ \n
+	+ \n
+	+ Está bien.\z{806,f}\n
+	+ \z{8ff,1005f}C\z{8ff,1005a}r\z{8ff,1004b}eo\z{806,3}.\z{806,3}.
+	+ \z{806,3}.
+    11	= Vaya, eh, has reclamado\n
+	+ bastantes objetos\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ \n
+	+ \n
+	+ Eh\z{806,3}.\z{806,3}.\z{806,3}. \z{806,f}No pasa nada\z{806,3}.
+	+ \z{806,3}.\z{806,3}.\z{806,14}\n
+	+ Ningún \z{8ff,10055}problema.\z{806,f} \z{8ff,1004b}Creo\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    12 [/24] = Ah, \z{806,5}eh,\z{806,14} \z{602,0}no ha pasado\n
+	+ nadie por aquí\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ \n
+	+ \n
+	+ \z{602,24}Perdón.\z{806,f} ¡Lo siento!\z{806,f}\n
+	+ \z{602,0}\z{8ff,1005f}Tendré\z{806,7} \z{8ff,10055}mucho 
+	+ \z{8ff,10050}más \z{8ff,1004b}cuidado\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    13	= Sí, \z{806,5}mmm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} El último
+	+  en\n
+	+ pasar por aquí fue...\n
+	+ \n
+	+ \n
+	+ \z{8ff,500}\z{1c04,3010056004900,5300490054004f00,52005f0050004300}
+	+ \z{8ff,0}...\n
+	+ Me \z{8ff,1005f}parece... \z{8ff,10055}Creo que \z{8ff,1004b}sí
+	+ \z{806,3}.\z{806,3}.\z{806,3}.
+    14 [/24] = Ah, \z{806,3}sí.\z{806,14} No recuerdo cuánto\n
+	+ hace de eso, pero...\n
+	+ \n
+	+ \n
+	+ \z{602,0}Sí, la vendedora de nabos,\n
+	+ \z{8ff,600}Joan\z{8ff,0}, pasó por aquí\z{8ff,10050}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.\n
+	+ Creo.
+    15	= Bueno, \z{806,3}mmm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} No
+	+  recuerdo\n
+	+ cuándo fue exactamente,\n
+	+ pero...\n
+	+ \n
+	+ Sí, \z{8ff,600}Saharah\z{8ff,0} pasó por aquí\n
+	+ con un montón de papel de\n
+	+ pared y alfombras\z{8ff,10050}\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ Me parece.
+    16 [/24] = Ah, \z{806,a}¡sí!\z{806,14} No recuerdo\n
+	+ exactamente cuándo,\n
+	+ pero...\n
+	+ \n
+	+ \z{602,0}Sí, pasó por aquí una\n
+	+ criaturita medio llorando\z{806,5}\n
+	+ no hace mucho\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ \z{8ff,10050}Creo.
+    17	= Sí, \z{806,3}mmm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} No recuerdo\n
+	+ exactamente cuándo,\n
+	+ pero...\n
+	+ \n
+	+ pasó una mamá gata\z{806,a}\n
+	+ preguntando por su hijita\n
+	+ perdida\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,24}¡Lo siento!\z{806,f} No he\n
+	+ visto nada.\z{806,f}\n
+	+ \z{602,0}\z{8ff,1005f}Prestaré \z{806,7}\z{8ff,10050}más 
+	+ \z{8ff,1004b}atención\z{8ff,1003c}\z{806,3}.\z{806,3}.\z{806,3}.
+    18 [/24] = Ah, \z{806,a}¡sí!\z{806,14} No recuerdo\n
+	+ cuándo, pero...\n
+	+ \n
+	+ \n
+	+ \z{602,0}Pasó alguien que se\n
+	+ parecía mucho al famoso\n
+	+ artista \z{8ff,600}Wendell\z{8ff,0}.\z{806,a}\n
+	+ Mmm\z{8ff,10050}\z{806,3}.\z{806,3}.\z{806,3}. Me parece.
+    19	= Ah, \z{806,a}¡sí!\z{806,14} \z{602,0}Hoy, mmm\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ El señor \z{8ff,600}K.K. Slider \z{8ff,0}pasó\n
+	+ por aquí murmurando algo\n
+	+ sobre una actuación en\n
+	+ \z{8ff,800}The Roost\z{8ff,0} o algo así\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\z{c08,1d0006001d001e}
+    1a	= Bueno, \z{806,3}mmm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} No
+	+  recuerdo\n
+	+ cuándo exactamente,\n
+	+ pero...\n
+	+ \n
+	+ Creo que pasó por aquí\n
+	+ una \z{8ff,600}gata misteriosa\n
+	+ \z{8ff,0}que se dirigía al pueblo\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,24}Ah\z{806,3}.\z{806,3}.\z{806,3}. \z{806,f}No\z{806,3}.
+	+ \z{806,3}.\z{806,3}.\z{806,14} \z{602,0}Supongo que\n
+	+ no pasa nada...\z{8ff,10050}\z{806,f} Me \z{8ff,1004b}parece\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    1b [///,,,1] = 
+    1c [/24] = Eh\z{806,3}.\z{806,3}.\z{806,3}. Bienvenid\z{c0c,4006f00000061}, 
+	+ \z{806,5}supongo\z{806,3}.\z{806,3}.\z{806,3}.
+    1d	= \z{602,24}Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Pero creo que a
+	+  esta\n
+	+ hora ya habrá acabado\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,3f}¡Oh, lo siento!\z{806,f} ¡Mucho!\z{606,1}\n
+	+ \z{602,0}\z{806,a}La próxima \z{8ff,1005f}vez\z{806,7}\z{8ff,10055}
+	+  tendré \z{8ff,10050}más\n
+	+ \z{8ff,1004b}cuidado,\z{8ff,10046} si puedo\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    1e	= \z{602,24}¡Oh, \z{806,5}sí!\z{806,f} \z{602,0}Estoy seguro de\n
+	+ \z{8ff,1005f}que\z{8ff,1005a} estará\z{8ff,10055} allí. 
+	+ \z{8ff,10050}Quizás...\z{806,f} Creo\z{8ff,1004b}\z{806,3}.\z{806,3}.
+	+ \z{806,3}.
+    1f	= \z{e08,8,29002300240025}
+    20	= \z{e08,8,2a002600270028}
+    21 [/24] = ¡Oh, \z{806,a}sí!\z{806,14} No recuerdo bien\n
+	+ hace cuánto, pero...\n
+	+ \n
+	+ \n
+	+ \z{602,0}Alguien que se llamaba\n
+	+ \z{8ff,600}Zipper T. Bunny\z{8ff,0}\z{806,a} pasó por\n
+	+ aquí\z{8ff,10050}\z{806,3}.\z{806,3}.\z{806,3}. Creo.
+    22	= Mm, \z{806,3}sí\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} No recuerdo
+	+  hace\n
+	+ cuánto, pero...\n
+	+ \n
+	+ \n
+	+ Sí que pasó por aquí un tal\n
+	+ \z{8ff,600}Pavé \z{8ff,0}que iba bailando\z{8ff,10050}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.\n
+	+ Creo que se llamaba así, que\n
+	+ iba bailando es seguro... Creo.
+    23 [/24] = ¡Oh, \z{806,a}sí!\z{806,14} No recuerdo bien\n
+	+ hace cuánto, pero...\n
+	+ \n
+	+ \n
+	+ \z{602,0}\z{8ff,600}Chip\z{8ff,0},\z{806,a} el maestro\n
+	+ pescador, pasó por aquí\z{8ff,10050}\z{806,3}.\z{806,3}.\z{806,3}. Creo
+	+ .
+    24	= Ah,\z{806,3} sí\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} Vi a\z{8ff,600}
+	+  Chip\z{8ff,0} esta\n
+	+ mañana temprano\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,24}Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Pero a estas horas
+	+  el\n
+	+ \z{8ff,300}Torneo de Pesca\z{8ff,0} ya se\n
+	+ habrá acabado, así que no\n
+	+ importa\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,3f}Lo siento.\z{806,f} ¡Mucho!\z{606,1}\n
+	+ \z{602,0}\z{806,a}\z{8ff,1005f}Estaré\z{806,7}\z{8ff,10055} más
+	+ \z{8ff,1004b} atento\z{8ff,10046} otro día\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    25	= Ah,\z{806,3} sí\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} Vi a\z{8ff,600}
+	+  Chip\z{8ff,0} esta\n
+	+ mañana\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,24}Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Pero creo que ya\n
+	+ se ha ido a casa\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,3f}Lo siento.\z{806,f} ¡Mucho!\z{606,1}\n
+	+ \z{602,0}\z{806,a}\z{8ff,1005f}Estaré\z{806,7}\z{8ff,10055} más
+	+ \z{8ff,1004b} atento\z{8ff,10046} otro día\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    26 [/24] = ¡Oh, \z{806,a}sí!\z{806,14} No recuerdo la\n
+	+ hora, pero...\n
+	+ \n
+	+ \n
+	+ \z{602,0}Creo que sí pasó por aquí\n
+	+ el de los insectos\z{8ff,10050}\z{806,3}.\z{806,3}.\z{806,3}. Creo.
+    27	= Mm, \z{806,3}sí\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} El de los
+	+  insectos\n
+	+ pasó por aquí esta mañana,\n
+	+ pero\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,24}Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Supongo que a
+	+  estas\n
+	+ alturas la \z{8ff,300}Caza de Insectos\n
+	+ \z{8ff,0}ya se habrá acabado, así\n
+	+ que ya da igual\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,3f}Lo siento.\z{806,f} ¡Mucho!\z{606,1}\n
+	+ \z{602,0}\z{806,a}\z{8ff,1005f}Estaré\z{806,7}\z{8ff,10055} más
+	+ \z{8ff,1004b} atento\z{8ff,10046} otro día\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    28	= Mm, \z{806,3}sí\z{806,3}.\z{806,3}.\z{806,3}.\z{806,14} El de los
+	+  insectos\n
+	+ pasó por aquí esta mañana,\n
+	+ pero\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,24}Pero\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Creo que\n
+	+ ya se fue\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,3f}Lo siento.\z{806,f} ¡Mucho!\z{606,1}\n
+	+ \z{602,0}\z{806,a}\z{8ff,1005f}Estaré\z{806,7}\z{8ff,10055} más
+	+ \z{8ff,1004b} atento\z{8ff,10046} otro día\z{8ff,1003c}\z{806,3}.
+	+ \z{806,3}.\z{806,3}.
+    29	= \z{c08,1d050600250023}
+    2a	= \z{c08,1d050600280026}
+

@@ -1,0 +1,533 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begins with an '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = NPC_gatekeeperA.gmm
+     1 [/22] = Hello, and welcome to the\n
+	+ \z{8ff,800}checkpoint\z{8ff,0} for bustling\n
+	+ \z{605,5}!\n
+	+ \n
+	+ \z{602,0}Listen well, \z{605,0}!\n
+	+ When you want to visit\n
+	+ another town...\n
+	+ \n
+	+ Or if, perhaps, you have\n
+	+ a friend come visit you\n
+	+ here in \z{605,5}...\n
+	+ \n
+	+ I'd very much appreciate\n
+	+ it if you'd please let me\n
+	+ know in advance! I insist!\n
+	+ \n
+	+ You see, armed with that\n
+	+ information, I can open\n
+	+ the gate for you!
+     2 [/22] = Greetings, \z{605,0}!\z{606,1}\n
+	+ I see you're working away\n
+	+ with due diligence!\n
+	+ \n
+	+ \z{602,0}There appears to be some\n
+	+ unfinished business to\n
+	+ tend to before you\n
+	+ can use the \z{8ff,800}checkpoint\z{8ff,0}.\n
+	+ We appreciate your\n
+	+ understanding\z{806,5} and\n
+	+ cooperation in this matter!
+     3 [/22] = A good morning to you!\z{606,1}\n
+	+ You're up rather bright\n
+	+ and early, I see. Very\n
+	+ commendable!\z{602,0}
+     4 [/22] = A very good day to you!\z{606,1}\n
+	+ I see you're making the\n
+	+ most of the day!\z{602,0}
+     5 [/22] = A good evening to you!\z{606,1}\n
+	+ As the day nears its end,\n
+	+ try to watch your step!\n
+	+ Fatigue is a bold criminal!\z{602,0}
+     6 [/22] = A fine evening to you!\z{606,1}\n
+	+ You're working rather\n
+	+ late... I salute your\n
+	+ exemplary dedication!\z{602,0}
+     7	= \z{60c,3}\z{605,0}, your resident\n
+	+ information is \z{806,5}currently\n
+	+ being processed!\n
+	+ \n
+	+ As soon as it's clear, we\n
+	+ can open the \z{8ff,800}checkpoint\n
+	+ \z{8ff,0}for you.\z{806,5} We certainly\n
+	+ appreciate your patience!
+     8	= At any rate,\z{806,5} is there\n
+	+ something I can do for you?\z{e07,6,b000a}\n
+	+ I wanna go out!\n
+	+ Close the gate!\n
+	+ Where am I?\n
+	+ Oh, nothing.
+     9	= At any rate,\z{806,5} is there\n
+	+ something I can do for you?\z{1007,70000,b000a}\n
+	+ I wanna go out!\n
+	+ Invite guests!\n
+	+ Friend code!\n
+	+ Where am I?\n
+	+ Oh, nothing.
+     a	= Is that so!\z{806,f} Very good.\n
+	+ Please let me know if\n
+	+ there is anything I can do\n
+	+ for you in the future!
+     b [/22] = Listen well! This is the\n
+	+ \z{8ff,800}checkpoint \z{8ff,0}for bustling\n
+	+ \z{605,5}!\n
+	+ \n
+	+ \z{602,0}When you get the urge to\n
+	+ visit another town,\n
+	+ \z{605,0}...\n
+	+ \n
+	+ Or if, perhaps, you have\n
+	+ a friend come visit you\n
+	+ here in \z{605,5}...\n
+	+ \n
+	+ I would appreciate your\n
+	+ letting me know, so I can\n
+	+ expedite the gate-opening\n
+	+ process!\n
+	+ Also, if you visit a friend's\n
+	+ town via Wiimmfi, you\n
+	+ might meet some of your\n
+	+ friend's friends there.\n
+	+ You'll be able to talk to them\n
+	+ via text chat and Mic Chat,\n
+	+ so please keep this in mind.\n
+	+ \n
+	+ Efficiency is our utmost\n
+	+ concern here!
+     c [/25] = Oh?\z{806,f} Would you like to\n
+	+ halt the \z{8ff,100}Wiimmfi \z{8ff,0}\n
+	+ session and return home?\z{8ff,100}\z{a07,4000e000d}\n
+	+ \z{8ff,0}Yup!\n
+	+ Not yet!
+     d [/22] = When you go home, we'd\n
+	+ truly appreciate it if you'd\n
+	+ take a moment to alert us\n
+	+ to your intention!
+     e [/22] = Understood!\z{806,14} \z{602,0}I will take\n
+	+ care of that, of course.\n
+	+ It will take just a brief\n
+	+ moment!\z{806,a0028}
+     f	= .\z{806,5}.\z{806,5}.\z{806,5}My sincerest apologies,\z{806,a}\n
+	+ \z{605,0}!\n
+	+ \n
+	+ \n
+	+ I am unable to make\n
+	+ preparations, as there\z{806,5} is a\n
+	+ conversation in progress...\n
+	+ or something!
+    10 [/22] = Well then, \z{605,0}...\z{806,f}\n
+	+ We wish you a good day!\z{806,a001e}
+    11 [,1f/24] = What's this?! \z{806,14}\z{60c,3}\z{605,0}\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\z{606,1}\n
+	+ \z{602,0}I see that you\z{806,5} do not\n
+	+ have anyone on your\n
+	+ \z{8ff,200}friend roster\z{8ff,0} yet.\n
+	+ You need to register some\n
+	+ friends\z{806,5} to your \z{8ff,200}friend\n
+	+ roster\z{8ff,0}\z{806,5} before you can\n
+	+ invite anyone over!
+    12	= I understand!\z{806,a} I shall start\n
+	+ the gate-opening process\n
+	+ at once so that you can\n
+	+ host guests!
+    13 [/22] = Without further ado,\z{806,5} I will\n
+	+ open the gate!\z{806,a0028}
+    14 [/24] = \z{806,a}\z{60c,3}\z{605,0},\z{806,14}\z{602,0} it appears\n
+	+ that a friend of yours\n
+	+ already has his or her\n
+	+ gate open.\n
+	+ \z{602,25}Knowing this, do you still\n
+	+ want to open your gate?\z{a07,400150016}\n
+	+ Open the gate!\n
+	+ Never mind...
+    15 [/22] = Understood!\z{806,14} Then without\n
+	+ further ado,\z{806,5} I will open\n
+	+ the gate! Hoo-rah!\z{806,a0028}
+    16 [/22] = Understood!\z{806,f} I will now\n
+	+ search for a town with an\n
+	+ open gate... Please wait\n
+	+ for a moment...
+    17 [///,,,1] /
+    18 [///,,,1] /
+    19 [///,,,1] /
+    1a [///,,,1] /
+    1b [///,,,1] /
+    1c [///,,,1] /
+    1d [,13] = \z{8ff,200}Wiimmfi User Information
+	+ \z{8ff,0}from the \n
+	+ \z{8ff,100}Wii system\z{8ff,0} you are using\n
+	+ has been saved!\n
+	+ I present you, \z{605,0},\n
+	+ with your \z{8ff,200}friend code\z{8ff,0}:\n
+	+ \z{8ff,200}\z{803,90000}\z{8ff,0}ー\z{8ff,200}\z{803,90100}
+	+ \z{8ff,0}ー\z{8ff,200}\z{803,90200}\z{8ff,0}!\n
+	+ \n
+	+ \z{602,22}Share this with your\n
+	+ friends\z{806,5} and have them\n
+	+ register you to their\n
+	+ \z{8ff,200}friend rosters\z{8ff,0}!
+    1e [///,,,1] /
+    1f	= Is there anything else I\n
+	+ can do for you?\z{1007,70000,b000a}\n
+	+ I wanna go out.\n
+	+ Invite guests.\n
+	+ Friend code!\n
+	+ Where am I?\n
+	+ Oh, nothing.
+    20 [/24] = \z{806,5}Certainly not, \z{605,0}!\z{606,1}\n
+	+ \z{602,0}It's against policy to \n
+	+ close the gate\z{806,5} when there\n
+	+ is a visitor in town!
+    21 [/24] = Very well then.\z{806,a} I will\n
+	+ close the gate at once!\n
+	+ \n
+	+ \n
+	+ \z{602,0}If you need anything at\n
+	+ all, do not hesitate to call\n
+	+ upon me!
+    22 [///,,,1] /
+    23	= .\z{806,5}.\z{806,5}.\z{806,5}\z{602,24}\z{806,5}What's this?\z{806,a} I
+	+  see that\n
+	+ you have not yet been\n
+	+ issued a \z{8ff,200}friend code\z{8ff,0}!\n
+	+ What an oversight!\z{8ff,200}\n
+	+ \z{602,0}\z{8ff,0}You and your friend must\n
+	+ \z{806,a}register each other's\n
+	+ \z{8ff,200}friend codes\z{8ff,0} to your\n
+	+ respective \z{8ff,200}friend rosters\z{8ff,0}!\z{8ff,200}\n
+	+ \z{8ff,0}That way, you can come\n
+	+ and go to one another's\n
+	+ towns and play together\n
+	+ over \z{8ff,200}Wiimmfi\z{8ff,0}!\n
+	+ Well then, \z{8ff,100}\z{806,a}\z{602,b}\z{8ff,0}would you like\n
+	+ to be issued a \z{8ff,200}friend\n
+	+ code \z{8ff,0}over \z{8ff,200}Wiimmfi\z{8ff,0}?
+	+ \z{c07,50026002a001f}\n
+	+ I want one!\n
+	+ Uh, come again?\n
+	+ No, thanks.
+    24 [///,,,1] /
+    25 [,1f/22] = \z{60c,3}\z{605,0}, your \z{8ff,200}friend\n
+	+ code \z{8ff,0}is as follows:\n
+	+ \z{8ff,200}\z{803,90000}\z{8ff,0}ー\z{8ff,200}\z{803,90100}
+	+ \z{8ff,0}ー\z{8ff,200}\z{803,90200}\z{8ff,0}!\n
+	+ \n
+	+ \z{602,0}Exchange \z{8ff,200}friend codes \z{8ff,0}with\n
+	+ your friends and register\n
+	+ each other to your\n
+	+ respective \z{8ff,200}friend rosters\z{8ff,0}!\n
+	+ And then...\z{806,5}you will be\n
+	+ able to play together in\n
+	+ each other's towns!
+    26	= Without further ado, \z{806,a}I will\n
+	+ now make preparations to\n
+	+ issue you a \z{8ff,200}friend code\z{8ff,0}!
+    27 [///,,,1] /
+    28 [///,,,1] /
+    29	= Listen well, \z{605,0}.\n
+	+ Your \z{8ff,200}friend code\z{8ff,0} is...\z{806,a}\n
+	+ \z{8ff,200}\z{803,90000}\z{8ff,0}ー\z{8ff,200}\z{803,90100}
+	+ \z{8ff,0}ー\z{8ff,200}\z{803,90200}\z{8ff,0}!
+    2a [,2b] = \z{60c,3}\z{605,0}, it's vital that\n
+	+ the \z{8ff,100}Wii system \z{8ff,0}you are\n
+	+ using can connect to the\n
+	+ \z{8ff,200}Internet\z{8ff,0}.\n
+	+ As long as it can do that,\n
+	+ you can even play with\n
+	+ far-off friends over \z{8ff,200}Wiimmfi\z{8ff,0}.\n
+	+ You need a friend code\n
+	+ in order to play with\n
+	+ faraway friends over \z{8ff,200}Wiimmfi\z{8ff,0}, of course.\n
+	+ It is quite simple... You\n
+	+ simply register each\n
+	+ other's friend codes to\n
+	+ your\z{8ff,200} friend rosters\z{8ff,0}.\n
+	+ \z{602,22}Then the system will\n
+	+ authenticate that you are,\n
+	+ in fact, friends! Hoo-rah!
+    2b	= ...So, \z{806,a}\z{602,25}would you like a\n
+	+ \z{8ff,200}friend code\z{8ff,0}?\z{c07,50026002a001f}\n
+	+ Yes!\n
+	+ Tell me again.\n
+	+ No, thanks.
+    2c [///,,,1] /
+    2d [/24] = Certainly not, \z{806,a}\z{605,0}!\z{606,1}\n
+	+ \z{602,0}While there is a visitor in\n
+	+ town, it is against\n
+	+ regulations to leave!
+    2e [/24] = Hold on, \z{806,14}\z{605,0}\z{806,5}.\z{806,5}.\z{806,5}.\z{606,1}\n
+	+ \z{602,0}I see that you do not\n
+	+ have anyone on your\n
+	+ \z{8ff,200}friend roster \z{8ff,0}yet.\n
+	+ You need to register some\n
+	+ friends from towns that\n
+	+ you want to visit\z{806,a} to your\n
+	+ \z{8ff,200}friend roster\z{8ff,0}!
+    2f	= So, you would rather\n
+	+ venture out\z{806,a}\z{602,25} than have\n
+	+ friends visit you?\z{a07,400510000}\n
+	+ That's right!\n
+	+ Maybe not...
+    30	= I will now\z{806,5} search for a\n
+	+ town with an open gate...\n
+	+ Please wait a moment...
+    31	= \z{8ff,200}Wiimmfi User\n
+	+ Information \z{8ff,0}from the\n
+	+ \z{8ff,100}Wii system\z{8ff,0} you\n
+	+ are using has been saved!\n
+	+ I present you, \z{605,0},\n
+	+ with your \z{8ff,200}friend code\z{8ff,0}:\n
+	+ \z{8ff,200}\z{803,90000}\z{8ff,0}ー\z{8ff,200}\z{803,90100}
+	+ \z{8ff,0}ー\z{8ff,200}\z{803,90200}\z{8ff,0}!\n
+	+ \n
+	+ \z{602,22}Have your friends register\n
+	+ this number to their \z{8ff,200}friend\n
+	+ rosters\z{8ff,0}, \z{806,5}and then pay them a\n
+	+ visit!
+    32 [///,,,1] /
+    33 [/22] = Many thanks for your\n
+	+ patience!\z{806,a} Allow me to\n
+	+ present the list of towns\n
+	+ you can visit!
+    34 [/22] = Please have a safe and\n
+	+ enjoyable journey!\z{806,a003c}
+    35 [/b] = Oh?\z{806,f}\z{602,0} Am I to understand\n
+	+ you have decided against\n
+	+ venturing out?
+    36	= .\z{806,5}.\z{806,5}.\z{806,5}My sincerest apologies,\z{806,5}\n
+	+ \z{605,0}!\n
+	+ \n
+	+ \n
+	+ It appears that the town\n
+	+ you tried to visit did not\n
+	+ have its gate open!\n
+	+ \n
+	+ Unless the gate to that\n
+	+ town is open, you cannot\n
+	+ visit it!
+    37	= Oh, \z{806,a}\z{605,0}!\n
+	+ \n
+	+ \n
+	+ \n
+	+ That town \z{806,5}already has\n
+	+ three visitors.\z{806,a} I am sorry,\n
+	+ but I cannot let you visit\n
+	+ such a crowded town!
+    38	= For some unfathomable\n
+	+ reason, you cannot visit\n
+	+ that town right now.\n
+	+ \n
+	+ Unless I am mistaken,\n
+	+ someone else must be\n
+	+ trying to enter at the\n
+	+ exact same time. \n
+	+ Please wait a moment\n
+	+ before trying to visit\n
+	+ that town again.\z{a07,40068003c}\n
+	+ Try again!\n
+	+ Quit.
+    39	= For some curious reason,\n
+	+ there is no response.\n
+	+ \n
+	+ \n
+	+ There's a possibility that\n
+	+ that person has already\n
+	+ disconnected from \z{8ff,200}Wiimmfi\z{8ff,0}...\n
+	+ It is also possible that you\n
+	+ have been removed from\n
+	+ that person's \z{8ff,200}friend roster\z{8ff,0}.\n
+	+ 　　　　　　　<\z{803,a0000}>\z{a07,40068003c}\n
+	+ Try again.\n
+	+ Never mind.
+    3a	= .\z{806,5}.\z{806,5}.\z{806,5}My sincerest apologies,\z{806,5}\n
+	+ \z{605,0}!\n
+	+ \n
+	+ \n
+	+ You cannot enter because\n
+	+ there seems to be a\n
+	+ conversation in progress.\z{a07,40068003c}\n
+	+ Try again!\n
+	+ I'll try later.
+    3b	= .\z{806,5}.\z{806,5}.\z{806,5}I'm terribly sorry,\z{806,5}\n
+	+ \z{605,0}!\n
+	+ \n
+	+ \n
+	+ This is very strange, but\n
+	+ for some unfathomable\n
+	+ reason, you cannot visit\n
+	+ that town right now.\z{a07,40068003c}\n
+	+ Try again!\n
+	+ Maybe later.
+    3c	= Is that so?\z{806,14} \z{602,22}Well,\z{806,5} if you\n
+	+ need anything, do not\n
+	+ hesitate to ask!
+    3d	= Is there something I can\n
+	+ do for you at this time?\z{e07,6,b000a}\n
+	+ I wanna go out!\n
+	+ Close the gate!\n
+	+ Where am I?\n
+	+ Nothing.
+    3e	= Is there anything else I\n
+	+ can do for you?\z{1007,70000,b000a}\n
+	+ I wanna go out!\n
+	+ Invite guests.\n
+	+ Friend code.\n
+	+ Where am I?\n
+	+ Nope.
+    3f	= .\z{806,5}.\z{806,5}.\z{806,5}\z{602,24}\z{806,5}What's this?\z{806,a}
+	+ \z{602,25} You have\n
+	+ not yet been issued a\n
+	+ \z{8ff,200}friend code\z{8ff,0}?\n
+	+ \z{8ff,200}\n
+	+ \z{8ff,0}\z{602,0}In order to venture out\n
+	+ over \z{8ff,200}Wiimmfi\z{8ff,0}, you\n
+	+ need to be issued a\n
+	+ \z{8ff,200}friend code\z{8ff,0}, \z{605,0}!\n
+	+ Then you and a friend\n
+	+ must register each other's\n
+	+ \z{8ff,200}friend codes\z{8ff,0}!\n
+	+ \n
+	+ Knowing that,\z{602,b} would you\n
+	+ like to be issued a friend\n
+	+ code over\z{8ff,200} Wiimmfi\z{8ff,0}?\z{a07,400400000}\n
+	+ Yes, please!\n
+	+ No, thanks.
+    40	= Affirmative!\z{806,a} I shall now\n
+	+ make preparations to\n
+	+ issue you a \z{8ff,200}friend code\z{8ff,0}!
+    41 [/25] = So, you want to go\n
+	+ somewhere?\z{606,1}\z{602,22} Well then, I\n
+	+ will need you to fill out\n
+	+ some forms first!
+    42 [///,,,1] /
+    43 [///,,,1] /
+    44 [///,,,1] /
+    45 [///,,,1] /
+    46 [///,,,1] /
+    47 [/25] = Oh?\z{806,a} Are you ready to go\n
+	+ home?\z{a07,4005d000d}\n
+	+ Yep!\n
+	+ Maybe not...
+    48 [///,,,1] /
+    49 [///,,,1] /
+    4a [///,,,1] /
+    4b [///,,,1] /
+    4c [///,,,1] /
+    4d [///,,,1] /
+    4e [///,,,1] /
+    4f [///,,,1] /
+    50	/
+    51	= Would you prefer to\n
+	+ venture out of town \z{602,25}via \z{8ff,200}Wiimmfi\z{8ff,0}\n
+	+ or via the \z{8ff,200}\z{806,a}DS Suitcase\z{8ff,0}?
+	+ \z{c07,5000000520000}\n
+	+ Wiimmfi!\n
+	+ DS Suitcase!\n
+	+ Neither.
+    52 [/22] = If you transfer your\n
+	+ data to a \z{8ff,100}Nintendo DS\z{8ff,0},\n
+	+ \z{605,0}, \z{806,a}you can\n
+	+ venture out via that\z{8ff,100} DS\z{8ff,0}!\n
+	+ \z{602,0}However, \z{806,5}once you are\n
+	+ through, you must return,\n
+	+ otherwise\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ You will lose all of your\n
+	+ many assets, \z{605,0}!\z{806,a}\n
+	+ So, please! Do not forget\n
+	+ to return.\n
+	+ On that note, \z{806,a}\z{602,25}can I begin\n
+	+ preparations?\z{a07,40053003e}\n
+	+ Start!\n
+	+ Never mind.
+    53	= Very well then! Please\n
+	+ turn the \z{8ff,100}Nintendo DS\n
+	+ \z{8ff,0}on \z{806,a}and then activate\n
+	+ \z{8ff,200}DS Download Play\z{8ff,0}!\z{a07,40054003e}\n
+	+ OK!\n
+	+ Maybe not...
+    54 [,5c] = Please download the\n
+	+ \z{8ff,200}DS Suitcase \z{8ff,0}\z{806,a}on the \n
+	+ \z{8ff,100}Nintendo DS \z{8ff,0}screen!
+    55	= My sincerest apologies!\z{606,1}\n
+	+ I was unable to find a \z{8ff,100}DS\z{8ff,0}\n
+	+ that can receive the data. \z{a07,40053003e}\n
+	+ Try again!\n
+	+ Never mind.
+    56	= My earnest apologies!\z{606,1}\n
+	+ I'm afraid an error seems\n
+	+ to have occurred during\n
+	+ the process.\z{a07,40053003e}\n
+	+ Try again!\n
+	+ Forget it.
+    57 [/22] = Thank you for your\n
+	+ patience!\z{806,f} On that note,\z{806,5}\n
+	+ have a pleasant journey!\z{806,a001e}
+    58 [/22] = Thank you for waiting!\z{806,f}\n
+	+ Well then, \z{605,0}...\z{806,5}\n
+	+ Enjoy your trip!\z{806,a001e}
+    59 [/22] = When you are ready to\n
+	+ return, please visit the\n
+	+ \z{8ff,800}checkpoint\z{8ff,0}!\z{806,a005a}
+    5a [/,,10,14] = \z{8ff,100}Now communicating!\n
+	+ Please wait a moment.\z{806,b001e}
+    5b [/25] = Do you want to quit?\z{a07,40054003e}\n
+	+ Continue!\n
+	+ Quit.
+    5c	= If you want to quit,\z{806,5} you can\n
+	+ do so by pressing \z{601,2} on the\z{8ff,100} \n
+	+ Wii Remote \z{8ff,0}to cancel!\z{8ff,100}\z{806,b003c}
+    5d	= Well then, please turn on\n
+	+ the\z{8ff,100} Nintendo DS\z{8ff,0}\z{806,a}'s power\n
+	+ and tap \z{8ff,200}DS Download Play\z{8ff,0}!\z{a07,40054000d}\n
+	+ OK!\n
+	+ Maybe not...
+    5e [///,,,1] /
+    5f [///,,,1] /
+    60 [///,,,1] /
+    61 [///,,,1] /
+    62 [///,,,1] /
+    63 [///,,,1] /
+    64	/
+    65 [/,,,14//,,,1] /
+    66 [/,,10,14] = \z{8ff,100}Now connecting to Wiimmfi.\n
+	+ Please wait a moment.\z{806,a0000}
+    67 [/,,10,14//,,,1] = \z{8ff,100}I will now search for a\n
+	+ town with an open gate.\n
+	+ Please wait a moment...\z{806,a0000}
+    68 [/,,10,14] = \z{8ff,100}Connecting to\n
+	+ \z{1604,1,560049004c00,4c00410047004500} via Wiimmfi...\n
+	+ Please wait\n a moment...\z{806,a0000}
+    69 [///,,,1] /
+    6a [///,,,1] /
+    6b [///,,,1] /
+    6c [///,,,1] /
+    6d [///,,,1] /
+    6e [///,,,1] /
+

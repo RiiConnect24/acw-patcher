@@ -1,0 +1,228 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [/,,,18]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,18//,,,1] = 
+     1	= Keine Verbindung zur\n
+	+ Nintendo Wi-Fi Connection\n
+	+ möglich. Besuche\n
+	+ support.nintendo.com oder\n
+	+ lies die Software-Anleitung,\n
+	+ um weitere Hilfe zu\n
+	+ erhalten.\n
+	+           <\z{803,a0000}>
+     2	= Entweder ist die Nintendo\n
+	+ Wi-Fi Connection mit\n
+	+ starkem Datenverkehr\n
+	+ ausgelastet oder\n
+	+ der Service steht vorüber-\n
+	+ gehend nicht zur\n
+	+ Verfügung. Versuche es\n
+	+ später noch einmal.\n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+           <\z{803,a0000}>
+     3	= Der Nintendo Wi-Fi\n
+	+ Connection Service für\n
+	+ diesen Titel wurde\n
+	+ eingestellt.\n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ eine Liste der Titel\n
+	+ einzusehen,\n
+	+ die Nintendo Wi-Fi\n
+	+ Connection unterstützen.\n
+	+           <\z{803,a0000}>
+     4 [ff,fe/,,,18] = Der Speicher der Wii-\n
+	+ Konsole ist belegt.\n
+	+            <\z{803,a0000}>
+     5 [ff,fe/,,,18] = Der Speicher der Wii-\n
+	+ Konsole ist beschädigt.\n
+	+ Bitte lies die Wii-\n
+	+ Bedienungsanleitung,\n
+	+ um weitere Informationen\n
+	+ zu erhalten.\n
+	+            <\z{803,a0000}>
+     6	= Es kann keine Verbindung\n
+	+ zum Internet hergestellt\n
+	+ werden. Bitte überprüfe die\n
+	+ Einstellungen der\n
+	+ Verbindung in den\n
+	+ Internet-Einstellungen.\n
+	+           <\z{803,a0000}>
+     7	= Es erfolgt keine\n
+	+ Rückmeldung. Entweder\n
+	+ wurde die Verbindung\n
+	+ getrennt oder du wurdest\n
+	+ von der Freundesliste des\n
+	+ Spielers entfernt.\n
+	+           <\z{803,a0000}>
+     8	= Fehler bei der Datenüber-\n
+	+ tragung. Die Verbindung\n
+	+ zur Nintendo Wi-Fi Connec-\n
+	+ tion wurde unterbrochen.\n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+            <\z{803,a0000}>
+     9	= Fehler bei der Datenüber-\n
+	+ tragung. Versuche es bitte\n
+	+ noch einmal.\n
+	+ \n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+           <\z{803,a0000}>
+     a	= Download fehlgeschlagen.\n
+	+ Versuche es bitte noch\n
+	+ einmal.\n
+	+ \n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+           <\z{803,a0000}>
+     b [ff,fe/,,,18] = Ein Fehler ist aufgetreten.\n
+	+ Die Nintendo Wi-Fi\n
+	+ Connection kann nicht\n
+	+ verwendet werden.\n
+	+ Bitte betätige den RESET-\n
+	+ Knopf und versuche es\n
+	+ erneut.\n
+	+ \n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+           <\z{803,a0000}>
+     c	= Fehler bei der Datenüber-\n
+	+ tragung. Die Verbindung\n
+	+ zur Nintendo Wi-Fi Connec-\n
+	+ tion wurde unterbrochen.\n
+	+ Besuche\n
+	+ support.nintendo.com, um\n
+	+ weitere Hilfe zu erhalten.\n
+	+            <\z{803,a0000}>
+     d	= 
+     e	= 
+     f	= 
+    10	= 
+    11	= 
+    12	= 
+    13	= Die Verwendung der\n
+	+ Netzwerkfunktionen ist\n
+	+ eingeschränkt.\n
+	+ \n
+	+ Überprüfe die\n
+	+ Einstellungen der Alters-\n
+	+ beschränkungen in den\n
+	+ Wii-Optionen.
+    14	= 
+    15	= Aufgrund eines Fehlers im\n
+	+ Speicher der Wii-Konsole\n
+	+ ist WiiConnect24 nicht\n
+	+ verfügbar.     <\z{803,b0000}>
+    16	= Es muss ein Update des\n
+	+ Wii-Systems durchgeführt\n
+	+ werden, bevor\n
+	+ WiiConnect24 verwendet\n
+	+ werden kann. Bitte lies die\n
+	+ Wii-Bedienungsanleitung,\n
+	+ um weitere Informationen\n
+	+ zu erhalten.     <\z{803,b0000}>
+    17	= Ein Fehler ist aufgetreten.\n
+	+ WiiConnect24 kann nicht\n
+	+ verwendet werden.\n
+	+ \n
+	+ Bitte betätige den\n
+	+ RESET-Knopf und versuche\n
+	+ es erneut.\n
+	+            <\z{803,b0000}>
+    18	= WiiConnect24 ist im\n
+	+ Moment nicht verfügbar.\n
+	+ Bitte versuche es später\n
+	+ erneut.            <\z{803,b0000}>
+    19	= WiiConnect24 ist zurzeit\n
+	+ ausgeschaltet. Überprüfe\n
+	+ die WiiConnect24-Einstell-\n
+	+ ungen in den Wii-Optionen.\n
+	+ Bitte lies die Wii-\n
+	+ Bedienungsanleitung, um\n
+	+ weitere Informationen zu\n
+	+ erhalten.       <\z{803,b0000}>
+    1a	= Keine Verbindung zum\n
+	+ Internet möglich.\n
+	+ WiiConnect24 ist nicht\n
+	+ verfügbar.\n
+	+ Überprüfe die Verbindung\n
+	+ zum Internet und die\n
+	+ Internet-Einstellungen der\n
+	+ Wii-Konsole.\n
+	+ Bitte lies die Wii-\n
+	+ Bedienungsanleitung, um\n
+	+ weitere Informationen zu\n
+	+ erhalten.         <\z{803,b0000}>
+    1b	= WiiConnect24 ist im\n
+	+ Moment nicht verfügbar.\n
+	+ Bitte versuche es später\n
+	+ erneut.            <\z{803,b0000}>
+    1c	= WiiConnect24 ist im\n
+	+ Moment nicht verfügbar.\n
+	+ Bitte versuche es später\n
+	+ erneut.            <\z{803,b0000}>
+    1d	= Aufgrund eines Fehlers im\n
+	+ Speicher der Wii-Konsole\n
+	+ ist WiiConnect24 nicht\n
+	+ verfügbar.       <\z{803,b0000}>
+    1e	= Ein Fehler ist aufgetreten.\n
+	+ WiiConnect24 kann nicht\n
+	+ verwendet werden.\n
+	+ \n
+	+ Bitte betätige den\n
+	+ RESET-Knopf und versuche\n
+	+ es erneut.\n
+	+            <\z{803,b0000}>
+    1f	= Ein Fehler ist aufgetreten.\n
+	+ WiiConnect24 kann nicht\n
+	+ verwendet werden.\n
+	+            <\z{803,b0000}>
+    20 [0] = 
+    21 [0] = 
+    22 [0] = 
+    23 [0] = 
+    24 [0] = 
+    25 [0] = 
+    26 [0] = 
+    27 [0] = 
+    28 [0] = 
+    29 [0] = 
+    2a [0] = 
+    2b [0] = 
+    2c [0] = 
+    2d [0] = 
+    2e [0] = 
+    2f [0] = 
+    30 [0] = 
+    31 [0] = 
+    32 [0] = 
+
