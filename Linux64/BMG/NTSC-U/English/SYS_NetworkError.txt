@@ -103,24 +103,24 @@
     14	/
     15	= There is a problem with the\n
 	+ Wii system memory, so\n
-	+ WiiConnect24 cannot be\n
+	+ RiiConnect24 cannot be\n
 	+ used.\n
 	+ <\z{803,b0000}>
-    16	= To use WiiConnect24, a\n
+    16	= To use RiiConnect24, a\n
 	+ system update is required.\n
 	+ Refer to the Wii Operations\n
 	+ Manual for details.\n
 	+ <\z{803,b0000}>
-    17	= WiiConnect24 cannot be\n
+    17	= RiiConnect24 cannot be\n
 	+ used because an error has\n
 	+ occurred. Reset and try\n
 	+ again.\n
 	+ <\z{803,b0000}>
-    18	= WiiConnect24 is\n
+    18	= RiiConnect24 is\n
 	+ temporarily unavailable.\n
 	+ Please try again later.\n
 	+ <\z{803,b0000}>
-    19	= The WiiConnect24 setting\n
+    19	= The RiiConnect24 setting\n
 	+ is not turned on. Please\n
 	+ check the settings under\n
 	+ Wii Options. Refer to the\n
@@ -129,31 +129,31 @@
 	+ <\z{803,b0000}>
     1a	= An Internet connection\n
 	+ cannot be established, so\n
-	+ WiiConnect24 cannot be\n
+	+ RiiConnect24 cannot be\n
 	+ used. Check the Internet\n
 	+ settings and connection.\n
 	+ Refer to the Wii Operations\n
 	+ Manual for details.\n
 	+ <\z{803,b0000}>
-    1b	= WiiConnect24 is\n
+    1b	= RiiConnect24 is\n
 	+ temporarily unavailable.\n
 	+ Please try again later.\n
 	+ <\z{803,b0000}>
-    1c	= WiiConnect24 is\n
+    1c	= RiiConnect24 is\n
 	+ temporarily unavailable.\n
 	+ Please try again later.\n
 	+ <\z{803,b0000}>
     1d	= There is a problem with the\n
 	+ Wii system memory, so\n
-	+ WiiConnect24 cannot be\n
+	+ RiiConnect24 cannot be\n
 	+ used.\n
 	+ <\z{803,b0000}>
-    1e	= WiiConnect24 cannot be\n
+    1e	= RiiConnect24 cannot be\n
 	+ used because an error has\n
 	+ occurred. Reset and try\n
 	+ again.\n
 	+ <\z{803,b0000}>
-    1f	= WiiConnect24 cannot be\n
+    1f	= RiiConnect24 cannot be\n
 	+ used because an error has\n
 	+ occurred. Please refer to the\n
 	+ Wii Operations Manual.\n

@@ -414,7 +414,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ Nintendo.\n
+	+ the RiiConnect24 Team.\n
 	+ \z{602,43}Are you interested in using\n
 	+ this feature?\z{606,1} Of course, \z{806,a}you\n
 	+ can always change your\n
