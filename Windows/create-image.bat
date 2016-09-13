@@ -8,7 +8,7 @@ echo This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For 
 echo Extracting...
 wit extract . --DEST ./accf-data/ --wiimmfi --psel=DATA -ovv
 
-cp ./accf-data/disc/header.bin header.bin
+copy /b ./accf-data/disc/header.bin header.bin
 
 version.exe header.bin && wit id6 . > version.txt
 set /p VERSION=<version.txt
