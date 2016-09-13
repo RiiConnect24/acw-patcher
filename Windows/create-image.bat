@@ -6,12 +6,12 @@ echo This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For 
 
 :extract
 echo Extracting...
-wit extract . --DEST ./accf-data/ --wiimmfi --psel=DATA -ovv
+wit extract . --DEST ./accf-data/ --psel=DATA -ovv
 
-copy /b ./accf-data/disc/header.bin header.bin
+copy /b accf-data\disc\header.bin header.bin
 
-version.exe header.bin && wit id6 . > version.txt
-set /p VERSION=<version.txt
+for /f %%i in ('wit id6 *.wbfs') do set ID=%%i
+for /f %%i in ('version.exe') do set VERSION=%ID%%%i
 
 if %VERSION%==RUUE010 (
 	set OFFSET=80474CB8
@@ -92,8 +92,6 @@ mkdir new-image
 wit copy accf-data ./new-image/ --update --psel=data --wiimmfi -ovv
 
 echo Done.
-
-goto commonexit
 
 echo If your patch completed successfully, your WBFS will now be in the "new-image" folder - please copy this to your USB.
 pause
