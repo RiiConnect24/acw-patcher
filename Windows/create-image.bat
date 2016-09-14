@@ -13,6 +13,8 @@ copy /b accf-data\disc\header.bin header.bin
 for /f %%i in ('wit id6 *.wbfs') do set ID=%%i
 for /f %%i in ('version.exe') do set VERSION=%ID%%%i
 
+rm header.bin
+
 if %VERSION%==RUUE010 (
 	set OFFSET=80474CB8
 	set BMG=USA
