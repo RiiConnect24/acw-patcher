@@ -60,9 +60,9 @@ if %BMG%==USA (
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/SPA/NPC_gatekeeperB.txt
 	)
 if %BMG%==JPN (
-	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=../BMGs/JPN/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperB.bmg --patch replace=../BMGs/JPN/NPC_gatekeeperB.txt
-	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=../BMGs/JPN/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
+	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/JPN/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
 	)
 if %BMG%==KOR (
 	wbmgt patch accf-data/files/Script/KOR/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/KOR/NPC_gatekeeperA.txt
