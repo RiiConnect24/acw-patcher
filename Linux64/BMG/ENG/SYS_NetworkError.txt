@@ -1,0 +1,180 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begins with an '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [/,,,18]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,18//,,,1] = SYS_NetworkError.gmm
+     1	= Unable to connect to Wiimmfi.\n
+	+ Check http://wiimmfi.de/error for the error code.\n
+	+           <\z{803,a0000}>
+     2	= Could not connect, because\n
+	+ either Wiimmfi is experiencing\n
+	+ high traffic volumes,\n
+	+ or the service is down. Please\n
+	+ try again later. For help,\n
+	+ check http://wiimmfi.de/error\n
+	+           <\z{803,a0000}>
+     3	= Wiimmfi has been discontinued.\n
+	+           <\z{803,a0000}>
+     4 [ff,fe/,,,18] = There is not enough\n
+	+ available space in Wii\n
+	+ system memory.\n
+	+ \n
+	+ Either turn off the console\n
+	+ or return to the Wii Menu.\n
+	+           <\z{803,a0000}>
+     5 [ff,fe/,,,18] = The Wii system memory has\n
+	+ been corrupted.\n
+	+ \n
+	+ \n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.\n
+	+           <\z{803,a0000}>
+     6	= Unable to connect to the\n
+	+ Internet. Confirm the Internet\n
+	+ settings of the Wii console.\n
+	+           <\z{803,a0000}>
+     7	= There is no response.\n
+	+ Either the player is not\n
+	+ connected to Wiimmfi,\n
+	+ or you have been removed\n
+	+ from the player's friend\n
+	+ roster.\n
+	+           <\z{803,a0000}>
+     8	= Communication error. You\n
+	+ have been disconnected\n
+	+ from Wiimmfi. Try again.\n
+	+ For help, visit\n
+	+ http://wiimmfi.de/error\n
+	+           <\z{803,a0000}>
+     9	= Communication error.\n
+	+ Please try again. For help,\n
+	+ visit http://wiimmfi.de/error\n
+	+           <\z{803,a0000}>
+     a	= Download failed. Please try\n
+	+ again. For help, visit\n
+	+ http://wiimmfi.de/error\n
+	+           <\z{803,a0000}>
+     b [ff,fe/,,,18] = Wiimmfi\n
+	+ cannot be used because an\n
+	+ error has occurred. Reset\n
+	+ and try again.\n
+	+ For help, visit\n
+	+ http://wiimmfi.de/error\n
+	+           <\z{803,a0000}>
+     c	= Communication error. You\n
+	+ have been disconnected\n
+	+ from Wiimmfi. Try again.\n
+	+ For help, visit\n
+	+ http://wiimmfi.de/error
+     d	/
+     e	/
+     f	/
+    10	/
+    11	/
+    12	/
+    13	= Use of network features has\n
+	+ been restricted.\n
+	+ \n
+	+ \n
+	+ Please check the settings\n
+	+ for Parental Controls under\n
+	+ Wii Options.
+    14	/
+    15	= There is a problem with the\n
+	+ Wii system memory, so\n
+	+ RiiConnect24 cannot be\n
+	+ used.\n
+	+ <\z{803,b0000}>
+    16	= To use RiiConnect24, a\n
+	+ system update is required.\n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.\n
+	+ <\z{803,b0000}>
+    17	= RiiConnect24 cannot be\n
+	+ used because an error has\n
+	+ occurred. Reset and try\n
+	+ again.\n
+	+ <\z{803,b0000}>
+    18	= RiiConnect24 is\n
+	+ temporarily unavailable.\n
+	+ Please try again later.\n
+	+ <\z{803,b0000}>
+    19	= The WiiConnect24 setting\n
+	+ is not turned on. Please\n
+	+ check the settings under\n
+	+ Wii Options. Refer to the\n
+	+ Wii Operations Manual for\n
+	+ details.\n
+	+ <\z{803,b0000}>
+    1a	= An Internet connection\n
+	+ cannot be established, so\n
+	+ RiiConnect24 cannot be\n
+	+ used. Check the Internet\n
+	+ settings and connection.\n
+	+ Refer to the Wii Operations\n
+	+ Manual for details.\n
+	+ <\z{803,b0000}>
+    1b	= RiiConnect24 is\n
+	+ temporarily unavailable.\n
+	+ Please try again later.\n
+	+ <\z{803,b0000}>
+    1c	= RiiConnect24 is\n
+	+ temporarily unavailable.\n
+	+ Please try again later.\n
+	+ <\z{803,b0000}>
+    1d	= There is a problem with the\n
+	+ Wii system memory, so\n
+	+ RiiConnect24 cannot be\n
+	+ used.\n
+	+ <\z{803,b0000}>
+    1e	= RiiConnect24 cannot be\n
+	+ used because an error has\n
+	+ occurred. Reset and try\n
+	+ again.\n
+	+ <\z{803,b0000}>
+    1f	= RiiConnect24 cannot be\n
+	+ used because an error has\n
+	+ occurred. Please refer to the\n
+	+ Wii Operations Manual.\n
+	+ <\z{803,b0000}>
+    20 [0] /
+    21 [0] /
+    22 [0] /
+    23 [0] /
+    24 [0] /
+    25 [0] /
+    26 [0] /
+    27 [0] /
+    28 [0] /
+    29 [0] /
+    2a [0] /
+    2b [0] /
+    2c [0] /
+    2d [0] /
+    2e [0] /
+    2f [0] /
+    30 [0] /
+    31 [0] /
+    32 [0] /
+
