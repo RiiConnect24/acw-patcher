@@ -1,0 +1,58 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0	= 
+     1	= 처음이에요!
+     2	= 그만두기
+     3	= 더 읽기
+     4	= 그만 읽기
+     5	= 그만두기
+     6	= 다음
+     7	= 그만두기
+     8	= 대출 상환
+     9	= 저금하기
+     a	= 인출하기
+     b	= 카드 재발급
+     c	= 종료
+     d	= 저장할래!
+     e	= 그만둘래
+     f	= 다른 주민
+    10	= 아무것도 아냐
+    11	= 지워 버릴래
+    12	= 안 지울래
+    13	= 소리 설정
+    14	= 
+    15	= 메뉴 관련 설정
+    16	= RiiConnect24 관련
+    17	= 아무것도 아냐
+    18	= \z{605,5} 마을
+    19	= 다른 마을
+    1a	= 미래의 나
+    1b	= 그만두기
+    1c	= 1층
+    1d	= 2층
+    1e	= 지하실
+    1f	= 그만두기
+

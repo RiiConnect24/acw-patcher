@@ -1,0 +1,58 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0	= SYS_Select.gmm
+     1	= I'm new!
+     2	= Never mind.
+     3	= Read more.
+     4	= Enough!
+     5	= Never mind.
+     6	= Next.
+     7	= Quit.
+     8	= Pay mortgage.
+     9	= Deposit.
+     a	= Withdraw.
+     b	= Reissue card.
+     c	= End.
+     d	= Save
+     e	= Never mind
+     f	= Someone else.
+    10	= Never mind.
+    11	= Erase
+    12	= Cancel
+    13	= Sound settings.
+    14	= Text settings.
+    15	= Menu stuff.
+    16	= RiiConnect24.
+    17	= Never mind.
+    18	= \z{60c,3}\z{605,5}.
+    19	= Other town.
+    1a	= Future self.
+    1b	= Never mind.
+    1c	= First floor.
+    1d	= Second floor.
+    1e	= Basement.
+    1f	= Never mind.
+

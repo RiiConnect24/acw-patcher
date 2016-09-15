@@ -1,0 +1,58 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0	= SYS_Select.gmm
+     1	= Je débute!
+     2	= Oublions ça.
+     3	= En savoir plus.
+     4	= Assez!
+     5	= Oublions ça.
+     6	= Suite.
+     7	= Quitter.
+     8	= Rembourser dette.
+     9	= Faire un dépôt.
+     a	= Retirer.
+     b	= Nouvelle carte.
+     c	= Quitter.
+     d	= Enregistrer
+     e	= Annuler
+     f	= Quelqu'un d'autre.
+    10	= Laisse tomber.
+    11	= Effacer.
+    12	= Garder.
+    13	= Audio.
+    14	= Texte.
+    15	= Menu.
+    16	= RiiConnect24.
+    17	= Rien du tout.
+    18	= \z{60c,3}\z{605,5}.
+    19	= Autre ville.
+    1a	= M\z{e0c,4,6f006e00000061} futur\z{a0c,400000065} moi.
+    1b	= Laisse tomber.
+    1c	= Premier étage.
+    1d	= Deuxième étage.
+    1e	= Sous-sol.
+    1f	= Oublions ça.
+
