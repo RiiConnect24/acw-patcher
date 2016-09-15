@@ -51,43 +51,55 @@ wit dolpatch accf-data/sys/main.dol %OFFSET%=B1E7F92ACACD2034E602C73DF43CCE51573
 
 if %BMG%==USA (
 	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/ENG/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
-	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/FRA/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/FRA/NPC_gatekeeperB.txt
-	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/FRA/SYS_NetworkError.txt
-	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/SPA/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/SPA/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
+	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
+	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
+	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
+	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
+	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
+	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
 	)
 if %BMG%==JPN (
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/JPN/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Bus.bmg --patch replace=BMG/JPN/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
 	)
 if %BMG%==KOR (
 	wbmgt patch accf-data/files/Script/KOR/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/KOR/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/KOR/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/KOR/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_Bus.bmg --patch replace=BMG/KOR/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/KOR/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_Start.bmg --patch replace=BMG/KOR/SYS_Start.txt
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/JPN/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Bus.bmg --patch replace=BMG/JPN/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
 	)
 if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/ENG/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/FRA/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/FRA/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/FRA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/FRA/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Start.bmg --patch replace=BMG/FRA/SYS_Start.txt
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/GER/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/GER/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_Bus.bmg --patch replace=BMG/GER/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/GER/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_Start.bmg --patch replace=BMG/GER/SYS_Start.txt
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/SPA/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/SPA/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/SPA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/SPA/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Start.bmg --patch replace=BMG/SPA/SYS_Start.txt
 	wbmgt patch accf-data/files/Script/ITA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ITA/NPC_gatekeeperA.txt
-	wbmgt patch accf-data/files/Script/ITA/NPC_SP/NPC_gatekeeperB.bmg --patch replace=BMG/ITA/NPC_gatekeeperB.txt
+	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ITA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ITA/SYS_NetworkError.txt
+	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ITA/SYS_Start.txt
 	)
 
 mkdir new-image
