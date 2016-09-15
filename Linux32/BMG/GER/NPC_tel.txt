@@ -1,0 +1,184 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,d//,,,1] = NPC_tel.gmm
+     1	= \z{a08,c00020014}
+     2	= \z{e08,12,5000300030003}
+     3 [/,,,f] = Huch!\z{606,1} Wie es aussieht,\n
+	+ kannst du das Telefon\n
+	+ gerade nicht verwenden\z{806,5}.\z{806,5}.\z{806,5}.
+     4	= Verstehe.\z{606,1} In Ordnung,\z{806,a}\n
+	+ mach's gut!
+     5	= Hey, \z{605,0}!\z{606,1} Was kann\n
+	+ ich für dich tun?
+     6	= Noch etwas?
+     7	= Wie sollen die Charaktere\n
+	+ sprechen?\z{c07,1000800080008}\n
+	+ Animalisisch.\n
+	+ Bebebisisch.\n
+	+ Lautlos!
+     8	= \z{8ff,200}\z{1204,101005600,4f00490043004500} \z{8ff,0}hört sich so\n
+	+ an\z{806,5}.\z{806,5}.\z{806,5}. In Ordnung?\z{a07,400060009}\n
+	+ In Ordnung.\n
+	+ Nein!
+     9 [,7] = Gut, dann also noch mal\z{806,5}.\z{806,5}.\z{806,5}.
+     a	= How confident are you in\n
+	+ reading \z{8ff,200}Kanji\z{8ff,0}? Would you\n
+	+ prefer \z{8ff,200}Hiragana\z{8ff,0} only?\z{a07,c000b}\n
+	+ Kanji is fine.\n
+	+ Hiragana only.
+     b [,d] = OK! We'll use Kanji then!
+     c [,d] = OK! Hiragana only it is!
+     d	= Übrigens\z{806,5}.\z{806,5}.\z{806,5}. Wie würdest du\n
+	+ den Text gerne eingeben?\z{a07,e000f}\n
+	+ Tastatur-Stil.\n
+	+ Handy-Stil.
+     e [,6] = \z{8ff,200}Tastatur-Stil\z{8ff,0}. Alles klar!
+     f [,6] = \z{8ff,200}Handy-Stil\z{8ff,0}. Alles klar!
+    10	= Sollen Erläuterungen für\n
+	+ Menü-Symbole und Fenster\n
+	+ angezeigt werden?\z{a07,400110012}\n
+	+ Ja!\n
+	+ Nein.
+    11 [,6] = Gut, wird gemacht.\z{606,1} Du\n
+	+ solltest sie jetzt sehen\n
+	+ können!
+    12 [,6] = Alles klar, kein Bedarf.\z{606,1} Sie\n
+	+ müssten jetzt ausgeblendet\n
+	+ sein.
+    13 [/,,,d] = 
+    14 [/,,,f] = Ein fremdes Telefon zu\n
+	+ verwenden, ohne vorher zu\n
+	+ fragen, ist ziemlich\n
+	+ unhöflich\z{806,5}.\z{806,5}.\z{806,5}.
+    15	= Gerne!\z{606,1} Diese Informationen\n
+	+ sind schließlich wichtig! Ich\n
+	+ wiederhole sie für dich, so\n
+	+ oft du möchtest. \n
+	+ \z{602,0}In Ordnung\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ In diesem Spiel\z{806,5} kannst du\n
+	+ mit den Städten deiner\n
+	+ Freunde kommunizieren.\n
+	+ Dazu musst du dich über\n
+	+ \z{8ff,200}RiiConnect24\z{8ff,0} mit \z{8ff,100}anderen\n
+	+ Wii-Systemen \z{8ff,0}verbinden.\n
+	+ \n
+	+ Mit dieser Funktion kannst\n
+	+ du Freunden, die auf deiner\n
+	+ \z{8ff,200}Freundesliste \z{8ff,0}registriert\n
+	+ sind, Briefe schreiben.\n
+	+ Oder ihnen Nachrichten\n
+	+ an ihre \z{8ff,200}Wii-Pinnwände\n
+	+ \z{8ff,0}schicken, wenn ihre \z{8ff,200}Wii\z{8ff,0}-\n
+	+ \z{8ff,200}Nummern \z{8ff,0}registriert sind.\n
+	+ Es kann auch passieren,\z{806,a}\n
+	+ dass die Bewohner deiner\n
+	+ befreundeten Städte in\n
+	+ deine Stadt umziehen\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Oder sie erzählen dir\n
+	+ Geschichten aus den\n
+	+ Städten deiner Freunde!\n
+	+ \n
+	+ Auch wenn ihr nicht spielt,\z{806,a}\n
+	+ ist es so, als würden eure\n
+	+ Städte weiterhin in\n
+	+ Verbindung bleiben!\n
+	+ Nicht nur das - \z{806,a}du kannst\n
+	+ außerdem regelmäßig\n
+	+ Briefe und Geschenke von\n
+	+ Nintendo erhalten.\n
+	+ So, \z{806,a}jetzt weißt du über\n
+	+ alle Zusatzfunktionen\n
+	+ Bescheid\z{806,5}.\z{806,5}.\z{806,5}.
+    16 [,18/4//,,,1] = Oh,\z{806,f} du kannst deine\n
+	+ Einstellungen nicht ändern,\n
+	+ wenn dein \z{8ff,200}RiiConnect24\n
+	+ \z{8ff,0}ausgeschaltet ist\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,b}Warum überprüfst du nicht\n
+	+ einmal die \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen in den\n
+	+ Wii-Optionen?
+    17 [,18/4//,,,1] = Oh, \z{806,f}mit eingeschränkten\n
+	+ Netzwerkeinstellungen\n
+	+ kannst du diese Ein-\n
+	+ stellungen nicht ändern\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Überprüfe bitte die\n
+	+ Einstellungen der \n
+	+ \z{8ff,200}Altersbeschränkungen\n
+	+ \z{8ff,0}in den Wii-Optionen.
+    18	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}EIN\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,1001c001c0015}\n
+	+ So lassen!\n
+	+ Ausschalten!\n
+	+ Erklären, bitte!
+    19	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}AUS\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,1001c001c0015}\n
+	+ Einschalten!\n
+	+ So lassen!\n
+	+ Erklären, bitte!
+    1a	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}EIN\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,1001c001c0015}\n
+	+ So lassen!\n
+	+ Ausschalten!\n
+	+ Erklären, bitte!
+    1b	= Deine \z{8ff,200}RiiConnect24\z{8ff,0}-\n
+	+ Einstellungen sind im\n
+	+ Moment auf \z{8ff,200}AUS\z{8ff,0} gestellt.\z{806,a}\n
+	+ Was willst du tun?\z{c07,1001c001c0015}\n
+	+ Einschalten!\n
+	+ So lassen!\n
+	+ Erklären, bitte!
+    1c [,6] = In Ordnung!\z{606,1} Wie du willst!
+    1d [,23] = Hmmm, \z{806,a}du bist zufrieden\n
+	+ damit?\z{806,f} In Ordnung!\n
+	+ Dann lassen wir besser\n
+	+ alles so, wie es ist.\040
+    1e	= \z{e08,12,1f000300030003}
+    1f	= Hallo!\z{606,1} Was kann ich für\n
+	+ dich tun,\z{806,5} \z{605,0}?\z{c07,5002000210004}\n
+	+ Spieleinstellungen.\n
+	+ Flaggen-Design.\n
+	+ Nichts.
+    20	= Alles klar, du willst die\n
+	+ Spieleinstellungen ändern!\z{806,f}\n
+	+ Was denn genau?
+    21 [/,,12] = Oh,\z{806,a} du willst also dein\n
+	+ Flaggen-Design ändern,\n
+	+ was?\z{606,1} Wie soll es denn\n
+	+ aussehen?
+    22	= Alles klar!\z{606,1} Keine Sorge, das\n
+	+ bekomme ich hin.
+    23	= So, kann ich noch etwas für\n
+	+ dich tun?\z{c07,5002000210004}\n
+	+ Spieleinstellungen.\n
+	+ Flaggen-Design.\n
+	+ Nichts.
+

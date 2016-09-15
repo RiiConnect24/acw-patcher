@@ -1,0 +1,964 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = NPC_periko.gmm
+     1 [/14] = This is the window for the \n
+	+ \z{8ff,800}civic center\z{8ff,0}.\z{806,14} \z{602,b}What can I help\n
+	+ you with?\z{1007,70007,40000003b0002}\n
+	+ The environment!\n
+	+ Town tunes!\n
+	+ Town fund!\n
+	+ Got a problem!\n
+	+ Nothing, really.
+     2	= Oh, OK.\z{806,f} \z{602,14}Well, if you ever need\n
+	+ something, please feel free\n
+	+ to stop by.
+     3 [/b] = Now,\z{806,5} is there anything else\n
+	+ I can help you with?\z{1007,70007,40000003b0002}\n
+	+ The environment!\n
+	+ Town tunes!\n
+	+ Town fund!\n
+	+ I've got a problem!\n
+	+ Nothing.
+     4 [/14,,10] = So, you're going to create\n
+	+ a new town tune?\z{606,1} Well,\z{806,5} I'm\n
+	+ sure you'll whip up a real\n
+	+ toe tapper.
+     5 [,3/14] = Wonderful!\z{806,f} Your new town\n
+	+ tune has been successfully\n
+	+ saved. \z{600,3}
+     6 [,3] = So, you want to give up on\n
+	+ changing the town tune\n
+	+ after all?\z{806,a} All right then.
+     7	= All right then.\z{806,f} Let me read\n
+	+ you some of the comments\n
+	+ we've received from the\n
+	+ townsfolk here.
+     8 [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Yes, it seems this\n
+	+ problem might be a result of\n
+	+ having too many trees in\n
+	+ some areas.
+     9 [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Maybe people are\n
+	+ sending in these comments\n
+	+ because there's not enough\n
+	+ greenery in some areas.
+     a [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} I guess my hunch\n
+	+ was right.\z{806,5} All those weeds\n
+	+ around town are really\n
+	+ stirring everyone up.
+     b [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm.\z{806,5}.\z{806,5}.\z{806,5} It sounds\z{806,a} like the\n
+	+ problem is that there's too\n
+	+ much stuff on the ground.\n
+     c [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} It sounds to me
+	+  like\n
+	+ the problem is all the garbage\n
+	+ lying around.
+     d [,3] = .\z{806,3}.\z{806,3}.\z{806,3}And that's the report.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,e}Hmm\z{806,5}.\z{806,5}.\z{806,5}. \z{806,f}You know, I think\n
+	+ the problem is there are\n
+	+ those gross flowers that\n
+	+ keep showing up.\n
+	+ \z{602,16}You really have to work\n
+	+ daily to prevent eyesores\n
+	+ like that from sprouting.
+     e [,3/14] = Everyone's got to work\n
+	+ together \z{806,a}so we can make\n
+	+ \z{605,5} shine.\z{806,a} Make\n
+	+ sure to do your part.
+     f [,3/14] = Here's hoping \z{605,5}\n
+	+ stays a great place to live\z{806,5}\n
+	+ for years to come.
+    10 [,3/14] = I feel like the luckiest\n
+	+ pelican in the world\z{806,5} to be\n
+	+ able to work in a wonderful\n
+	+ town like \z{605,5}.
+    11 [,12/c] = \z{806,a}Oh,\z{806,5} \z{605,0},\z{806,f} \z{602,14}I have\n
+	+ some happy news for you\n
+	+ today!\n
+	+ \n
+	+ \z{602,0}Because of \z{605,5}'s\n
+	+ lovely,\z{806,a} squeaky-green\n
+	+ environment...\n
+	+ \n
+	+ We've been chosen as a top\z{806,a}\n
+	+ contributor to world\n
+	+ environment upkeep!\n
+	+ \n
+	+ \z{602,a}And \z{605,5} has even\n
+	+ received a special award\n
+	+ from a famous\n
+	+ environmental group!\n
+	+ \z{602,14}There's not a doubt in my\n
+	+ mind that the sweat and\n
+	+ work of all our townsfolk is\n
+	+ what made this possible.
+    12 [,13/14,,4] = We've received a bunch of\n
+	+ commemorative gifts to\n
+	+ celebrate the honor.\z{806,a} And\n
+	+ here's one for you!
+    13 [/14] = It's a real privilege to own\n
+	+ a \z{8ff,700}golden can\z{8ff,0} like that one,\z{806,5}\n
+	+ so please be sure to take\n
+	+ good care of it,\z{806,a} OK?\n
+	+ \z{602,14}Thanks again for your help,\z{806,5}\n
+	+ and keep up the good work!
+    14 [/,,11] = We are always accepting\n
+	+ donations to help make \n
+	+ \z{605,5} the best place\n
+	+ it can be.\n
+	+ \z{602,14}So, please give generously!
+    15 [/14,,11] = Please help \z{605,5}\n
+	+ become an even better \n
+	+ place by donating to the\n
+	+ \z{605,5} Fund!
+    16 [,3] = Oh, that's perfectly fine.\z{606,1}\n
+	+ After all, donations are by\n
+	+ no means mandatory.
+    17 [,3/14] = Thank you for supporting\n
+	+ our cause!
+    18	= With your help, we have\n
+	+ quite a few Bells,\z{806,a} \z{602,a}which\n
+	+ we'll be using to build a\n
+	+ brand-new \z{8ff,800}bridge\z{8ff,0}!\n
+	+ \z{602,14}We're currently conducting\n
+	+ a survey to decide where\n
+	+ we'll put the \z{8ff,800}bridge\z{8ff,0}.\z{806,a} Please\n
+	+ let us know what you think!
+    19	= We're currently conducting\n
+	+ a survey here to decide\n
+	+ where the new \z{8ff,800}bridge\n
+	+ \z{8ff,0}should be built!\n
+	+ \z{602,14}Let us know where you'd\n
+	+ like to see the \z{8ff,800}bridge \z{8ff,0}go.
+    1a [,3] = Understood.\z{806,f} I'll make sure\n
+	+ your opinion is taken into\n
+	+ account, \z{605,0}.\n
+	+ \n
+	+ \z{602,0}Remember,\z{806,f} the proposal\n
+	+ with the most support wins.\n
+	+ \n
+	+ \n
+	+ \z{602,16}So, if things don't turn out\n
+	+ as you would have liked,\z{806,5}\n
+	+ well,\z{806,5} sorry!
+    1b [,3/4] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,b}You're going to
+	+  pass\n
+	+ this time? \n
+	+ \n
+	+ \n
+	+ \z{602,14}Well,\z{806,5} if the mood strikes\n
+	+ you,\z{806,5} feel free to come back\n
+	+ and submit your opinion\n
+	+ before the survey ends.
+    1c [,3] = Right now,\z{806,5} we're moving\n
+	+ forward with our plan to\n
+	+ build the new \z{8ff,800}bridge\z{8ff,0}.\n
+	+ \n
+	+ I'm sure it will make life in\n
+	+ this great town of ours\n
+	+ even better,\z{806,a} \z{602,14}so please look\n
+	+ forward to its completion!
+    1d	= The town has decided to\n
+	+ use your generous Bell\n
+	+ donations\z{806,a} \z{602,a}to build a\n
+	+ \z{8ff,800}lighthouse \z{8ff,0}or \z{8ff,800}windmill\z{8ff,0}.\n
+	+ \z{602,14}We're conducting a survey\n
+	+ right now to decide which\n
+	+ proposal to go with.\z{806,a} Do\n
+	+ let us know what you think!\z{c07,5001f00200021}\n
+	+ Lighthouse!\n
+	+ Windmill!\n
+	+ I will later!
+    1e	= We're conducting a survey\n
+	+ to decide whether we will\n
+	+ build a \z{8ff,800}windmill\z{806,a} \z{8ff,0}or\n
+	+ \z{8ff,800}lighthouse\z{8ff,0} with town funds.\n
+	+ Please\z{806,a}\z{602,14} share your opinion\n
+	+ with us on this very\n
+	+ important matter!\z{c07,5001f00200021}\n
+	+ Lighthouse!\n
+	+ Windmill!\n
+	+ I will later!
+    1f [,3] = One person for a new\n
+	+ \z{8ff,800}lighthouse\z{8ff,0}.\z{602,14}\z{806,f} You got it!\z{606,1}
+	+  \z{602,0}I'll\n
+	+ make sure your voice is\n
+	+ heard, \z{605,0}.\n
+	+ \z{602,0}The proposal with the most\n
+	+ support wins,\z{602,16} so if things\n
+	+ don't turn out as you would\n
+	+ have liked,\z{806,5} well,\z{806,5} sorry!
+    20 [,3] = One person for a new\n
+	+ \z{8ff,800}windmill\z{8ff,0}.\z{602,14}\z{806,f} You got it!\z{606,1} 
+	+ \z{602,0}I'll\n
+	+ make sure your voice is\n
+	+ heard, \z{605,0}.\n
+	+ \z{602,0}The proposal with the most\n
+	+ support wins,\z{602,16} so if things\n
+	+ don't turn out as you would\n
+	+ have liked,\z{806,5} well,\z{806,5} sorry!
+    21 [,3] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,b}You're going to
+	+  pass\n
+	+ this time? \n
+	+ \n
+	+ \n
+	+ \z{602,14}Well,\z{806,5} if the mood strikes\n
+	+ you,\z{806,5} feel free to come back\n
+	+ and submit your opinion\n
+	+ before the survey ends.
+    22 [,3] = We're working around the\n
+	+ clock to put a new\n
+	+ \z{8ff,800}lighthouse \z{8ff,0}or \z{8ff,800}windmill \z{8ff,0}here\n
+	+ in town.\n
+	+ The new addition will no\n
+	+ doubt do wonders for the\n
+	+ scenic beauty of our town!\z{806,a}\n
+	+ \z{602,14}Please look forward to it!
+    23	= All the great donations we\n
+	+ received have left us with\n
+	+ extra Bells that we need to\n
+	+ think about how to spend.\n
+	+ For example, we could turn\n
+	+ the town\z{8ff,800}\z{806,a} lighthouse\z{8ff,0} into a\n
+	+ \z{8ff,800}windmill\z{8ff,0}.\z{602,b} What do you\n
+	+ think about that?\z{a07,250026}\n
+	+ Keep it as is!\n
+	+ Yay, windmill!
+    24	= All the great donations we\n
+	+ received have left us with\n
+	+ extra Bells that we need to\n
+	+ think about how to spend.\n
+	+ For example, we could turn\n
+	+ the town\z{8ff,800}\z{806,a} windmill\z{8ff,0} into a\n
+	+ \z{8ff,800}lighthouse\z{8ff,0}.\z{602,b} What do you\n
+	+ think about that?\z{a07,250026}\n
+	+ Keep it as is!\n
+	+ Yay, lighthouse!
+    25 [,3] = OK, I got it.\z{806,f} \z{602,14}Feel free to\n
+	+ come by and share your\n
+	+ opinion whenever you wish.
+    26 [,3/4] = Oh,\z{806,a} I see!\z{606,1} \z{602,14}We'll be sure to\n
+	+ think the matter over long\n
+	+ and hard.
+    27 [,3] = Right now,\z{806,5} the town is\n
+	+ considering converting our\n
+	+ \z{8ff,800}lighthouse \z{8ff,0}into a nice, new\n
+	+ \z{8ff,800}windmill\z{8ff,0}.\n
+	+ I'm not sure what we're\n
+	+ going to end up doing,\z{806,a}\z{602,14} but \n
+	+ look forward to a decision\n
+	+ before too long!
+    28 [,3] = Right now,\z{806,5} the town is\n
+	+ considering converting our\n
+	+ \z{8ff,800}windmill \z{8ff,0}into a nice new\n
+	+ \z{8ff,800}lighthouse\z{8ff,0}.\n
+	+ I'm not sure what we're\n
+	+ going to end up doing,\z{806,a}\z{602,14} but \n
+	+ look forward to a decision\n
+	+ before too long!
+    29	= Right now, we're curious to\n
+	+ find out what people think\n
+	+ about changing the town\z{806,a}\n
+	+ \z{8ff,800}lighthouse \z{8ff,0}to a \z{8ff,800}windmill\z{8ff,0}.\n
+	+ Are you for it?\z{806,a} Against it?\z{806,a}\n
+	+ Please let us know where\n
+	+ you stand on the issue!\z{c07,5002b002c002d}\n
+	+ It's fine now!\n
+	+ Yay, windmill!\n
+	+ I will later.
+    2a	= Right now, we're curious to\n
+	+ find out what people think\n
+	+ about changing the town\z{806,a}\n
+	+ \z{8ff,800}windmill \z{8ff,0}to a \z{8ff,800}lighthouse\z{8ff,0}.\n
+	+ Are you for it?\z{806,a} Against it?\z{806,a}\n
+	+ Please let us know where\n
+	+ you stand on the issue!\z{c07,5002b002c002d}\n
+	+ It's fine now!\n
+	+ Yay, lighthouse!\n
+	+ I will later.
+    2b [,3] = All right, \z{605,0}.\z{806,f} It\n
+	+ seems safe to say that you\n
+	+ are voting against doing a\n
+	+ conversion\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,0}The proposal with the most\n
+	+ support wins, \z{602,16}so if things\n
+	+ don't turn out as you would\n
+	+ have liked,\z{806,5} well,\z{806,5} sorry!
+    2c [,3] = OK then, \z{806,a}\z{605,0}, I'll\n
+	+ put you down as for the\n
+	+ conversion of our existing\n
+	+ building\z{806,f}.\z{806,5}.\z{806,5}.\n
+	+ \z{602,0}The proposal with the most\n
+	+ support wins, \z{602,16}so if things\n
+	+ don't turn out as you would\n
+	+ have liked,\z{806,5} well,\z{806,5} sorry!
+    2d [,3] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,b}Are you going to
+	+  pass\n
+	+ this time?\n
+	+ \n
+	+ \n
+	+ \z{602,14}Well,\z{806,a} you can always come\n
+	+ back and let us know your\n
+	+ opinion before the survey\n
+	+ ends.
+    2e [,3] = The town has decided to\n
+	+ use your generous Bell\n
+	+ donations\z{806,a} \z{602,a}to build a lovely\n
+	+ \z{8ff,800}fountain\z{8ff,0}.\n
+	+ \z{602,14}Construction should be\n
+	+ complete before too long\n
+	+ now,\z{806,a} so please keep an eye\n
+	+ out for it!
+    2f [,3/14//,,,1] = Thank you so much for your\n
+	+ cooperation!
+    30 [,3/14//,,,1] = We thank you, \z{605,0},\n
+	+ for your generosity\z{806,a} and\n
+	+ kindness.
+    31 [///,,,1] = 
+    32 [///,,,1] = 
+    33 [/14] = Welcome.\z{806,a} This is the\n
+	+ \z{605,5} \z{8ff,800}town hall\z{8ff,0}!\n
+	+ \n
+	+ \n
+	+ \z{602,0}Services here are only for\n
+	+ town residents,\z{806,5} but the\n
+	+ \z{8ff,800}post office\z{8ff,0},\z{806,5} located one\n
+	+ window over,\z{806,5} is open to all.
+    34 [///,,,1] = 
+    35 [///,,,1] = 
+    36 [///,,,1] = 
+    37 [///,,,1] = 
+    38 [///,,,1] = 
+    39 [///,,,1] = 
+    3a [///,,,1] = 
+    3b	= \z{e08,12,48003c003c003c}
+    3c [,3/16] = Oh,\z{806,a} I'm very sorry,\n
+	+ \z{605,0}.\n
+	+ \n
+	+ \n
+	+ As you might have noticed,\n
+	+ we have a visitor in our\n
+	+ town right now.\n
+	+ \n
+	+ If you have a problem\n
+	+ you'd like to talk about,\n
+	+ would you mind coming by\n
+	+ after our guest leaves?
+    3d [/4] = Goodness!\z{606,1} \z{602,16}Who in town are\n
+	+ you having a problem with?
+    3e [,3/14] = Oh, nothing's the matter \n
+	+ then?\z{806,f} Whew, that's a great\n
+	+ relief to hear.
+    3f	= Who's causing trouble?
+    40	= What seems to be the\n
+	+ problem with \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0}?
+	+ \z{e07,6,42004400460041}\n
+	+ Rude!\n
+	+ Slobby!\n
+	+ Weird letters!\n
+	+ No problem!
+    41 [,3/b] = Oh,\z{806,a} is that so?\z{606,1} \z{602,14}All right.\z{806,a}\n
+	+ But don't hesitate to come\n
+	+ by if you ever have a\n
+	+ problem.
+    42 [/16] = I see.\z{806,a} So, \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} has\n
+	+ been a bit rude then?\n
+	+ \n
+	+ \n
+	+ \z{602,b}Would you like me to have\n
+	+ a word with \032‌\005
+    43 [,3] = All right.\z{806,a} I'll make sure to\n
+	+ talk to \z{806,a}\z{8ff,600}\z{e04,1,4e0050004300} \z{8ff,0}about\n
+	+ how \z{1e0c,5,680065000000,7300680065000000,6e0075006c006c00} speaks to o
+	+ thers.
+    44 [/16] = I see.\z{806,a} So, \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} has\n
+	+ offensive taste in clothing,\n
+	+ does \z{1e0c,5,680065000000,7300680065000000,6e0075006c006c00}?\n
+	+ \n
+	+ \z{602,b}Would you like me to have\n
+	+ a word with \032‌\005
+    45 [,3] = Very well.\z{806,a} I'll make sure to\n
+	+ talk to \z{806,a}\z{8ff,600}\z{e04,1,4e0050004300} \z{8ff,0}about\n
+	+ what \z{1e0c,5,680065000000,7300680065000000,6e0075006c006c00} wears
+	+  around town.
+    46 [/16] = I see.\z{806,a} So, \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} has\n
+	+ been showing people\n
+	+ unpleasant letters?\n
+	+ \n
+	+ \z{602,b}Would you like me to have\n
+	+ a word with \032‌\005
+    47 [,3] = Very well.\z{806,a} I'll make sure to\n
+	+ chat with \z{8ff,600}\z{806,a}\z{e04,1,4e0050004300} \z{8ff,0}about\n
+	+ carrying around unpleasant\n
+	+ letters.
+    48	= \z{602,16}Well,\z{806,f} please tell me what's\n
+	+ been troubling you.\z{c07,5003d0049003e}\n
+	+ Residents.\n
+	+ I'm locked out!\n
+	+ Nothing.
+    49	= \z{602,2}What?!\z{606,1} Oh, my!\z{806,a} That IS quite\n
+	+ troubling\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \z{602,16}Could it be that\z{806,f} you've filled\n
+	+ your house with so much stuff\n
+	+ that you have no room left\n
+	+ to walk through?\n
+	+ \z{602,e}Well,\z{806,a} though I can't really say\n
+	+ that this is the ideal solution\n
+	+ for everyone\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \z{602,16}We might be able to help you\z{806,a}\n
+	+ by collecting those things that\n
+	+ you no longer need in the\n
+	+ \z{8ff,200}recycling bin\z{8ff,0}.\n
+	+ However, \z{806,a}we would have to\n
+	+ dispose of any pieces that\n
+	+ don't fit then and there.\n
+	+ \n
+	+ If you're all right with that,\n
+	+ we can certainly help you.\z{806,f}\n
+	+ Would you like to do that?\z{a07,4004b004a}\n
+	+ Yes, please!\n
+	+ No, thanks.
+    4a [,3] = Yep,\z{806,a} that's not really my\n
+	+ preferred way of doing things\n
+	+ either\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ But if you really can't get into\n
+	+ your house,\z{806,a} there's not much\n
+	+ more we can do, so please tell\n
+	+ us if you change your mind!
+    4b	= \z{602,1c}It's not ideal, but\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}
+	+  Well, it's\n
+	+ really the only thing you can\n
+	+ do if you can't get into your\n
+	+ house.\n
+	+ \z{602,16}So,\z{806,a} which room would you\n
+	+ like us to clear out for you?
+    4c [,4f] = Let me make sure I've got this\n
+	+ right.\z{606,1} You'd like us to collect\n
+	+ all the\z{806,a} furniture and items\n
+	+ on the \z{8ff,200}first floor\z{8ff,0},\z{806,a}\z{602,b} right?
+    4d [,4f] = Let me make sure I've got this\n
+	+ right.\z{606,1} You'd like us to collect\n
+	+ all the\z{806,a} furniture and items\n
+	+ on the \z{8ff,200}second floor\z{8ff,0},\z{806,a}\z{602,b} right?
+    4e [,4f] = Let me make sure I've got this\n
+	+ right.\z{606,1} You'd like us to collect\n
+	+ all the\z{806,a} furniture and items\n
+	+ in the \z{8ff,200}basement\z{8ff,0},\z{806,a}\z{602,b} right?
+    4f	= \z{602,16}Just so we're on the same\n
+	+ page, I'll say this just one\n
+	+ more time\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ We will gather all of these\n
+	+ items and place them in the\n
+	+ \z{8ff,200}recycling bin\z{8ff,0}.\n
+	+ \n
+	+ However, as for those items\n
+	+ that won't fit,\z{806,f} we will dispose\n
+	+ of them then and there.\n
+	+ \n
+	+ Are you absolutely sure that\n
+	+ you want us to take all of\n
+	+ these items for you?\z{a07,40050004a}\n
+	+ Yes, please!\n
+	+ No, thanks...
+    50 [,3] = Got it.\z{606,1} Well then, \z{806,f}I'll take care\n
+	+ of that right away.\z{806,f} It should\n
+	+ be done by the time you get\n
+	+ home.\n
+	+ \z{602,16}And I hope that you make an\n
+	+ effort to organize your things\n
+	+ more carefully\z{806,f} so that we\n
+	+ don't have to do this again.
+    51 [/4] = Hello there, \z{605,0}.\z{606,1}\n
+	+ \z{602,0}Tell me,\z{806,f}\z{602,b} have you already\n
+	+ seen the \z{8ff,800}bridge \z{8ff,0}we built\n
+	+ with your donations?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ splendid \z{8ff,800}bridge \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    52 [/4] = Hello there, \z{605,0}.\z{606,1}\n
+	+ \z{602,0}Tell me,\z{806,f}\z{602,b} have you already\n
+	+ seen the \z{8ff,800}fountain \z{8ff,0}we built\n
+	+ by the \z{8ff,800}gate\z{8ff,0}?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ great \z{8ff,800}fountain \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    53 [/4] = Hi there, \z{605,0}.\z{606,1} \z{602,0}Tell\n
+	+ me,\z{806,f}\z{602,b} have you already seen\n
+	+ the \z{8ff,800}lighthouse \z{8ff,0}we built on\n
+	+ the beach?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ nice \z{8ff,800}lighthouse \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    54 [/4] = Hi there, \z{605,0}.\z{606,1} \z{602,0}Tell\n
+	+ me,\z{806,f}\z{602,b} have you already seen\n
+	+ the \z{8ff,800}windmill \z{8ff,0}we built down\n
+	+ by the sea?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ great \z{8ff,800}windmill \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    55 [/4] = Hi there, \z{605,0}.\z{606,1} \z{602,0}Tell\n
+	+ me,\z{806,f}\z{602,b} have you already seen\n
+	+ the \z{8ff,800}lighthouse \z{8ff,0}we built on\n
+	+ the beach?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ nice \z{8ff,800}lighthouse \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    56 [/4] = Hi there, \z{605,0}.\z{606,1} \z{602,0}Tell\n
+	+ me,\z{806,f}\z{602,b} have you already seen\n
+	+ the \z{8ff,800}windmill \z{8ff,0}we built down\n
+	+ by the sea?\n
+	+ \z{602,14}There's no way the town\n
+	+ could have afforded such a\n
+	+ great \z{8ff,800}windmill \z{8ff,0}without the\n
+	+ support of people like you! \n
+	+ I sure hope we can count\n
+	+ on you to continue to\n
+	+ support the grand town of\n
+	+ \z{605,5}. \n
+	+ \z{602,0}Now,\z{806,f} back to business\z{806,5}.\z{806,5}.\z{806,5}.
+    57 [///,,,1] = 
+    58 [///,,,1] = 
+    59 [///,,,1] = 
+    5a	= 
+    5b	= Would you like to send a\n
+	+ message to your own\z{8ff,200} Wii\n
+	+ Message Board\z{8ff,0}?\z{c07,50000005c0061}\n
+	+ Yeah!\n
+	+ Where am I?\n
+	+ Never mind.
+    5c	= From here, you can send a\n
+	+ message to the \z{8ff,200}Wii Message\n
+	+ Board\z{8ff,0} of a \z{8ff,100}Wii console\z{8ff,0}.\n
+	+ \n
+	+ \z{602,14}You can even \z{806,a}attach\n
+	+ photos to these messages too!\n
+	+ \n
+	+ \n
+	+ So,\z{806,14} \z{602,b}would you like to send\n
+	+ a message?\z{a07,400000061}\n
+	+ Yeah!\n
+	+ Never mind.
+    5d	= Come back anytime!
+    5e	= \z{606,19}
+    5f	= \z{606,18}
+    60	= \z{606,17}
+    61	= \z{a08,c00620068}
+    62	= \z{e08,12,67006800680068}
+    63	= \z{e08,12,65006600660066}
+    64	= \z{a08,c00630066}
+    65 [/14] = This is the town \z{8ff,800}post office\z{8ff,0}.\z{806,14}\n
+	+ \z{602,b}What can I help you with?\z{e07,6,72000000600002}\n
+	+ Send mail.\n
+	+ Wii Message Board.\n
+	+ Save mail.\n
+	+ Never mind.
+    66 [/14] = This is the town \z{8ff,800}post\n
+	+ office\z{8ff,0}.\z{806,14} \z{602,b}What would you\n
+	+ like to do?\z{c07,5007200000002}\n
+	+ Send mail.\n
+	+ Wii Message Board.\n
+	+ Never mind.
+    67	= Is there\z{806,5} anything else I can\n
+	+ help you with?\z{e07,6,72000000600002}\n
+	+ Send mail.\n
+	+ Wii Message Board.\n
+	+ Save mail.\n
+	+ Never mind.
+    68	= Is there\z{806,5} anything else I\n
+	+ can help you with?\z{c07,5007200000002}\n
+	+ Send mail.\n
+	+ Wii Message Board.\n
+	+ Never mind.
+    69 [,61] = Okeydokey,\z{806,5} I'll go ahead and\n
+	+ take care of that for you.
+    6a [,6b/,,,14//,,,1] = 
+    6b [,61///,,,1] = 
+    6c [,61/14] = OK,\z{806,f} you got it.
+    6d [,61/16] = Oh, I'm terribly sorry.\n
+	+ \n
+	+ \n
+	+ \n
+	+ We received a great number\n
+	+ of messages today, and I'm\n
+	+ afraid we're done for the\n
+	+ day.\z{806,a} Please try tomorrow.
+    6e	= Would you like me to add a\n
+	+ photo to this message?\z{a07,400920092}\n
+	+ Yes, please!\n
+	+ No, thanks.
+    6f [,61] = Thanks for waiting!\z{606,1} I'll send\n
+	+ off this message momentarily.
+    70 [/14] = So, you'd like to send a\n
+	+ message to the \z{8ff,200}Wii Message\n
+	+ Board\z{8ff,0}, correct?\n
+	+ \n
+	+ You can also send a message\n
+	+ to a friend's \z{8ff,200}Wii Message\n
+	+ Board\z{8ff,0}, cell phone, or e-mail\n
+	+ address.\n
+	+ All right,\z{806,a}\z{602,b} who are you sending\n
+	+ the message to?\z{e07,6,8d0061}\n
+	+ Me!\n
+	+ A friend.\n
+	+ The what?\n
+	+ Never mind.
+    71 [/b] = Oh,\z{806,5} so you're not going to\n
+	+ send a message then?\z{a07,400000061}\n
+	+ I'll send one.\n
+	+ No, I won't.
+    72	= So, where would you like to\n
+	+ send your mail?
+    73 [/b] = Do you have any other letters\n
+	+ you need to send out?\z{a07,400720074}\n
+	+ Yes.\n
+	+ Nope.
+    74 [/14] = Thank you for visiting, and\n
+	+ please come again!
+    75 [/b] = Oh, so you don't want to send\n
+	+ any mail after all?\z{a07,400720061}\n
+	+ Yes, I do!\n
+	+ No, I'm done.
+    76 [/4,,4] = Say,\z{806,a} I've noticed that this\n
+	+ letter is addressed to\n
+	+ someone who doesn't live\n
+	+ in \z{605,5}.\n
+	+ \z{602,0}With this address as is, I\n
+	+ don't think this letter will\n
+	+ find its addressee,\z{806,5} so I'm\n
+	+ giving it back to you.
+    77	= Also...
+    78 [/16,,4] = Oh, so sorry.\z{806,a} I can't send\n
+	+ letters addressed to \n
+	+ \z{8ff,500}\z{c04,1000050003100} \z{8ff,0}right now.\z{806,a}\n
+	+ \n
+	+ It appears that the person\n
+	+ you are trying to reach has\n
+	+ a full mailbox and can't\n
+	+ receive another letter.
+    79 [/16,,4] = Oh, sorry,\z{806,a} but I can't send\n
+	+ those letters to \z{8ff,500}\z{c04,1000050003100}\n
+	+ \z{8ff,0}and \z{8ff,500}\z{c04,1010050003200}\z{8ff,0}.\n
+	+ \n
+	+ Both recipients' mailboxes\n
+	+ are full,\z{806,5} which means\n
+	+ there's nowhere for these\n
+	+ letters to go.\040
+    7a [/16,,4] = Oh,\z{806,a} about those letters for\n
+	+ \z{8ff,500}\z{c04,1000050003100}\z{8ff,0}, \z{8ff,500}
+	+ \z{c04,1010050003200}\z{8ff,0}, \n
+	+ and \z{8ff,500}\z{c04,1020050003300}\z{8ff,0}\z{806,3}.\z{806,3}.
+	+ \z{806,3}.\n
+	+ \n
+	+ I'm really sorry, but I can't\n
+	+ send them out now, as all\n
+	+ three recipients currently\n
+	+ have full mailboxes.
+    7b [,73/14] = OK,\z{806,a} I'll take it from here!
+    7c [,73/14] = I'll be sure to send off the\n
+	+ rest of your mail.
+    7d [,73/16] = Oh, dear,\z{806,5} all mailing routes\n
+	+ out of town are at capacity,\z{806,5}\n
+	+ so we can't take your mail\n
+	+ right now.\n
+	+ Sorry to trouble you,\z{806,5} but\n
+	+ please come back later and\n
+	+ we can try again.
+    7e [,73/,,4] = Sorry to disappoint, but\n
+	+ right now I can only send \z{8ff,200}\z{803,60000}\n
+	+ \032⸌\022\000瀀椀攀挀攀猀
+    7f [,73/14] = OK,\z{806,a} I'll be happy to take\n
+	+ your outgoing mail.
+    80 [,73/16] = Oh, dear.\z{606,1} We've received\n
+	+ so many letters headed out\n
+	+ of town that we've stopped\n
+	+ accepting them for today.\n
+	+ \z{602,0}Sorry for the hassle,\z{806,5}\n
+	+ but please try bringing by\n
+	+ your mail tomorrow.
+    81 [,82/,,14] = All righty then.\z{806,a} At what point\n
+	+ in the future would you like\n
+	+ to see this letter again,\n
+	+ \z{605,0}?
+    82 [/b] = I heard \z{8ff,200}\z{1204,103004d00,4f004e0054004800} 
+	+ \z{e04,1,400440041005900}\n
+	+ \z{8ff,0}in the year \z{8ff,200}\z{803,90100}\z{8ff,0}.\z{806,f} Is
+	+  that\n
+	+ correct?\z{a07,400830084}\n
+	+ You got it.\n
+	+ Nope.
+    83 [,73/14] = All right.\z{806,a} I'll take care of\n
+	+ things from here on out.
+    84 [,82/,,14] = All right.\z{806,a} I'm going to ask\n
+	+ one more time then.
+    85 [/16] = Umm,\z{806,a} I'm sorry, but I'm afraid\n
+	+ we've got a small problem.\n
+	+ \n
+	+ \n
+	+ \z{602,0}Our \z{8ff,200}future-letters \z{8ff,0}service\n
+	+ has a limit of one letter per\n
+	+ person.\n
+	+ \n
+	+ It appears that you've already\n
+	+ logged a letter due for\n
+	+ delivery on \z{8ff,200}\z{1204,103004d00,4f004e0054004800} 
+	+ \z{e04,1,400440041005900}\z{8ff,0},\n
+	+ \z{8ff,200}\z{803,90100}\z{8ff,0}\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ \z{602,b}Shall I dispose of your\n
+	+ previous letter and replace it\n
+	+ with the new one you just\n
+	+ submitted?\z{806,a}\z{a07,400860087}\n
+	+ Yes.\n
+	+ Never mind.
+    86 [,82/,,14] = Understood.\z{606,1} So,\z{806,a} \z{602,b}when\n
+	+ would you like this letter to\n
+	+ reach its destination?
+    87 [,73/4,,4] = Oh,\z{806,a}\z{602,0} so you're not going to\n
+	+ send this out?\n
+	+ \n
+	+ \n
+	+ Well, in that case,\z{806,5} I'll just\n
+	+ give you your mail back.
+    88 [,61/16] = I'm very sorry,\z{806,5}\z{8ff,800} \z{8ff,0}but a great\n
+	+ number of undeliverable\n
+	+ letters have piled up in the\n
+	+ \z{8ff,800}post office\z{8ff,0}.\n
+	+ As a result, we aren't\n
+	+ accepting any new letters\n
+	+ right now.\n
+	+ \n
+	+ \z{602,0}I apologize for the\n
+	+ inconvenience,\z{806,5} but do come\n
+	+ back and try again later.
+    89 [/,,13] = People visiting from out of\n
+	+ town can only send mail\n
+	+ to addresses within\n
+	+ \z{605,5}.
+    8a [,61/16] = Pardon the inconvenience,\z{806,3}\n
+	+ but we are unable to save\n
+	+ your mail right now\z{806,3}.\z{806,3}.\z{806,3}.\n
+	+ \n
+	+ \z{602,0}Could I ask you to please\n
+	+ try again later?
+    8b [,61/16//,,,1] = Sorry, but I can only accept\n
+	+ messages addressed to\n
+	+ other people's \z{8ff,200}Wii Message\n
+	+ Boards \z{8ff,0}right now.
+    8c [,61/16//,,,1] = Sorry, but I can only accept\n
+	+ messages addressed to\n
+	+ your \z{8ff,200}Wii Message Board\n
+	+ \z{8ff,0}right now.
+    8d	= From here, you can send\n
+	+ messages to your friends'\n
+	+ \z{8ff,200}Wii Message Boards\z{8ff,0} as well as\n
+	+ your own. \n
+	+ \z{602,14}You can even attach a picture\n
+	+ to send along with each\n
+	+ message, if you like! \n
+	+ \n
+	+ \z{602,0}Now,\z{806,a} rules change when your\n
+	+ message is headed to a \z{8ff,200}PC \z{8ff,0}or\n
+	+ \z{8ff,200}cell phone\z{8ff,0} instead of a \z{8ff,200}Wii\n
+	+ Message Board\z{8ff,0}\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ When sending a picture to\n
+	+ these devices, the message\n
+	+ text might become corrupted.\n
+	+ \n
+	+ OK, now that we've gotten\n
+	+ that out of the way,\z{806,a}\z{602,b} where\n
+	+ would you like to send a\n
+	+ message?\z{c07,5000000000061}\n
+	+ Myself!\n
+	+ Someone else!\n
+	+ Never mind.
+    8e [,61/4] = Oh, my\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} Sorry, but we've\n
+	+ got a small problem.\n
+	+ \n
+	+ \n
+	+ \z{602,0}You can't send messages to\n
+	+ people from out of town\n
+	+ because your \z{8ff,200}RiiConnect24\n
+	+ \z{8ff,0}settings are turned off.\n
+	+ Please check your settings\z{806,a}\n
+	+ using the \z{8ff,200}telephone\z{8ff,0} in the\n
+	+ \z{8ff,200}attic\z{8ff,0} of your house.
+    8f [,73/4] = Oh, my\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} Sorry, but we've\n
+	+ got a small problem.\n
+	+ \n
+	+ \n
+	+ \z{602,0}You can't send letters to\n
+	+ people from out of town\n
+	+ because your \z{8ff,200}RiiConnect24\n
+	+ \z{8ff,0}settings are turned off.\n
+	+ Please check your settings\z{806,a}\n
+	+ using the \z{8ff,200}telephone\z{8ff,0} in the\n
+	+ \z{8ff,200}attic\z{8ff,0} of your house.
+    90 [,61/4] = Oh, my\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} Sorry, but we've\n
+	+ got a small problem.\n
+	+ \n
+	+ \n
+	+ \z{602,0}You can't send messages to\n
+	+ people outside your town\n
+	+ because your \z{8ff,200}Parental\n
+	+ Controls \z{8ff,0}prohibit doing so.
+    91 [,73/4] = Oh, my\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} Sorry, but we've\n
+	+ got a small problem.\n
+	+ \n
+	+ \n
+	+ \z{602,0}You can't send letters to\n
+	+ people outside your town\n
+	+ because your \z{8ff,200}Parental\n
+	+ Controls \z{8ff,0}prohibit doing so.
+    92 [,6f] = Excellent.\z{806,a} Please wait just\n
+	+ a moment while I prepare\n
+	+ to send off the message.
+    93	= Oh, dear\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} I'm very sorry,\n
+	+ but I was unable to prepare\n
+	+ your message for sending.\n
+	+ \n
+	+ Would you like me to try\n
+	+ and prepare the message \n
+	+ again?\z{a07,400920094}\n
+	+ Sure!\n
+	+ Never mind.
+    94 [,61] = All right.\z{806,a} In that case,\z{806,5}\n
+	+ please excuse me while I\n
+	+ dispose of your message.
+    95 [,61] = I'm afraid I wasn't able to\n
+	+ complete preparations\n
+	+ necessary to send your\n
+	+ message.\n
+	+ I'm very sorry to do this,\z{806,5}\n
+	+ but please excuse me while\n
+	+ I dispose of the message I \n
+	+ just tried to send for you.
+    96 [/16,,4] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Sorry, but I've got some\n
+	+ bad news for you. \n
+	+ \n
+	+ \n
+	+ The only letters I can accept\n
+	+ from you here are ones\n
+	+ addressed to people on your\n
+	+ \z{8ff,200}friend roster\z{8ff,0}.
+    97 [/,,13] = You'd like to send mail to\n
+	+ another town, correct?\n
+	+ \n
+	+ \n
+	+ Sometimes it takes a little\n
+	+ time before we can deliver\n
+	+ mail to other towns.\n
+	+ \n
+	+ \z{602,16}And please be aware that a\n
+	+ mistake in the system,\z{806,5} though\n
+	+ rare,\z{806,5} may prevent your letter\n
+	+ from reaching its destination.
+    98 [,61/16,,4] = I'm very sorry,\z{806,5}\z{8ff,800} \z{8ff,0}but a great\n
+	+ number of undeliverable\n
+	+ letters have piled up in the\n
+	+ \z{8ff,800}post office\z{8ff,0}.\n
+	+ This backup makes it\n
+	+ impossible for me to accept\n
+	+ all of the letters you\n
+	+ just submitted.\n
+	+ \z{602,0}I'll take what I can handle\n
+	+ right now and return the\n
+	+ rest to you,\z{806,a} all right?\n
+    99 [/14] = OK,\z{806,a} you're going to send a\n
+	+ letter.\z{806,a} You got it.
+    9a [,61] = I'm terribly sorry,\z{806,5} but I\n
+	+ can't accept messages to\n
+	+ the \z{8ff,200}Wii Message Board\n
+	+ \z{8ff,0}from out-of-town visitors.
+    9b [/16,,4] = Oh, dear\z{806,3}.\z{806,3}.\z{806,3}.\z{806,f} We're in a bit of\n
+	+ a jam at the moment.\n
+	+ \n
+	+ \n
+	+ It appears that \z{8ff,500}\z{c04,1000050003100}\z{8ff,0},\n
+	+ \z{8ff,500}\z{c04,1010050003200}\z{8ff,0},\z{8ff,500} 
+	+ \z{c04,1020050003300}\z{8ff,0},\z{8ff,500}\n
+	+ \z{8ff,0}and \z{8ff,500}\z{c04,1030050003400}\z{8ff,0}\z{806,3} cannot\n
+	+ receive letters right now!\n
+	+ All four of their mailboxes are\n
+	+ filled to the brim with letters,\z{806,5}\n
+	+ so we cannot make any\n
+	+ deliveries!
+

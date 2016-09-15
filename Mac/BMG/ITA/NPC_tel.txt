@@ -1,0 +1,190 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,d//,,,1] = 
+     1	= \z{a08,c00020014}
+     2	= \z{e08,12,5000300030003}
+     3 [/,,,f] = Oh?!\z{606,1} Sembra che in questo\n
+	+ momento tu non possa\n
+	+ utilizzare il telefono\z{806,5}.\z{806,5}.\z{806,5}.
+     4	= Ho capito.\z{606,1}\n
+	+ OK,\z{806,a} a presto allora!
+     5	= Ehilà, \z{605,0}!\z{606,1}\n
+	+ Cosa posso fare per te?
+     6	= C'è qualcos'altro\n
+	+ che posso fare?
+     7	= Come vorresti che\n
+	+ parlassero i personaggi?\z{c07,1000800080008}\n
+	+ Animalese.\n
+	+ Bababese.\n
+	+ Silenzio.
+     8	= \z{60c,3}\z{8ff,200}\z{1204,101005600,4f00490043004500} \z{8ff,0}Suona
+	+  un po'\n
+	+ così... Ti piace?\z{a07,400060009}\n
+	+ Molto.\n
+	+ Cambialo!
+     9 [,7] = OK, ricominciamo\z{806,5}.\z{806,5}.\z{806,5}.
+     a	= Quanto sei brav\z{c0c,4006f00000061} a leggere\n
+	+ i \z{8ff,200}Kanji\z{8ff,0}? O preferisci usare\n
+	+ solo \z{8ff,200}Hiragana\z{8ff,0}?\z{a07,c000b}\n
+	+ Solo Hiragana.\n
+	+ Kanji.
+     b [,d] = OK! Allora useremo i Kanji!
+     c [,d] = OK! Solo gli Hiragana!
+     d	= Bene\z{806,5}.\z{806,5}.\z{806,5}. Vuoi digitare il\n
+	+ testo come su una tastiera\n
+	+ o come su un cellulare?\z{a07,e000f}\n
+	+ Tastiera.\n
+	+ Cellulare.
+     e [,6] = Ho capito! Potrai digitare\n
+	+ il testo come su una\n
+	+ \z{8ff,200}normale tastiera\z{8ff,0}!
+     f [,6] = Ottimo! Potrai digitare\n
+	+ il testo come quando scrivi\n
+	+ un messaggio con il\n
+	+ \z{8ff,200}cellulare\z{8ff,0}!
+    10	= Vuoi che appaiano\n
+	+ le spiegazioni sulle icone\n
+	+ dei menu e sulle finestre?\z{a07,400110012}\n
+	+ Certo!\n
+	+ No, grazie.
+    11 [,6] = OK, le attivo subito.\z{606,1}\n
+	+ Ora dovresti visualizzarle!
+    12 [,6] = OK, non ti servono.\z{606,1}\n
+	+ Le disattivo subito!
+    13 [/,,,d] = 
+    14 [/,,,f] = Usare il telefono altrui\n
+	+ senza chiedere il permesso\n
+	+ è maleducazione...
+    15	= Certo!\z{606,1} Questa è un'infor-\n
+	+ mazione molto importante,\n
+	+ quindi la ripeterò tutte le\n
+	+ volte che ti servirà!\n
+	+ Vediamo\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ In questo gioco,\z{806,5} puoi\n
+	+ giocare con i tuoi amici col-\n
+	+ legandoti alle loro \z{8ff,100}console\n
+	+ Wii\z{8ff,0} tramite \z{8ff,100}RiiConnect24\z{8ff,0}.\n
+	+ Usando questa funzione,\n
+	+ puoi spedire direttamente\n
+	+ lettere agli amici registrati\n
+	+ sulla tua \z{8ff,200}lista amici\z{8ff,0}...\n
+	+ Oppure puoi inviare mes-\n
+	+ saggi alla \z{8ff,200}Bacheca Wii \z{8ff,0}degli\n
+	+ amici di cui hai registrato\n
+	+ il \z{8ff,200}codice Wii\z{8ff,0}.\n
+	+ E inoltre,\z{806,a} i vicini dei tuoi\n
+	+ amici possono traslocare\n
+	+ nella tua città e diventare\n
+	+ i TUOI vicini.\z{806,5}.\z{806,5}.\z{806,5}\n
+	+ Potranno anche raccontarti\n
+	+ quello che accade nelle\n
+	+ città dei tuoi amici\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ Anche mentre non stai\n
+	+ giocando,\z{806,a} ti sembrerà\n
+	+ che le vostre citta siano\n
+	+ collegate.\n
+	+ E non solo, \z{806,a}potrai anche\n
+	+ ricevere periodicamente\n
+	+ messaggi e regali da\n
+	+ Nintendo.\n
+	+ Ecco qui, \z{806,a}queste sono le\n
+	+ funzioni che ti offre questo\n
+	+ gioco\z{806,5}.\z{806,5}.\z{806,5}.
+    16 [,18/4//,,,1] = Oh,\z{806,f} sembra che il servizio\n
+	+ \z{8ff,100}RiiConnect24 \z{8ff,0}non sia\n
+	+ attivo...\n
+	+ \n
+	+ Per condividere le tue\n
+	+ informazioni con altre\n
+	+ città devi attivarlo.\n
+	+ \n
+	+ Controlla le impostazioni\n
+	+ di \z{8ff,100}RiiConnect24 \z{8ff,0}nel menu\n
+	+ delle Opzioni Wii.\n
+	+ \n
+	+ E ora,\z{806,f} procediamo\z{806,5}.\z{806,5}.\z{806,5}.
+    17 [,18/4//,,,1] = Oh, \z{806,f}vedo che le tue\n
+	+ impostazioni di rete\n
+	+ sono limitate...\n
+	+ \n
+	+ Controlla le impostazioni\n
+	+ del \z{8ff,100}filtro famiglia \z{8ff,0}nel\n
+	+ menu delle Opzioni Wii.
+    18	= Il servizio \z{8ff,100}RiiConnect24\n
+	+ \z{8ff,0}è al momento \z{8ff,200}attivo\z{8ff,0}.\z{806,a} Cosa\n
+	+ vorresti fare?\z{c07,1001c001c0015}\n
+	+ Tenere attivo!\n
+	+ Disattivare!\n
+	+ Spiegazioni!
+    19	= Il servizio \z{8ff,100}RiiConnect24\n
+	+ \z{8ff,0}è al momento \z{8ff,200}disattivato\z{8ff,0}.\z{806,a}\n
+	+ Cosa vorresti fare?\z{c07,1001c001c0015}\n
+	+ Attivare!\n
+	+ Lasciare così!\n
+	+ Spiegazioni!
+    1a	= Il servizio \z{8ff,100}RiiConnect24\n
+	+ \z{8ff,0}è al momento \z{8ff,200}attivo\z{8ff,0}.\z{806,a} Cosa\n
+	+ vorresti fare?\z{c07,1001c001c0015}\n
+	+ Tenere attivo!\n
+	+ Disattivare!\n
+	+ Spiegazioni!
+    1b	= Il servizio \z{8ff,100}RiiConnect24\n
+	+ \z{8ff,0}è al momento \z{8ff,200}disattivato\z{8ff,0}.\z{806,a}\n
+	+ Cosa vorresti fare?\z{c07,1001c001c0015}\n
+	+ Attivare!\n
+	+ Lasciare così!\n
+	+ Spiegazioni!
+    1c [,6] = OK!\z{606,1} Farò come desideri!
+    1d [,23] = Uhmmm, \z{806,a}alla fine ti sta\n
+	+ bene com'è ora?\z{806,f} Giusto.\n
+	+ Se una cosa non è rotta,\n
+	+ non cercare di aggiustarla!
+    1e	= \z{e08,12,1f000300030003}
+    1f	= Salve, salve!\z{606,1} Cosa posso\n
+	+ fare per te,\z{806,5} \z{605,0}?\z{c07,5002000210004}\n
+	+ Impostazioni.\n
+	+ Cambia bandiera.\n
+	+ Nulla.
+    20	= Ho capito! Vuoi cambiare le\n
+	+ impostazioni del gioco!\z{806,f}\n
+	+ E quali, di preciso?
+    21 [/,,12] = Oh,\z{806,a} quindi vuoi cambiare il\n
+	+ disegno della tua bandiera,\n
+	+ eh?\z{606,1} Cosa avevi in mente,\n
+	+ sentiamo?
+    22	= Perfetto!\z{606,1} Non preoccuparti,\n
+	+ mi assicurerò che venga\n
+	+ fuori proprio come la vuoi.
+    23	= Ora, posso esserti ancora\n
+	+ d'aiuto?\z{c07,5002000210004}\n
+	+ Impostazioni.\n
+	+ Cambia bandiera.\n
+	+ No, grazie.
+

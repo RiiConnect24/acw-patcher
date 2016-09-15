@@ -1,0 +1,996 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [///,,,1] = 【Strings】\n
+	+ 0 : ⑥Name of person 1 with full mailbox\n
+	+ 1 : ⑥Name of person 2 with full mailbox\n
+	+ 2 : ⑥Name of person 3 with full mailbox\n
+	+ \n
+	+ -----------------------\n
+	+ 【Free Management】\n
+	+ 1 : Open Town Song Window\n
+	+ 2 : Open Collection Window\n
+	+ 3 : Open Letter Box\n
+	+ 4 : Open Letter Window\n
+	+ 5 : Open Date Window
+     1	= Sì? Cosa desideri?\z{806,f}\n
+	+ \z{8ff,400}(Umf... altro da fare.)\z{8ff,0}\n
+	+ Questo\z{806,5}\z{602,b} è il \z{8ff,800}centro civico\z{8ff,0}.
+	+ \z{8ff,800}\n
+	+ \z{8ff,0}Come posso aiutarti?\z{1007,70007,40000003b0002}\n
+	+ L'ambiente!\n
+	+ L'inno cittadino!\n
+	+ Il fondo civico!\n
+	+ Ho un problema.\n
+	+ Nulla, grazie.
+     2	= Ah, sì?\z{806,f} OK, allora. Chiudi\n
+	+ la porta quando esci.\z{806,f}\n
+	+ \z{8ff,400}(E vedi di andartene\n
+	+ in fretta!)
+     3	= Sì? \z{806,a}Allora\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}\n
+	+ \z{602,b}Che altro c'è?\z{806,f}\z{8ff,400}\n
+	+ (Bla bla bla! Sbrigati!)\z{8ff,0}\z{1007,70007,40000003b0002}\n
+	+ L'ambiente!\n
+	+ L'inno cittadino!\n
+	+ Il fondo civico!\n
+	+ Ho un problema.\n
+	+ Nulla, grazie.
+     4 [/,,10] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Vuoi veramente\n
+	+ cambiare l'inno cittadino?\z{806,14}\n
+	+ \z{8ff,400}(Sì, facciamoci ridere\n
+	+ dietro da tutti!)
+     5 [,3] = Bene. \z{806,a}E ora abbiamo\z{806,5}\n
+	+ un nuovo inno cittadino. \z{600,3}\n
+	+ \z{8ff,400}(Ugh, dove ho messo\n
+	+ i tappi per le orecchie?)
+     6 [,3] = .\z{806,5}.\z{806,5}.\z{806,5} Insomma, non vuoi\n
+	+ fare altre modifiche,\n
+	+ giusto?\z{806,f}\n
+	+ \z{8ff,400}(Peggio di così...)
+     7	= ...\z{602,1b} Bene. Ti mostro alcune\n
+	+ delle lettere che abbiamo\n
+	+ ricevuto.
+     8 [,3] = .\z{806,5}.\z{806,5}.\z{806,5} Sì, è proprio quello che\n
+	+ c'è scritto.\n
+	+ \n
+	+ \n
+	+ Forse \z{806,5}\z{602,e}è per via di tutti\n
+	+ quegli alberi\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{8ff,400}(E che ne so io?\n
+	+ Mica sono una scienziata!)
+     9 [,3] = .\z{806,5}.\z{806,5}.\z{806,5} Nient'altro.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,19}Il problema è che non ci\n
+	+ sono abbastanza alberi\n
+	+ nella zona.\z{606,1}\n
+	+ ALBERI!\z{806,f} Ho detto ALBERI!\z{806,f}\n
+	+ \z{8ff,400}(E vedi di ascoltare\n
+	+ una buona volta!)
+     a [,3] = .\z{806,5}.\z{806,5}.\z{806,5} tutto qui.\n
+	+ \n
+	+ \n
+	+ \n
+	+ Forse\z{806,5} \z{602,e}è per via di tutte\n
+	+ quelle erbacce\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \z{8ff,400}(Quella zona è in uno stato\n
+	+ pietoso!)
+     b [,3] = .\z{806,5}.\z{806,5}.\z{806,5} fine del rapporto.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,1b}Forse perché c'è\n
+	+ troppa roba lasciata in\n
+	+ giro per la città.
+     c [,3] = .\z{806,5}.\z{806,5}.\z{806,5} ecco.\z{806,f} Finisce così.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,1b}Sarà dovuto a tutta\n
+	+ la spazzatura che c'è\n
+	+ in giro!\z{806,5} \z{8ff,400}(Fa una puzza che\n
+	+ non ti dico!)
+     d [,3] = .\z{806,5}.\z{806,5}.\z{806,5} Mh-mmmh.\n
+	+ Fine della lettera.\n
+	+ \n
+	+ \n
+	+ Ci devono essere dei fiori\n
+	+ puzzolenti da qualche\n
+	+ parte.\n
+	+ \n
+	+ \z{602,15}Beh, se il problema è\n
+	+ questo, basterebbe non\n
+	+ piantarli più!\z{806,f} \z{602,0}\z{8ff,400}(Non ci vuole\n
+	+ mica un genio a capirlo!)
+     e [,3] = Beh, non so tu,\z{806,23}\z{602,9} ma io\n
+	+ preferisco vivere in\n
+	+ un posto bello piuttosto\n
+	+ che in uno brutto.
+     f [,3] = Beh, \z{806,f}certo questa\n
+	+ situazione non potrà andare\n
+	+ avanti per sempre.\z{806,5}\n
+	+ Non è giusto.
+    10 [,3] = Beh, \z{806,5}\z{602,b}vivere qui è meglio di\n
+	+ quello che ti aspettavi, eh?\z{806,f}\n
+	+ \z{8ff,400}(\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} O no?)
+    11 [,12/4] = \z{806,a}Oh, \z{806,5}giustissimo.\z{806,f} \n
+	+ \z{602,0}È esattamente quello che\n
+	+ sarei tenuta a dire a tutti.\n
+	+ \n
+	+ \z{602,1b}Dovremmo avere cura di\n
+	+ \z{605,5},\z{806,14} così come\n
+	+ dovremmo farlo per il resto\n
+	+ del pianeta\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Sembra che \z{605,5} sia\n
+	+ stata presa come esempio\n
+	+ da \z{806,a}un'associazione di\n
+	+ ambientalisti.\n
+	+ \z{8ff,400}(Una banda di spostati che\n
+	+ si legano agli alberi!)
+    12 [,13/,,4] = E\z{806,f} QUESTO\z{806,5}.\z{806,5}.\z{806,5}.\z{606,1} è il premio\n
+	+ che abbiamo vinto.
+    13	= Sì. È un \z{8ff,700}innaffiatoio d'oro\z{8ff,0}.\z{606,1} \n
+	+ \z{602,1b}Pensa che bello poterlo\n
+	+ usare!\n
+	+ \n
+	+ \z{602,0}Senti, facciamo così.\n
+	+ Perché non lo prendi tu?\z{806,f}\n
+	+ \z{8ff,400}(Ma non dimenticarti di\n
+	+ strappare le erbacce.)
+    14 [/1b,,11] = Il comune di \z{605,5} ha\n
+	+ fatto tutto il possibile per\n
+	+ le strutture pubbliche e\n
+	+ i vari eventi cittadini.\n
+	+ \z{602,0}Ma le finanze sono limitate.\n
+	+ Hai visto questo ufficio?\z{806,f} \n
+	+ \z{8ff,400}(Per non parlare del mio\n
+	+ stipendio!)\z{8ff,0}\n
+	+ E dato che ora vivi in\n
+	+ questa città,\z{806,5} \z{602,b}spero che\n
+	+ potremo contare anche sul\n
+	+ tuo aiuto, giusto?
+    15 [/,,11] = Oh?\z{806,a}\z{602,b} Una donazione?\z{606,1}\n
+	+ \z{602,0}Non posso dirti di no.
+    16 [,3/18] = Cosa? \z{806,7}Hai cambiato idea?\z{806,f}\n
+	+ .\z{806,5}.\z{806,5}.\z{806,5} .\z{806,5}.\z{806,5}.\z{806,a}\n
+	+ \z{602,15}\z{8ff,400}(E smettila di farmi perdere\n
+	+ tempo!)
+    17 [,3] = \z{602,14}Beh, grazie!\z{806,a} Grazie mille\n
+	+ per il tuo aiuto!\z{806,19}\n
+	+ \z{602,1b}\z{8ff,1005a}\z{8ff,400}(Continua a sorridere.\n
+	+ Fingi interesse.)
+    18	= Ho saputo che i fondi rac-\n
+	+ colti saranno destinati alla\n
+	+ costruzione di un \z{8ff,800}ponte\z{8ff,0}.\z{606,1}\n
+	+ Sì.\z{806,1e} Un \z{8ff,800}ponte\z{8ff,0}.\n
+	+ \z{602,15}\z{8ff,400}(Se hanno tanti soldi da\n
+	+ buttare, perché non mi\n
+	+ comprano una nuova sedia?\n
+	+ Questa è sfondata!)\n
+	+ \z{602,0}\z{8ff,0}.\z{806,5}.\z{806,5}.\z{806,a} Comunque, il luogo in
+	+  cui\n
+	+ verrà costruito il ponte\n
+	+ sarà deciso tramite\n
+	+ votazione. \z{806,1e}A te la parola.
+    19	= Le votazioni per decidere\n
+	+ dove costruire il \z{8ff,800}ponte\n
+	+ \z{8ff,0}sono ancora aperte.\z{806,f}\n
+	+ \n
+	+ Quindi sbrigati e rispondi,\n
+	+ OK?
+    1a [,3] = \z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Umf, quindi tu lo\n
+	+ costruiresti lì?\z{606,1}\n
+	+ Cioè, \z{602,14}certo, che splendida\n
+	+ posizione per un \z{8ff,800}ponte\z{8ff,0}!\n
+	+ \z{602,15}Comunque la maggioranza\n
+	+ vince,\z{806,5} per cui non venirti\n
+	+ a lamentare da me se poi lo\n
+	+ costruiscono altrove!
+    1b [,3/15] = Ah, sì? \z{806,a}Non vuoi votare\n
+	+ ora?\z{806,5}\n
+	+ \z{8ff,400}(Trovano sempre qualche\n
+	+ scusa!)\n
+	+ \z{602,0}\z{8ff,0}Beh, se mai deciderai di\n
+	+ fare il tuo dovere di citta-\n
+	+ din\z{c0c,4006f00000061}, vedi di votare entro\n
+	+ il termine massimo.
+    1c [,3] = Se sei venut\z{c0c,4006f00000061} per il \z{8ff,800}ponte\z{8ff,0},
+	+ \z{806,a}\n
+	+ devi aspettare fino a che\n
+	+ non lo abbiamo costruito!\z{606,1}\n
+	+ \z{8ff,400}\z{602,15}(E non assillarci!)
+    1d	= Ah, e le stelline raccolte\n
+	+ verranno usate per costrui-\n
+	+ re un \z{8ff,800}faro \z{8ff,0}o un \z{8ff,800}mulino a\n
+	+ vento\z{8ff,0}\z{806,f}.\z{806,f}.\z{806,f}.\z{806,f} Yippie!\n
+	+ \z{602,15}\z{8ff,400}(Se hanno tanti soldi da\n
+	+ spendere, potrebbero\n
+	+ assumere qualche\n
+	+ dipendente in più!)\n
+	+ \z{602,0}\z{8ff,0}.\z{806,5}.\z{806,5}.\z{806,a} Comunque, stiamo\n
+	+ chiedendo ai cittadini di\n
+	+ votare quale preferiscono.\n
+	+ \z{806,1e}Tu quale vorresti?\z{c07,5001f00200021}\n
+	+ Faro!\n
+	+ Mulino a vento!\n
+	+ Non lo so.
+    1e	= Le votazioni per decidere\n
+	+ se costruire un \z{8ff,800}faro \z{8ff,0}o\n
+	+ un \z{8ff,800}mulino a vento \z{8ff,0}sono\n
+	+ ancora aperte.\n
+	+ Quindi, potresti togliere\n
+	+ le mani dalle tasche e\n
+	+ votare anche tu.\z{c07,5001f00200021}\n
+	+ Faro!\n
+	+ Mulino a vento!\n
+	+ Non lo so.
+    1f [,3] = Un \z{8ff,800}faro\z{8ff,0},\z{806,5} dici?\z{606,1} Sì, ottima\n
+	+ idea.\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5}\z{602,15} Ma non metterti a\n
+	+ frignare se alla fine\n
+	+ decidiamo di costruire\n
+	+ un \z{8ff,800}mulino a vento\z{8ff,0}, eh!
+    20 [,3] = \z{806,f}.\z{806,f}.\z{806,f}.\z{806,f} Sì. Ho sempre pensato\n
+	+ anch'io che a questa città\n
+	+ manchi un \z{8ff,800}mulino a vento\z{8ff,0}.\z{806,1e}\n
+	+ \z{8ff,400}(Ugh. Che volgarità!)\z{8ff,0}\n
+	+ .\z{806,5}.\z{806,5}.\z{806,5} \z{602,15}Ma siccome in questa\n
+	+ città non ci vivi soltanto tu,\n
+	+ se poi non lo costruiscono\n
+	+ non metterti a piangere!
+    21 [,3/15] = Oh.\z{806,1e} Beh, è una decisione\n
+	+ molto complicata, vero?\z{806,f}\n
+	+ \z{8ff,400}(MA FIGURATI!)\n
+	+ \n
+	+ \z{602,0}\z{8ff,0}Se per caso dovessi\n
+	+ deciderti, torna qui prima\n
+	+ della chiusura delle\n
+	+ votazioni.
+    22 [,3] = Ci stiamo dando un sacco\n
+	+ da fare per costruire un\n
+	+ \z{8ff,800}faro \z{8ff,0}o un \z{8ff,800}mulino \z{8ff,0}nuovo qui\n
+	+ in città.\z{606,1} \z{602,15}\z{8ff,400}(Quindi fila via!)
+    23	= Oh, \z{806,a}sì\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,1d}in
+	+  effetti sembra\n
+	+ che siano rimasti un po' di\n
+	+ soldi dalle donazioni.\n
+	+ \n
+	+ \z{602,1c}Quindi ora dobbiamo stabi-\n
+	+ lire come spenderli\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}\n
+	+ \z{602,15}\z{8ff,400}(Di aumento dello stipendio\n
+	+ naturalmente non se ne parla!)\n
+	+ \z{602,1b}\z{8ff,0}Comunque \z{806,a}ci sarebbe\n
+	+ la proposta di convertire\n
+	+ il \z{8ff,800}faro\z{8ff,0} in un \z{8ff,800}mulino a vento\z{8ff,0}.\n
+	+ Tu che ne pensi?\z{a07,250026}\n
+	+ No!\n
+	+ Mulino a vento!
+    24	= Oh, \z{806,a}sì\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,1d}in
+	+  effetti sembra\n
+	+ che siano rimasti un po' di\n
+	+ soldi dalle donazioni.\n
+	+ \n
+	+ \z{602,1c}Quindi ora dobbiamo stabi-\n
+	+ lire come spenderli\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \n
+	+ \z{602,15}\z{8ff,400}(Un assistente per me\n
+	+ quando lo assumono?)\n
+	+ \z{602,1b}\z{8ff,0}Comunque \z{806,a}ci sarebbe\n
+	+ la proposta di convertire\n
+	+ il \z{8ff,800}mulino a vento \z{8ff,0}in un \z{8ff,800}faro\z{8ff,0}.\n
+	+ Tu che ne pensi?\z{a07,250026}\n
+	+ No!\n
+	+ \z{8ff,800}Faro\z{8ff,0}!
+    25 [,3] = Nessuna variazione\n
+	+ insomma?\z{806,f} Va bene. Il tuo\n
+	+ voto è stato registrato.
+    26 [,3] = Ah, sì?\z{606,1} Bene, ne discute-\n
+	+ remo.\z{806,14} \z{8ff,400}(Che noia infinita...)
+    27 [,3] = Se sei venut\z{c0c,4006f00000061} per sapere\n
+	+ del \z{8ff,800}mulino a vento\z{8ff,0},\z{806,a} devi\n
+	+ aspettare fino a dopo la\n
+	+ chiusura delle votazioni.
+    28 [,3] = Se sei venut\z{c0c,4006f00000061} per sapere\n
+	+ del \z{8ff,800}faro\z{8ff,0},\z{806,a} devi aspettare\n
+	+ fino a dopo la chiusura\n
+	+ delle votazioni.
+    29	= Ultimamente\z{806,a} si sta\n
+	+ pensando di convertire\n
+	+ il \z{8ff,800}faro \z{8ff,0}in un \z{8ff,800}mulino\z{8ff,0}.\n
+	+ \n
+	+ E qualche genio ha pensato\n
+	+ bene di mettere la proposta\n
+	+ ai voti.\z{806,f} Quindi, tu che ne\n
+	+ pensi?\z{c07,5002b002c002d}\n
+	+ No!\n
+	+ \z{8ff,800}Mulino a vento\z{8ff,0}!\n
+	+ Non lo so.
+    2a	= Ultimamente\z{806,a} si sta\n
+	+ pensando di convertire\n
+	+ il \z{8ff,800}mulino \z{8ff,0}in un \z{8ff,800}faro\z{8ff,0}.\n
+	+ \n
+	+ Così abbiamo indetto\n
+	+ una votazione.\z{806,f} Allora, tu\n
+	+ che ne pensi?\z{c07,5002b002c002d}\n
+	+ No!\n
+	+ \z{8ff,800}Faro\z{8ff,0}!\n
+	+ Non lo so.
+    2b [,3] = OK!\z{806,a} Hai votato per\n
+	+ mantenere tutto invariato.\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5}\z{602,15} Beh, è la maggioranza\n
+	+ dei voti che decide, quindi\n
+	+ non lamentarti se le cose\n
+	+ non vanno a modo tuo!
+    2c [,3] = OK!\z{806,a} Hai votato per\n
+	+ il cambiamento.\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5}\z{602,15} Ma siccome siamo in\n
+	+ democrazia, non lamentarti\n
+	+ se le cose non vanno come\n
+	+ vorresti tu!
+    2d [,3/15] = Non vuoi votare ora?\z{806,5}\n
+	+ \z{8ff,400}(La domanda è troppo\n
+	+ difficile e ci devi pensare?)\n
+	+ \n
+	+ \z{602,0}\z{8ff,0}Beh, vedi di deciderti prima\n
+	+ della chiusura delle\n
+	+ votazioni, perché dopo sarà\n
+	+ troppo tardi.
+    2e [,3] = Oh, \z{806,a}a proposito\z{806,5}.\z{806,5}.\z{806,5}. le stelline\n
+	+ raccolte verranno usate per\n
+	+ costruire una \z{8ff,800}fontana\z{8ff,0}.\n
+	+ \n
+	+ \z{602,15}\z{8ff,400}(Mentre di questo ufficio\n
+	+ che cade a pezzi non\n
+	+ importa niente a\n
+	+ nessuno!)\n
+	+ \z{602,0}\z{8ff,0}.\z{806,5}.\z{806,5}.\z{806,a} Quindi\z{806,5} al
+	+  momento, la\n
+	+ raccolta di donazioni è\n
+	+ sospesa.
+    2f [,3] = OK, OK.\z{806,14} Dunque,\z{806,14} \z{602,14}grazie\n
+	+ per la tua considerazione!\z{806,1e}\n
+	+ \z{8ff,1005a}\z{8ff,400}(Ora posso smettere di sor-\n
+	+ ridere, giusto?)
+    30 [,3] = \z{602,2}\z{806,7}.\z{806,7}.\z{806,7}. \z{806,7}.\z{806,7}.\z{806,7}.
+	+  \z{806,7}.\z{806,7}.\z{806,7}.\z{806,7}\n
+	+ \z{8ff,400}(Uhm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} cos'è che
+	+  dovevo\n
+	+ dire in questi casi?)\z{8ff,0}\n
+	+ \n
+	+ \z{602,0}\z{806,7}.\z{806,7}.\z{806,7}.\z{806,f}\z{602,14}\z{806,f} Ah
+	+  sì! Grazie per la\n
+	+ generosa donazione!\z{806,1e}\n
+	+ \z{8ff,1005a}\z{8ff,400}(Ora posso smettere di\n
+	+ sorridere?)
+    31	= 
+    32	= 
+    33	= Uh...\z{606,1} Questo è lo sportello\n
+	+ del \z{8ff,800}centro civico \z{8ff,0}di\n
+	+ \z{605,5}.\n
+	+ \n
+	+ Gli ospiti in visita da altre\n
+	+ città devono rivolgersi\n
+	+ all'altro sportello, prego.\n
+	+ \z{8ff,800}\n
+	+ \z{8ff,400}(Uffa! Possibile che tutti\n
+	+ gli scocciatori arrivino\n
+	+ mentre sono in pausa?)
+    34	= Sì, sì, \z{806,a}buonasera.\z{606,1}\n
+	+ Questo è il \z{8ff,800}centro civico\z{8ff,0}\z{806,a}\n
+	+ del \z{8ff,800}municipio \z{8ff,0}di\n
+	+ \z{605,5}.\n
+	+ Gli ospiti in visita da altre\n
+	+ città devono rivolgersi\n
+	+ all'altro sportello, prego.\z{806,a} \n
+	+ \z{8ff,400}(Uffa. Ho sonno...)
+    35 [///,,,1] = 
+    36 [///,,,1] = 
+    37 [///,,,1] = 
+    38 [///,,,1] = 
+    39 [///,,,1] = 
+    3a [///,,,1] = 
+    3b	= \z{e08,12,48003c003c003c}
+    3c [,3/4] = Sono spiacente,\z{806,a} ma ora\n
+	+ abbiamo qualcuno in visita\n
+	+ da un'altra città qui.\n
+	+ \z{8ff,400}(NON CI VEDI?!)\z{8ff,0}\n
+	+ \z{602,0}Dovresti tornare più tardi.
+    3d	= Beh?\z{806,14} Ora che c'è?
+    3e [,3] = Ah, sì? \z{806,f}Benissimo.\n
+	+ \z{8ff,400}(Perché proprio io?)
+    3f	= E chi è la causa\n
+	+ del problema?
+    40 [/b] = Allora, qual è il problema\n
+	+ relativo a quest\z{100c,50000,6f00000061000000}\z{806,5}.\z{806,5}.
+	+ \z{806,5}.\z{806,5}\n
+	+ \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0}?\z{e07,6,42004400460041}\n
+	+ Frase tipica!\n
+	+ Vestiti orrendi!\n
+	+ Lettere!\n
+	+ Niente.
+    41 [,3] = Ah, sì? \z{806,f}Beh, meglio così.\z{806,f}\n
+	+ \z{8ff,400}(Grazie per avermi fatto\n
+	+ perdere tempo!)
+    42	= E così il problema è\n
+	+ la frase tipica di\n
+	+ \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0}, eh?\n
+	+ \n
+	+ \z{602,b}Vuoi che \z{160c,5,67006c006900,6c0065000000} mandiamo\n
+	+ un avvertimento?\z{a07,400430041}\n
+	+ Avvertimento!\n
+	+ No, lascia stare.
+    43 [,3] = OK. \z{806,a}Diremo a \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} \n
+	+ di fare attenzione a come\n
+	+ parla.\z{806,f} \z{8ff,400}(Che pedanti\n
+	+ i ragazzi d'oggi!)
+    44	= E così ritieni\z{806,a} offensivo\n
+	+ l'abbigliamento di \n
+	+ \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0}?\n
+	+ \n
+	+ \z{602,b}Vuoi che \z{160c,5,67006c006900,6c0065000000} mandiamo\n
+	+ un avvertimento?\z{a07,400450041}\n
+	+ Avvertimento!\n
+	+ No, lascia stare.
+    45 [,3] = Bene. \z{806,a}Diremo a \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} \n
+	+ di vestirsi un po' meglio.\z{806,a}\n
+	+ \z{8ff,400}(In effetti si concia proprio\n
+	+ male...)
+    46	= E così \z{806,a}\z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} mostra\n
+	+ alla gente delle lettere\n
+	+ offensive, eh?\n
+	+ \n
+	+ \z{602,b}Vuoi che \z{160c,5,67006c006900,6c0065000000} mandiamo\n
+	+ un avvertimento?\z{a07,400470041}\n
+	+ Avvertimento!\n
+	+ No, lascia stare.
+    47 [,3] = Bene. \z{806,a}Diremo a \z{8ff,600}\z{e04,1,4e0050004300}\z{8ff,0} \n
+	+ che deve smetterla con\n
+	+ le lettere offensive.\z{806,f}\n
+	+ \z{8ff,400}(Ma che gente!)
+    48	= Dimmi!\z{806,14} Qual è il tuo\n
+	+ problema?\z{c07,5003d0049003e}\n
+	+ Altre persone.\n
+	+ Entrare in casa!\n
+	+ Niente.
+    49	= \z{602,2}Cosa?!\z{606,1} Non riesci a entrare\n
+	+ in casa tua?!\z{806,a} \z{8ff,400}(Non ci posso\n
+	+ credere!)\n
+	+ \n
+	+ \z{8ff,0}.\z{806,3}.\z{806,3}.\z{806,14}\z{602,1b}\z{806,f} Ah, ho
+	+  capito cosa è\n
+	+ successo.\z{806,f} Probabilmente\n
+	+ hai accumulato tanta roba\z{806,a}\n
+	+ che ora...\n
+	+ ... non riesci neppure a\n
+	+ muoverti dentro casa!\n
+	+ \z{602,1c}Ugh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a}\n
+	+ Ma ormai la frittata è fatta.\n
+	+ A questo punto non ti resta\n
+	+ che una cosa da fare\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ prendere tutta la roba e\n
+	+ portarla al\z{8ff,200} bidone dei rifiuti\z{8ff,0}. \n
+	+ E se hai cose troppo grandi\z{806,a}\n
+	+ per il \z{8ff,200}bidone dei rifiuti\z{8ff,0},\n
+	+ dovrai buttarle definitiva-\n
+	+ mente.\n
+	+ Se ti va bene, posso\n
+	+ aiutarti.\z{806,f} Allora, sei sicur\z{c0c,4006f00000061} di\n
+	+ volerti disfare della tua\n
+	+ roba?\z{a07,4004b004a}\n
+	+ Certo!\n
+	+ No, grazie.
+    4a [,3] = Beh,\z{806,a} è abbastanza normale\n
+	+ avere dei ripensamenti.\n
+	+ \n
+	+ \n
+	+ .\z{806,5}.\z{806,5}.\z{806,5} Ma\z{806,a} purtroppo, se non\n
+	+ riesci veramente più a\n
+	+ entrare in casa,\z{806,a} la soluzione\n
+	+ è una sola: questa!\n
+	+ Quindi, se vedi che non hai\n
+	+ altra scelta, torna da me.\z{806,a}\n
+	+ \z{8ff,400}(O, ancora meglio, non mi\n
+	+ scocciare!)
+    4b	= \z{602,1c}Oh, hai deciso di andare\n
+	+ fino in fondo, eh?\z{806,f}\n
+	+ \z{8ff,400}(Ugh, \z{806,5}che SECCATURA\z{806,5}.\z{806,5}.\z{806,5}.)
+	+ \z{8ff,0}\n
+	+ \n
+	+ \z{602,b}Allora dimmi, \z{806,a}quale stanza\n
+	+ vuoi svuotare?
+    4c [,4f] = Quindi vuoi buttare tutti\n
+	+ i mobili e gli oggetti che hai\n
+	+ al\z{8ff,200} piano terra\z{8ff,0}, giusto?\z{806,a}\n
+	+ \z{8ff,400}(Yippie!)
+    4d [,4f] = Quindi vuoi buttare tutti\n
+	+ i mobili e gli oggetti che hai\n
+	+ al\z{8ff,200} primo piano\z{8ff,0}, giusto?\z{806,a}\n
+	+ \z{8ff,400}(Non vedo l'ora!)
+    4e [,4f] = Quindi vuoi buttare tutti\n
+	+ i mobili e gli oggetti che hai\n
+	+ in\z{8ff,200} cantina\z{8ff,0}, giusto?\z{806,a}\n
+	+ \z{8ff,400}(Yippie!)
+    4f	= A scanso di equivoci, ti\n
+	+ ripeto di nuovo come\n
+	+ stanno le cose!\n
+	+ \n
+	+ Tutta la roba che si trova a\n
+	+ quel piano verrà ritirata e\n
+	+ portata nel \z{8ff,200}bidone dei rifiuti\z{8ff,0}.\n
+	+ \n
+	+ Tutto ciò che è troppo\n
+	+ grande per il \z{8ff,200}bidone dei\n
+	+ rifiuti\z{8ff,0} verrà buttato\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}
+	+  \z{602,15}in altre\n
+	+ parole,\z{806,a} sparirà per sempre.\n
+	+ \z{602,b}Sei sicur\z{c0c,4006f00000061} di volerti disfare\n
+	+ di tutta quella roba?\n
+	+ \z{8ff,400}(Se dopo la rivuoi, non\n
+	+ venire a frignare da me!)\z{8ff,0}\z{a07,40050004a}\n
+	+ Sì, grazie!\n
+	+ No, grazie...
+    50 [,3] = OK, ho capito.\z{806,a} Ho capito.\z{606,1}\n
+	+ Ce ne occupiamo subito.\n
+	+ Quando arriverai a casa\n
+	+ sarà già tutto fatto.\n
+	+ \z{8ff,400}(Anzi, abbiamo già fatto.)\z{8ff,0}\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,15}.\z{806,5}.\z{806,5}.\z{806,5} Ma, ti prego, fatti e\n
+	+ fammi un favore e, d'ora in\n
+	+ poi cerca di evitare di stipa-\n
+	+ re tanta roba in casa, OK?!\z{806,a}\n
+	+ \z{8ff,400}(Basta solo fare un po' più\n
+	+ d'attenzione!)
+    51 [///,,,1] = 
+    52 [///,,,1] = 
+    53 [///,,,1] = 
+    54 [///,,,1] = 
+    55 [///,,,1] = 
+    56 [///,,,1] = 
+    57 [///,,,1] = 
+    58 [///,,,1] = 
+    59 [///,,,1] = 
+    5a [///,,,1] = 
+    5b	= Vuoi inviare un messaggio\n
+	+ alla \z{8ff,200}bacheca Wii\z{8ff,0}?\z{c07,50000005c0061}\n
+	+ Sì, grazie.\n
+	+ Dove sono?\n
+	+ Lascia stare.
+    5c	= Cosa?!\z{806,a} Cioè\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} vuoi
+	+  inviare\n
+	+ un messaggio alla TUA\n
+	+ \z{8ff,200}bacheca Wii\z{8ff,0}?\n
+	+ \n
+	+ Se vuoi, puoi anche\z{806,5}\n
+	+ allegare delle foto ai\n
+	+ messaggi.\n
+	+ \n
+	+ A parte questo\z{806,a} non puoi\n
+	+ fare altro\z{806,5}.\z{806,5}.\z{806,5}.\z{606,1}\z{602,b} Allora?
+	+ \z{806,f} Vuoi\n
+	+ inviare un messaggio\z{806,5} sì o\n
+	+ no?!\z{a07,400000061}\n
+	+ Sì!\n
+	+ No.
+    5d	= Non sbattere la porta\n
+	+ quando esci!\z{806,f}\n
+	+ \z{8ff,400}(È una cosa che non\n
+	+ sopporto!)
+    5e [///,,,1] = 
+    5f	= \z{606,18}
+    60	= \z{606,17}
+    61	= \z{a08,c00620068}
+    62	= \z{e08,12,67006800680068}
+    63	= \z{e08,12,65006600660066}
+    64	= \z{a08,c00630066}
+    65 [/14] = \z{8ff,400}(Uffa. \z{806,5}\z{120c,40055006e,55006e0061} cliente.
+	+ \z{806,5}.\z{806,5}.)\z{806,14}\n
+	+ \z{8ff,0}Questo è lo sportello\n
+	+ dell'\z{8ff,800}ufficio postale\z{8ff,0}. \z{602,b}In cosa\n
+	+ posso aiutarti oggi?\z{e07,6,72000000600002}\n
+	+ Spedire lettera.\n
+	+ Bacheca Wii.\n
+	+ Organizza lettere.\n
+	+ Lascia stare.
+    66 [/14] = \z{8ff,400}(Uffa. \z{806,5}\z{120c,40055006e,55006e0061} cliente.
+	+ \z{806,5}.\z{806,5}.)\z{806,14}\n
+	+ \z{8ff,0}Questo è lo sportello\n
+	+ dell'\z{8ff,800}ufficio postale\z{8ff,0}. \z{602,b}In cosa\n
+	+ posso aiutarti oggi?\z{c07,5007200000002}\n
+	+ Spedire lettera.\n
+	+ Bacheca Wii.\n
+	+ Lascia stare.
+    67	= OK, \z{806,5}è stato divertente.\z{806,5}.\z{806,5}.\z{806,5} \n
+	+ \z{602,b}Ti occorre altro?\z{806,f}\z{8ff,400}\n
+	+ (Vedi di fare in fretta!)\z{8ff,0}\z{e07,6,72000000600002}\n
+	+ Spedire lettera.\n
+	+ Bacheca Wii.\n
+	+ Organizza lettere.\n
+	+ Lascia stare.
+    68	= OK, \z{806,5}è stato divertente.\z{806,5}.\z{806,5}.\z{806,5} \n
+	+ \z{602,b}Ti occorre altro?\z{806,f}\z{8ff,400}\n
+	+ (Vedi di fare in fretta!)\z{8ff,0}\z{c07,5007200000002}\n
+	+ Spedire lettera.\n
+	+ Bacheca Wii.\n
+	+ Lascia stare.
+    69 [,61] = Benissimo, \z{806,5}ci penso io.
+    6a [/,,,14//,,,1] = 
+    6b [///,,,1] = 
+    6c [,61] = OK.\z{806,f} Fatto.
+    6d [,61] = \z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} Abbiamo usato troppo\n
+	+ la \z{8ff,200}bacheca Wii\z{8ff,0} e purtroppo\n
+	+ non possiamo più \n
+	+ utilizzarla per oggi.\n
+	+ Mi spiace.\z{806,a} \n
+	+ \z{8ff,400}(Bla bla bla!)\z{8ff,0}\z{806,a} \n
+	+ Riprova domani.
+    6e	= Vuoi allegare una foto a\n
+	+ questo messaggio?\z{a07,400920092}\n
+	+ Sì, certo!\n
+	+ No, va bene così.
+    6f [,61] = Bene.\z{606,1} Espongo subito\n
+	+ il tuo messaggio nella\n
+	+ \z{8ff,200}bacheca Wii\z{8ff,0}.\z{8ff,200}\z{806,14}\n
+	+ \z{8ff,400}(Sua Altezza Reale!)
+    70	= Ah.\z{806,f} Vuoi pubblicare questo\n
+	+ messaggio nella\n
+	+ \z{8ff,200}bacheca Wii\z{8ff,0}, eh?\n
+	+ \n
+	+ Quindi, vuoi inviare un\n
+	+ messaggio alla \z{8ff,200}bacheca\n
+	+ Wii\z{8ff,0}, giusto?\n
+	+ \n
+	+ Puoi anche inviarlo alla\n
+	+ \z{8ff,200}bacheca Wii\z{8ff,0} di un amico, o\n
+	+ inviare un'e-mail verso un\n
+	+ PC o verso un cellulare.\n
+	+ \z{806,5}.\z{806,5}.\z{806,5}.\z{806,5} Sì, OK, aspetta.\z{806,f}\n
+	+ A chi è indirizzato\n
+	+ il messaggio?\z{e07,6,8d0061}\n
+	+ A me!\n
+	+ A un amico!\n
+	+ Che cos'è?\n
+	+ Lascia stare.\n
+	+ \n
+    71	= Cosa, \z{806,a}ora NON VUOI più\n
+	+ inviare un messaggio?\z{806,14}\n
+	+ \z{8ff,400}(Ugh! Deciditi!)\z{a07,400000061}\n
+	+ \z{8ff,0}Sì, ora lo invio!\n
+	+ No, grazie.
+    72	= \z{602,1b}Ooocccheiii\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} 
+	+ \z{602,0}Allora, vuoi\n
+	+ inviare una lettera a...?
+    73	= Vuoi spedire altre lettere?\n
+	+ \z{8ff,400}(Ti prego, dimmi di no...)\z{8ff,0}\z{a07,400720074}\n
+	+ Sì, certo!\n
+	+ No, è tutto.
+    74	= Ottimo.\z{806,f} Mi raccomando,\n
+	+ chiudi bene la porta\n
+	+ quando esci.\z{806,f} \z{8ff,400}(Possibil-\n
+	+ mente senza sbatterla!)
+    75	= Cosa, \z{806,a}ora NON VUOI più\n
+	+ inviare una lettera?\z{806,14}\n
+	+ \z{8ff,400}(Umf, per amor del pesce!)\z{a07,400720061}\n
+	+ \z{8ff,0}Sì, ora la invio!\n
+	+ No grazie.
+    76 [/b,,4] = Aspetta\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,15}Ma questa
+	+  lettera\n
+	+ non è indirizzata a\n
+	+ un abitante di questa città!\z{806,f}\n
+	+ \z{8ff,400}(Che rimbambit\z{c0c,4006f00000061}...)\z{8ff,0}\n
+	+ \z{602,0}Quindi non possiamo\n
+	+ spedirla.\z{606,1} Ecco.\n
+	+ Riprenditela pure.
+    77	= Vediamo...
+    78 [/4,,4] = Sì, \z{806,f}è una lettera per\n
+	+ \z{8ff,500}\z{c04,1000050003100}\z{8ff,0},\z{602,0} bene, ma in\n
+	+ questo momento non la\n
+	+ possiamo consegnare.\z{806,f}\n
+	+ \z{602,1b}La sua cassetta delle \n
+	+ lettere è piena e non ci sta\n
+	+ più nulla dentro.\n
+	+ \n
+	+ \z{602,9}\z{806,f}.\z{806,f}.\z{806,f}.\z{806,f} Perché non riprovi?
+	+ \z{606,1}\n
+	+ Più avanti, magari.\z{806,1e}\n
+	+ \z{8ff,400}(Devo sempre spiegare\n
+	+ TUTTO a questa gente?!)
+    79 [/4,,4] = \z{602,b}Allora, \z{806,f}le lettere per\n
+	+ \z{8ff,500}\z{c04,1000050003100} \z{8ff,0}e \z{8ff,500}
+	+ \z{c04,1010050003200}\z{8ff,0} \z{602,0}\n
+	+ in questo momento non le\n
+	+ possiamo consegnare.\z{806,f}\n
+	+ \z{602,1b}Pare che abbiano\n
+	+ le cassette delle lettere\n
+	+ stracolme e che non ci stia\n
+	+ più nulla dentro.\n
+	+ \z{602,0}Mi dispiace. Non posso\n
+	+ farci niente.\z{806,f}\n
+	+ \z{8ff,400}(Cosa? Vuoi un fazzoletto\n
+	+ per piangere?)
+    7a [/4,,4] = Ehi, vedi queste lettere?\z{806,f}\n
+	+ Per \z{8ff,500}\z{c04,1000050003100}\z{8ff,0}, \n
+	+ \z{8ff,500}\z{c04,1010050003200}\z{8ff,0} e\n
+	+ \z{8ff,500}\z{c04,1020050003300}\z{8ff,0}, eh?\n
+	+ \z{602,0}Beh, non possiamo recapi-\n
+	+ tarne neanche una. Le\n
+	+ cassette delle lettere dei\n
+	+ destinatari sono piene.\n
+	+ \z{602,1b}Ci scusiamo per il disagio.\z{806,f}\n
+	+ \z{8ff,400}(Si fa per dire!)
+    7b [,73] = Va bene.\z{806,a} Me ne occupo\n
+	+ subito...\z{806,a}\n
+	+ \z{8ff,400}(Come sempre, uffa...)
+    7c [,73] = Dammi pure le altre lettere.\z{806,a}\n
+	+ \z{8ff,400}(Che lavoro meraviglioso\n
+	+ che ho...)
+    7d [,73] = In questo momento \z{806,a}non\n
+	+ possiamo prendere in\n
+	+ consegna lettere indirizzate\n
+	+ a persone di altre città.\n
+	+ Ti consiglio di aspettare e\n
+	+ riprovare più tardi.\z{806,a}\n
+	+ \z{8ff,400}(Scocciat\z{160c,4,6f007200650000,72006900630065}...)
+    7e [,73/,,4] = In questo momento, \z{806,5}\n
+	+ possiamo prendere in\n
+	+ consegna un massimo di \z{8ff,200}\z{803,60000}\n
+	+ \032⠌\022\000
+    7f [,73] = Bene.\z{806,a} Dammi pure\n
+	+ le lettere.\z{806,a}\n
+	+ \z{8ff,400}(Uffa...)
+    80 [,73] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,a} purtroppo oggi\n
+	+ abbiamo già preso in\n
+	+ consegna molte lettere per\n
+	+ altre città.\n
+	+ Non possiamo accettarne\n
+	+ altre. Perché non riprovi\n
+	+ domani? \z{8ff,400}(Magari non\n
+	+ durante il mio turno!)
+    81 [,82/,,14] = OK, OK\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} \z{602,b}Ora dimmi, 
+	+ \z{806,a}\n
+	+ quando vuoi che\n
+	+ la consegniamo?
+    82	= Vuoi che la consegniamo\n
+	+ il giorno \z{8ff,200}\z{e04,1,400440041005900}\z{8ff,0}\n
+	+ \z{8ff,200}\z{1204,103004d00,4f004e0054004800} \z{803,90100}\z{8ff,0},
+	+  sì?\z{a07,400830084}\n
+	+ Esatto!\n
+	+ Sbagliato!
+    83 [,73] = Benissimo. \z{806,5}Ce ne\n
+	+ occuperemo subito.\n
+	+ \z{8ff,400}(Uffa, \z{806,5}quanto rompi...)
+    84 [,82/,,14] = \z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} Bene.\z{806,5} Riproviamo.
+	+ \z{806,f}\n
+	+ \z{8ff,400}(Perché gli scocciatori\n
+	+ vengono TUTTI da me?)
+    85 [/1b] = Aspetta. C'è un problema.\z{806,f}\n
+	+ \z{8ff,400}(Come al solito!)\z{8ff,0}\n
+	+ \n
+	+ \n
+	+ \z{602,0}Sono spiacente, ma\n
+	+ possiamo recapitare solo\n
+	+ una lettera indirizzata a te\n
+	+ stess\z{c0c,4006f00000061} alla volta.\n
+	+ Ed è già in consegna\n
+	+ un'altra lettera per\n
+	+ il giorno \z{8ff,200}\z{e04,1,400440041005900} 
+	+ \z{1204,103004d00,4f004e0054004800} \z{803,90100}\z{8ff,0}.\n
+	+ \n
+	+ \z{602,1c}Se vuoi, puoi annullare la\n
+	+ consegna dell'altra lettera,\z{806,14}\n
+	+ \z{8ff,400}(e farmi fare un doppio\n
+	+ lavoro)\z{806,14} \z{8ff,0}e spedire questa.\n
+	+ Cosa vuoi fare?\z{806,f}\n
+	+ \z{8ff,400}(Fammi indovinare. Ci pensi\n
+	+ per un'ora?)\z{806,5}\z{a07,400860087}\n
+	+ \z{8ff,0}Annulla e invia!\n
+	+ Lascia stare.
+    86 [,82/,,14] = OK. Perfetto. Annullo il\n
+	+ recapito della lettera pre-\n
+	+ cedente.\z{806,14} \z{8ff,400}(Probabilmente\n
+	+ piena di cretinate...)\z{8ff,0}\n
+	+ Ora dimmi, \z{806,a}\z{602,b}quando vorresti\n
+	+ ricevere la tua nuova\n
+	+ lettera?\z{806,5}\n
+	+ \z{8ff,400}(Su, su, rapid\z{c0c,4006f00000061}, rapid
+	+ \z{c0c,4006f00000061}...)
+    87 [,73/4,,4] = Cosa? \z{806,5}Hai cambiato idea?\z{806,a}\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,0}.\z{806,5}.\z{806,5}.\z{806,5} .\z{806,5}.\z{806,5}.\z{806,f}\n
+	+ \z{602,15}\z{8ff,400}(Ho altro da fare,\n
+	+ spicciati!)
+    88 [,61] = Mh-mmmh. Beh, sono\n
+	+ spiacente, ma abbiamo già\n
+	+ un sacco di lettere in\n
+	+ consegna.\z{806,14}\n
+	+ Non possiamo prenderne\n
+	+ altre. \z{602,1b}Perché non ripassi\n
+	+ un po' più tardi?\z{806,a} \z{8ff,400}(Durante\n
+	+ il turno di Pelly magari!)
+    89 [/,,13] = \z{602,9}Uhm,\z{806,14} possiamo accettare\n
+	+ lettere inviate da gente di\n
+	+ altre città solo se destinate\n
+	+ a qualcuno di \z{605,5}.
+    8a [,61] = Uhm.... Pare che in questo\n
+	+ momento il servizio di\n
+	+ salvataggio non sia\n
+	+ disponibile.\n
+	+ Sono spiacente, potresti\n
+	+ riprovare più tardi?\z{806,f}\n
+	+ \z{8ff,400}(Strano...)
+    8b [,61///,,,1] = \z{602,19}Uhm...\z{806,f} Mi spiace.\z{806,f} Non si\n
+	+ può.\z{806,f} Ora puoi solo mandare\n
+	+ messaggi alla \z{8ff,200}bacheca Wii\n
+	+ \z{8ff,0}di altre persone.
+    8c [,61///,,,1] = \z{602,19}Uhm...\z{806,f} Mi spiace.\z{806,f} Non si\n
+	+ può.\z{806,f} Ora come ora puoi\n
+	+ solo mandare messaggi\n
+	+ alla tua \z{8ff,200}bacheca Wii\z{8ff,0}.
+    8d	= Da qui puoi mandare\n
+	+ messaggi alla \z{8ff,200}bacheca Wii\n
+	+ \z{8ff,0}tua o dei tuoi amici.\n
+	+ \n
+	+ \z{602,14}Inoltre, puoi allegare una\n
+	+ foto a ogni messaggio!\z{606,1}\n
+	+ \z{602,0}Se vuoi, naturalmente.\n
+	+ \n
+	+ Però,\z{806,a} se il messaggio\n
+	+ viene inviato a un indirizzo\n
+	+ e-mail per \z{8ff,200}PC \z{8ff,0}o\n
+	+ \z{8ff,200}cellulare\z{8ff,0}...\n
+	+ ... già registrato nella tua\n
+	+ \z{8ff,200}rubrica Wii\z{8ff,0}, non\n
+	+ possiamo garantire\n
+	+ l'integrità del testo.\n
+	+ \z{602,1b}\z{8ff,400}(Uffa, che noia! Quante\n
+	+ volte dovrò ancora\n
+	+ rispiegare la stessa cosa?)\z{8ff,0}\n
+	+ \n
+	+ \z{602,0}Spero di essere stata\n
+	+ chiara. Allora,\z{806,14}\z{602,b} vuoi spedire\n
+	+ un messaggio?\z{c07,5000000000061}\n
+	+ Sì, a me stess\z{c0c,4006f00000061}.\n
+	+ Sì, a un amico.\n
+	+ Lascia stare.
+    8e [,61] = Ehm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} il servizio \n
+	+ \z{8ff,200}RiiConnect24 \z{8ff,0}è impostato\n
+	+ su\z{8ff,200} NO\z{8ff,0}.\n
+	+ \n
+	+ \z{602,0}Se non cambi questa\n
+	+ impostazione, non potrai\n
+	+ inviare messaggi agli\n
+	+ abitanti di altre città.\n
+	+ Se vuoi controllare le tue\n
+	+ impostazioni,\z{806,a} usa il\n
+	+ \z{8ff,200}telefono \z{8ff,0}nel tuo \z{8ff,200}attico\z{8ff,0}.\n
+	+ \z{8ff,10050}\z{8ff,400}(Ancora non lo sapevi?)
+    8f [,73] = Ehm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} il servizio \n
+	+ \z{8ff,200}RiiConnect24\z{8ff,0} è impostato\n
+	+ su\z{8ff,200} NO\z{8ff,0}.\n
+	+ \n
+	+ \z{602,1b}Se non cambi questa\n
+	+ impostazione, non potrai\n
+	+ inviare lettere agli\n
+	+ abitanti di altre città.\n
+	+ Se vuoi controllare le tue\n
+	+ impostazioni,\z{806,a} usa il\n
+	+ \z{8ff,200}telefono \z{8ff,0}nel tuo \z{8ff,200}attico\z{8ff,0}.\n
+	+ \z{8ff,10050}\z{8ff,400}(Ancora non lo sapevi?)
+    90 [,61] = Ehm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} le impostazioni del\n
+	+ \z{8ff,200}filtro famiglia \z{8ff,0}non consen-\n
+	+ tono l'invio di messaggi a\n
+	+ persone di altre città.\n
+	+ \z{602,0}Sono spiacente. Non posso\n
+	+ farci nulla.
+    91 [,73] = Ehm\z{806,3}.\z{806,3}.\z{806,3}.\z{806,a} le impostazioni del\n
+	+ \z{8ff,200}filtro famiglia \z{8ff,0}non consen-\n
+	+ tono l'invio di lettere a\n
+	+ persone di altre città.\n
+	+ \z{602,0}Sono spiacente. Non posso\n
+	+ farci nulla.
+    92 [,6f] = OK, \z{806,5}mi preparo a spedire.
+    93	= Uhm...\z{806,f} mi sa che qualcosa\n
+	+ è andato storto.\z{806,f}\n
+	+ \z{8ff,400}(Maledetta tecnologia...)\z{8ff,0}\n
+	+ \n
+	+ Vuoi che riprovi a inviare?\z{a07,400920094}\n
+	+ Sì, grazie!\n
+	+ No, lascia stare.
+    94 [,61] = Mi dispiace, ma temo che\n
+	+ dovrai buttare via il tuo\n
+	+ messaggio.\n
+	+ \z{8ff,400}(Mi dispiace davvero...)
+    95 [,61] = Mmmh?\z{806,f} Non capisco. Non\n
+	+ riesco a preparare\n
+	+ il messaggio per l'invio.\n
+	+ \n
+	+ Mi dispiace, ma temo che\n
+	+ dovrai buttare il tuo\n
+	+ messaggio.\n
+	+ \z{8ff,400}(Mi dispiace davvero...)
+    96 [/4] = Mmmh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f} aspetta un attimo.\n
+	+ \n
+	+ \n
+	+ \n
+	+ Puoi spedire lettere solo\n
+	+ alle persone incluse nella\n
+	+ tua \z{8ff,200}lista amici Wii\z{8ff,0}.
+    97 [/,,13] = Mmmh...\z{806,a} Questa lettera è\n
+	+ indirizzata a qualcuno che\n
+	+ vive in un'altra città...\n
+	+ \n
+	+ È mio dovere informarti che\n
+	+ non sempre riusciamo a\n
+	+ recapitare le lettere a\n
+	+ destinatari fuori città...\n
+	+ ... ed a volte può succedere\n
+	+ che la tua lettera impieghi\n
+	+ un po' più del normale ad\n
+	+ arrivare.\n
+	+ Alle volte si verificano\z{602,9}\z{806,a}.\z{806,a}.\z{806,a}.
+	+ \z{806,a}\n
+	+ dei piccoli incidenti di\n
+	+ percorso, diciamo.
+    98 [,61/,,4] = Sono spiacente, ma il\n
+	+ reparto lettere è un po'\n
+	+ sovraccarico in questo\n
+	+ momento.\n
+	+ \z{602,1b}Tieni. Riprenditi\n
+	+ le lettere che non riusci-\n
+	+ remmo a smaltire.
+    99 [///,,,1] = 
+    9a [,61] = Eh? Cosa?\z{806,a} Ah, giusto.\n
+	+ \n
+	+ \n
+	+ \n
+	+ \z{602,1b}Mi spiace, ma non possiamo\n
+	+ accettare messaggi da par-\n
+	+ te di residenti in altre città\n
+	+ nella \z{8ff,200}bacheca Wii\z{8ff,0}.
+    9b [/4,,4] = Oh, no, \z{806,f}non posso\n
+	+ crederci\z{806,5}.\z{806,5}.\z{806,5}. Pare che le\n
+	+ cassette della posta di\n
+	+ \z{8ff,500}\z{c04,1000050003100}\z{8ff,0}...\z{806,5}\n
+	+ ... \z{8ff,500}\z{c04,1010050003200}\z{8ff,0},\z{806,5}\n
+	+ \z{8ff,500}\z{c04,1020050003300}\z{8ff,0} e\z{806,5}\n
+	+ \z{8ff,500}\z{c04,1030050003400} \z{8ff,0}siano tutte\n
+	+ piene.\n
+	+ \z{602,1b}E questo significa che non\n
+	+ possiamo consegnargli\n
+	+ niente!\n
+	+ \n
+	+ \z{602,0}Non è\z{806,5} colpa mia!\z{806,f}\n
+	+ \z{8ff,400}(Aaah,\z{806,5} che gente!)
+

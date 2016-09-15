@@ -1,0 +1,183 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: http://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  http://szs.wiimm.de/r/wiki/BMG
+#
+#------------------------------------------------------------------------------
+# Parameters begin with '@'. Unknown parameters are ignored on scanning.
+
+# Size of each element of section 'INF0' (MKW: 8).
+# Set it first, because it defines defaults for other parameters.
+@INF-SIZE = 0x14
+
+# Default attribute values for this BMG (MKW: [1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#------------------------------------------------------------------------------
+
+     0 [/,,,d//,,,1] = 
+     1	= \z{a08,c00020014}
+     2	= \z{e08,12,5000300030003}
+     3 [/,,,f] = Hein?\z{806,14} On dirait que tu\n
+	+ ne peux pas utiliser le\n
+	+ téléphone pour l'instant...
+     4	= Je vois.\z{806,14} À bientôt,\z{806,5} alors!
+     5	= Salut,\z{806,5} \z{605,0}!\z{806,14}\n
+	+ Qu'est-ce que je peux faire\n
+	+ pour toi?
+     6	= Autre chose?
+     7	= Choisis un type de voix\n
+	+ pour les habitants.\z{c07,1000800080008}\n
+	+ Animal.\n
+	+ Bibibise.\n
+	+ Aucun.
+     8	= \z{8ff,200}\z{60c,3}\z{1204,101005600,4f00490043004500}\z{8ff,0}?
+	+ \z{806,14} C'est ce que\n
+	+ tu veux?\z{a07,400060009}\n
+	+ Oui!\n
+	+ Euh, non!
+     9 [,7] = Très bien,\z{806,5} on reprend...
+     a	= 
+     b [,d] = 
+     c [,d] = 
+     d	= Dis-moi...\z{806,14} Quel clavier\n
+	+ veux-tu utiliser durant\n
+	+ le jeu?\z{a07,e000f}\n
+	+ Ordinateur.\n
+	+ Cellulaire.
+     e [,6] = \z{8ff,200}Le clavier d'un ordinateur\z{8ff,0}.\z{806,14}\n
+	+ Compris!
+     f [,6] = \z{8ff,200}Le clavier d'un cellulaire\z{8ff,0}.\z{806,14}\n
+	+ Compris!
+    10	= Veux-tu activer l'aide pour\n
+	+ les fenêtres et les icônes\n
+	+ de menu?\z{a07,400110012}\n
+	+ Oui!\n
+	+ Non merci.
+    11 [,6] = Très bien.\z{806,14}\n
+	+ Voilà qui est fait!
+    12 [,6] = Très bien,\z{806,5} tu n'en as pas\n
+	+ besoin...\z{806,14} Voilà,\z{806,5} tu ne les\n
+	+ verras plus.
+    13 [/,,,d] = 
+    14 [/,,,f] = Ce n'est pas très poli\n
+	+ d'utiliser le téléphone\n
+	+ de quelqu'un sans lui\n
+	+ demander la permission...
+    15	= Très bien!\z{806,14} Ceci est très\n
+	+ important, alors je vais le\n
+	+ répéter autant de fois qu'il\n
+	+ le faudra!\n
+	+ Alors\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ \n
+	+ \n
+	+ \n
+	+ Ce jeu te permet de\z{806,5}\n
+	+ communiquer avec tes amis\n
+	+ en te connectant à leur\n
+	+ \z{8ff,100}console Wii\z{8ff,0} via \z{8ff,200}RiiConnect24\z{8ff,0}.\n
+	+ Grâce à cette option, tu\n
+	+ peux envoyer des lettres\n
+	+ aux personnes enregistrées\n
+	+ dans ta \z{8ff,200}liste d'amis\z{8ff,0}...\n
+	+ Tu peux aussi envoyer des\n
+	+ messages sur le \z{8ff,200}Bureau Wii\z{8ff,0}\n
+	+ des amis dont tu possèdes\n
+	+ le \z{8ff,200}code Wii\z{8ff,0}.\n
+	+ En plus, \z{806,a}les voisins de tes\n
+	+ amis peuvent aussi décider\n
+	+ de déménager dans ta ville\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Et tu pourras compter sur\n
+	+ eux pour qu'ils te racontent\n
+	+ les dernières nouvelles dans\n
+	+ la ville de tes amis\z{806,5}.\z{806,5}.\z{806,5}.\n
+	+ Même si tu n'es pas en train\n
+	+ de jouer,\z{806,a} vous aurez\n
+	+ l'impression que vos villes\n
+	+ sont reliées entre elles.\n
+	+ Et ce n'est pas tout! \z{806,a}Tu\n
+	+ recevras régulièrement des\n
+	+ lettres et des cadeaux\n
+	+ de Nintendo.\n
+	+ Bon, \z{806,a}je crois qu'on a fait le\n
+	+ tour de cette formidable\n
+	+ option\z{806,5}.\z{806,5}.\z{806,5}.
+    16 [,18/4//,,,1] = Oh, \z{806,5}on dirait que\n
+	+ \z{8ff,200}RiiConnect24 \z{8ff,0}n'est pas\n
+	+ activé.\n
+	+ \n
+	+ Tu dois d'abord l'activer, si\n
+	+ tu veux modifier des\n
+	+ paramètres dans ce\n
+	+ domaine...\n
+	+ Commence par vérifier les\n
+	+ paramètres \z{8ff,200}RiiConnect24\n
+	+ \z{8ff,0}dans les options Wii.
+    17 [,18/4//,,,1] = Oh,\z{806,5} on dirait que tu\n
+	+ ne peux pas accéder aux\n
+	+ services en ligne.\n
+	+ \n
+	+ Si tu veux échanger des\n
+	+ informations avec d'autres\n
+	+ villes...\n
+	+ \n
+	+ Vérifie les paramètres du\n
+	+ \z{8ff,100}contrôle parental \z{8ff,0}dans les\n
+	+ options Wii.
+    18	= \z{8ff,200}RiiConnect24 \z{8ff,0}est\n
+	+ actuellement \z{8ff,200}activé\z{8ff,0}.\z{806,a}\n
+	+ Que souhaites-tu faire?\z{c07,1001c001c0015}\n
+	+ Laisser activé!\n
+	+ Désactiver!\n
+	+ Explique-moi!
+    19	= \z{8ff,200}RiiConnect24 \z{8ff,0}est\n
+	+ actuellement \z{8ff,200}désactivé\z{8ff,0}.\n
+	+ Que souhaites-tu faire?\z{c07,1001c001c0015}\n
+	+ Activer!\n
+	+ Laisser désactivé!\n
+	+ Explique-moi!
+    1a	= \z{8ff,200}RiiConnect24 \z{8ff,0}est\n
+	+ actuellement \z{8ff,200}activé\z{8ff,0}.\z{806,a}\n
+	+ Que souhaites-tu faire?\z{c07,1001c001c0015}\n
+	+ Laisser activé!\n
+	+ Désactiver!\n
+	+ Explique-moi!
+    1b	= \z{8ff,200}RiiConnect24 \z{8ff,0}est\n
+	+ actuellement \z{8ff,200}désactivé\z{8ff,0}.\z{806,a}\n
+	+ Que souhaites-tu faire?\z{c07,1001c001c0015}\n
+	+ Activer!\n
+	+ Laisser désactivé!\n
+	+ Explique-moi!
+    1c [,6] = OK!\z{806,14}\n
+	+ Bien reçu!
+    1d [,23] = Hmmm, \z{806,5}alors tu es satisfait\z{a0c,400000065}\n
+	+ de ce que tu as?\z{806,14} Très bien,\n
+	+ c'est compris.
+    1e	= \z{e08,12,1f000300030003}
+    1f	= Oui?\z{806,14} De quoi as-tu\n
+	+ besoin,\z{806,5} \z{605,0}?\z{c07,5002000210004}\n
+	+ Options.\n
+	+ Mon drapeau.\n
+	+ Rien du tout.
+    20	= Très bien, tu veux régler les\n
+	+ options de jeu!\z{806,14} Vas-y,\n
+	+ fais ton choix!
+    21 [/,,12] = Alors comme ça, tu veux\n
+	+ modifier ton drapeau?\n
+	+ Qu'est-ce que tu as en\n
+	+ tête?
+    22	= Compris!
+    23	= Alors, as-tu besoin d'autre\n
+	+ chose?\z{c07,5002000210004}\n
+	+ Options.\n
+	+ Mon drapeau.\n
+	+ Rien du tout.
+
