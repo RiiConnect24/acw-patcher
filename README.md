@@ -1,6 +1,7 @@
 # Animal Crossing: City Folk - Wiimmfi+RC24 patcher
 
 This patcher is for Animal Crossing: City Folk, which will allow Wiimmfi and RiiConnect24 support and patch the messages in the game.
+
 For WiiConnect24 support, you need to <a href="https://riiconnect24.net/">install RiiConnect24</a> and delete `wc24pubk.mod` from your savedata (instructions will come later).
 
 ## Usage
