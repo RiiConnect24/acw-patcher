@@ -14,7 +14,7 @@ Place your image in the folder with the WBFS/ISO and run the create-image script
 - [ ] Make BMG list global
 
 ## Credits
-- @larsenv for offsets  
+- Larsenv for offsets and some translations
 - PokeAcer549 for actual script creation  
 - Wiimm for WIT and SZS tools (both of which are used in my patcher)  
 
