@@ -1,22 +1,21 @@
-# Animal Crossing Wii - Wiimmfi+RC24 patcher
+# Animal Crossing: City Folk - Wiimmfi+RC24 patcher
 
-This patcher is for Animal Crossing Wii, and will patch for both Wiimmfi's URLs and "Nintendo WFC", aswell as add RiiConnect24's key into your ISO.  
+This patcher is for Animal Crossing: City Folk, and will patch for both Wiimmfi's URLs and "Nintendo WFC", aswell as add RiiConnect24's key into your ISO.  
 You will need to use DNS `185.82.21.64` and delete `wc24pubk.mod` from your savedata (instructions will come later)  
 
 ## Usage
-Place your image in the folder with the WBFS/ISO and run the create-image script; type in your region (Accepts: PAL/NTSC-U/NTSC-J/NTSC-K) and hit enter.
+Place your WBFS image in the folder corresponding to your operating system then run the create-image script.
 
 ## To Do
-- [ ] Get other language translations (see https://github.com/PokeAcer549/acw-patcher/issues/1 )
-- [ ] Find more offsets for patch keys
 - [ ] Add how to remove public key from savedata
 - [ ] Patch URLs to remove requirement of DNS (need to contact Wiimm)
-- [ ] Make BMG list global
 
 ## Credits
-- Larsenv for offsets and some translations
-- PokeAcer549 for actual script creation  
-- Wiimm for WIT and SZS tools (both of which are used in my patcher)  
+- Brawl345 for the German translations.
+- Larsenv for offsets, translations, some BMG patches, and script updates.
+- PokeAcer549 for actual script creation.
+- Shutterbug2000 for a small program to detect the version of this game, and helped us get v2 of the USA version of this game to add support for patching it.
+- Wiimm for SZS and ISO tools (both of which are used in this patcher).
 
 ## Changelog
 v1.2 (first GitHub version):
