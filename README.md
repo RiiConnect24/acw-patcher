@@ -1,7 +1,7 @@
 # Animal Crossing: City Folk - Wiimmfi+RC24 patcher
 
-This patcher is for Animal Crossing: City Folk, and will patch for both Wiimmfi's URLs and "Nintendo WFC", aswell as add RiiConnect24's key into your ISO.  
-You will need to use DNS `185.82.21.64` and delete `wc24pubk.mod` from your savedata (instructions will come later)  
+This patcher is for Animal Crossing: City Folk, which will allow Wiimmfi and RiiConnect24 support and patch the messages in the game.
+For WiiConnect24 support, you need to <a href="https://riiconnect24.net/">install RiiConnect24</a> and delete `wc24pubk.mod` from your savedata (instructions will come later).
 
 ## Usage
 Place your WBFS image in the folder corresponding to your operating system then run the create-image script.
