@@ -57,7 +57,7 @@ if %BMG%==USA (
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
-	copy /b BMG/ENG/script.arc accf-data/files/Script/ENG/script.arc
+	copy /b BMG\ENG\script.arc accf-data\files\Script\ENG\script.arc
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/FRA/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_periko.bmg --patch replace=BMG/FRA/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_perimi.bmg --patch replace=BMG/FRA/NPC_perimi.txt
@@ -65,7 +65,7 @@ if %BMG%==USA (
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/FRA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/FRA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Start.bmg --patch replace=BMG/FRA/SYS_Start.txt
-	copy /b BMG/FRA/script.arc accf-data/files/Script/FRA/script.arc
+	copy /b BMG\FRA\script.arc accf-data\files\Script\FRA\script.arc
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/SPA/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_periko.bmg --patch replace=BMG/SPA/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_perimi.bmg --patch replace=BMG/SPA/NPC_perimi.txt
@@ -73,7 +73,7 @@ if %BMG%==USA (
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/SPA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/SPA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
-	copy /b BMG/SPA/script.arc accf-data/files/Script/SPA/script.arc
+	copy /b BMG\SPA\script.arc accf-data\files\Script\SPA\script.arc
 	)
 if %BMG%==JPN (
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
@@ -83,7 +83,7 @@ if %BMG%==JPN (
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Bus.bmg --patch replace=BMG/JPN/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
-	copy /b BMG/JPN/script.arc accf-data/files/Script/JPN/script.arc
+	copy /b BMG\JPN\script.arc accf-data\files\Script\JPN\script.arc
 	)
 if %BMG%==KOR (
 	wbmgt patch accf-data/files/Script/KOR/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/KOR/NPC_gatekeeperA.txt
@@ -93,7 +93,7 @@ if %BMG%==KOR (
 	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_Bus.bmg --patch replace=BMG/KOR/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/KOR/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/KOR/SYS_mess/SYS_Start.bmg --patch replace=BMG/KOR/SYS_Start.txt
-	copy /b BMG/KOR/script.arc accf-data/files/Script/KOR/script.arc
+	copy /b BMG\KOR\script.arc accf-data\files\Script\KOR\script.arc
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_periko.bmg --patch replace=BMG/JPN/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_perimi.bmg --patch replace=BMG/JPN/NPC_perimi.txt
@@ -101,7 +101,7 @@ if %BMG%==KOR (
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Bus.bmg --patch replace=BMG/JPN/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
-	copy /b BMG/JPN/script.arc accf-data/files/Script/JPN/script.arc
+	copy /b BMG\JPN\script.arc accf-data\files\Script\JPN\script.arc
 	)
 if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
@@ -111,7 +111,7 @@ if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ENG/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ENG/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/ENG/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
-	copy /b BMG/ENG/script.arc accf-data/files/Script/ENG/script.arc
+	copy /b BMG\ENG\script.arc accf-data\files\Script\ENG\script.arc
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/FRA/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_periko.bmg --patch replace=BMG/FRA/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/FRA/NPC_SP/NPC_perimi.bmg --patch replace=BMG/FRA/NPC_perimi.txt
@@ -119,7 +119,7 @@ if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/FRA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/FRA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Start.bmg --patch replace=BMG/FRA/SYS_Start.txt
-	copy /b BMG/RFA/script.arc accf-data/files/Script/FRA/script.arc
+	copy /b BMG\FRA\script.arc accf-data\files\Script\FRA\script.arc
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/GER/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_periko.bmg --patch replace=BMG/GER/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_perimi.bmg --patch replace=BMG/GER/NPC_perimi.txt
@@ -127,7 +127,7 @@ if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_Bus.bmg --patch replace=BMG/GER/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/GER/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/GER/SYS_mess/SYS_Start.bmg --patch replace=BMG/GER/SYS_Start.txt
-	copy /b BMG/GER/script.arc accf-data/files/Script/GER/script.arc
+	copy /b BMG\GER\script.arc accf-data\files\Script\GER\script.arc
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/SPA/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_periko.bmg --patch replace=BMG/SPA/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/SPA/NPC_SP/NPC_perimi.bmg --patch replace=BMG/SPA/NPC_perimi.txt
@@ -135,7 +135,7 @@ if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/SPA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/SPA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Start.bmg --patch replace=BMG/SPA/SYS_Start.txt
-	copy /b BMG/SPA/script.arc accf-data/files/Script/SPA/script.arc
+	copy /b BMG\SPA\script.arc accf-data\files\Script\SPA\script.arc
 	wbmgt patch accf-data/files/Script/ITA/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ITA/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/ITA/NPC_SP/NPC_periko.bmg --patch replace=BMG/ITA/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/ITA/NPC_SP/NPC_perimi.bmg --patch replace=BMG/ITA/NPC_perimi.txt
@@ -143,7 +143,7 @@ if %BMG%==EUR (
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/ITA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ITA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ITA/SYS_Start.txt
-	copy /b BMG/ITA/script.arc accf-data/files/Script/ITA/script.arc
+	copy /b BMG\ITA\script.arc accf-data\files\Script\ITA\script.arc
 	)
 
 mkdir wiimmfi-images
