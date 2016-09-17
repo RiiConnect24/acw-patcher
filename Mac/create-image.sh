@@ -4,7 +4,7 @@ echo "This will both patch the server URLs and change the text from Nintendo WFC
 echo "This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For more information, please go to http://riiconnect24.net."
 
 echo "Extracting..."
-./wit extract . --DEST ./accf-data/ --psel=DATA --wiimmfi
+./wit extract . --DEST ./accf-data/ --psel=DATA --wiimmfi -ovv
 
 cp ./accf-data/disc/header.bin header.bin
 
