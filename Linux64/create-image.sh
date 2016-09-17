@@ -112,7 +112,7 @@ then
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Bus.bmg --patch replace=BMG/FRA/SYS_Bus.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/FRA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/FRA/SYS_mess/SYS_Start.bmg --patch replace=BMG/FRA/SYS_Start.txt
-	cp BMG/RFA/script.arc accf-data/files/Script/FRA/script.arc
+	cp BMG/FRA/script.arc accf-data/files/Script/FRA/script.arc
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/GER/NPC_gatekeeperA.txt
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_periko.bmg --patch replace=BMG/GER/NPC_periko.txt
 	wbmgt patch accf-data/files/Script/GER/NPC_SP/NPC_perimi.bmg --patch replace=BMG/GER/NPC_perimi.txt
