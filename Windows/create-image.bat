@@ -6,7 +6,7 @@ echo This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For 
 
 :extract
 echo Extracting...
-wit extract . --DEST ./accf-data/ --psel=DATA -ovv
+wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA -ovv
 
 copy /b accf-data\disc\header.bin header.bin
 

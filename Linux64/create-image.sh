@@ -4,7 +4,7 @@ echo "This will both patch the server URLs and change the text from Nintendo WFC
 echo "This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For more information, please go to http://riiconnect24.net."
 
 echo "Extracting..."
-./wit extract . --DEST ./accf-data/ --psel=DATA --wiimmfi
+./wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA --wiimmfi -ovv
 
 cp ./accf-data/disc/header.bin header.bin
 
@@ -145,4 +145,4 @@ wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
 
 echo "Done."
 
-echo "If your patch completed successfully, your WBFS will now be in the "wiimmfi-images" folder - please copy the WBFS in there to your USB."
+echo "If your patch completed successfully, your WBFS will now be in the wiimmfi-images folder - please copy the WBFS in there to your USB."
