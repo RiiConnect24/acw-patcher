@@ -146,11 +146,11 @@ if %BMG%==EUR (
 	copy /b BMG/ITA/script.arc accf-data/files/Script/ITA/script.arc
 	)
 
-mkdir new-image
-wit copy accf-data new-image --update --psel=data --wiimmfi -ovv
-wit move new-image/accf-data.wbfs new-image
+mkdir wiimmfi-images
+wit copy accf-data wiimmfi-images --update --psel=data --wiimmfi -ovv
+wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
 
 echo Done.
 
-echo If your patch completed successfully, your WBFS will now be in the "new-image" folder - please copy this to your USB.
+echo If your patch completed successfully, your WBFS will now be in the "wiimmfi-images" folder - please copy the WBFS in there to your USB.
 pause
