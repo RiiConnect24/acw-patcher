@@ -145,4 +145,4 @@ wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
 
 echo "Done."
 
-echo "If your patch completed successfully, your WBFS will now be in the "wiimmfi-images" folder - please copy the WBFS in there to your USB."
+echo "If your patch completed successfully, your WBFS will now be in the wiimmfi-images folder - please copy the WBFS in there to your USB."
