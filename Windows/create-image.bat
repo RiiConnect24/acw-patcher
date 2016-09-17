@@ -1,6 +1,6 @@
 echo off
 echo Wiimmfi Patcher for Animal Crossing: City Folk.
-echo Patcher by PokeAcer and Larsenv. WIT and SZS tools by Wiimm.
+echo Patcher by PokeAcer and Larsenv. SZS and ISO tools by Wiimm.
 echo This will both patch the server URLs and change the text from Nintendo WFC to Wiimmfi.
 echo This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For more information, please go to http://riiconnect24.net.
 
