@@ -17,22 +17,32 @@ if [ $VERSION -eq RUUE010 ]
 then
 	OFFSET="80474CB8"
 	BMG="USA"
+fi
+
 if [ $VERSION -eq RUUE011 ]
 then
 	OFFSET="80474F38"
 	BMG="USA"
+fi
+
 if [ $VERSION -eq RUUJ011 ]
 then
 	OFFSET="80474DE8"
 	BMG="JPN"
+fi
+
 if [ $VERSION -eq RUUK011 ]
 then
 	OFFSET="8047DE98"
 	BMG="KOR"
+fi
+
 if [ $VERSION -eq RUUP010 ]
 then
 	OFFSET="804753F8"
 	BMG="EUR"
+fi
+
 if [ $VERSION -eq RUUP011 ]
 then
 	OFFSET="80475678"
@@ -67,6 +77,8 @@ then
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/SPA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/SPA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ENG/SYS_Start.txt
 	cp BMG/SPA/script.arc accf-data/files/Script/SPA/script.arc
+fi
+
 if [ $BMG -eq JPN ]
 then
 	wbmgt patch accf-data/files/Script/JPN/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/JPN/NPC_gatekeeperA.txt
@@ -77,6 +89,8 @@ then
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
 	cp BMG/JPN/script.arc accf-data/files/Script/JPN/script.arc
+fi
+
 if [ $BMG -eq KOR ]
 then
 	wbmgt patch accf-data/files/Script/KOR/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/KOR/NPC_gatekeeperA.txt
@@ -95,6 +109,8 @@ then
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/JPN/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/JPN/SYS_mess/SYS_Start.bmg --patch replace=BMG/JPN/SYS_Start.txt
 	cp BMG/JPN/script.arc accf-data/files/Script/JPN/script.arc
+fi
+
 if [ $BMG -eq EUR ]
 then
 	wbmgt patch accf-data/files/Script/ENG/NPC_SP/NPC_gatekeeperA.bmg --patch replace=BMG/ENG/NPC_gatekeeperA.txt
@@ -137,7 +153,6 @@ then
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_NetworkError.bmg --patch replace=BMG/ITA/SYS_NetworkError.txt
 	wbmgt patch accf-data/files/Script/ITA/SYS_mess/SYS_Start.bmg --patch replace=BMG/ITA/SYS_Start.txt
 	cp BMG/ITA/script.arc accf-data/files/Script/ITA/script.arc
-fi
 
 mkdir wiimmfi-images
 wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
