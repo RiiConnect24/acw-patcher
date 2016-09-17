@@ -159,6 +159,8 @@ mkdir wiimmfi-images
 wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
 wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
 
+rm -rf accf-data
+
 echo "Done."
 
 echo "If your patch completed successfully, your WBFS will now be in the wiimmfi-images folder - please copy the WBFS in there to your USB."
