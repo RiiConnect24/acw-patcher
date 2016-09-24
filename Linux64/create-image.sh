@@ -8,7 +8,7 @@ echo "Extracting..."
 
 cp ./accf-data/disc/header.bin header.bin
 
-ID="$(wit id6 *.wbfs)"
+ID="$(./wit id6 *.wbfs)"
 VERSION="$ID$(./version)"
 
 rm header.bin
@@ -156,8 +156,8 @@ then
 fi
 
 mkdir wiimmfi-images
-wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
-wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
+./wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
+./wit move wiimmfi-images/accf-data.wbfs wiimmfi-images
 
 rm -rf accf-data
 
