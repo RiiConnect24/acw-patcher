@@ -17,3 +17,5 @@ Place your WBFS image in the folder corresponding to your operating system then 
 - PokeAcer549 for actual script creation.
 - Shutterbug2000 for a small program to detect the version of this game, and helped us get v2 of the USA version of this game to add support for patching it.
 - Wiimm for SZS and ISO tools (both of which are used in this patcher).
+
+![AGPL v3 Logo](https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg "This software is licensed under the AGPL v3 License.")
