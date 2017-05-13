@@ -7,10 +7,6 @@ To get DLC items in the game, you need to <a href="https://riiconnect24.net/">in
 ## Usage
 Place your WBFS image in the folder corresponding to your operating system then run the create-image script.
 
-## To Do
-- [ ] Add how to remove public key from savedata
-- [ ] Patch URLs to remove requirement of DNS (need to contact Wiimm)
-
 ## Credits
 - Brawl345 for the German translations.
 - Larsenv for offsets, translations, some BMG patches, and script updates.
