@@ -1,4 +1,6 @@
 # Animal Crossing: City Folk - Wiimmfi+RC24 patcher
+![Version Badge](https://img.shields.io/github/release/riiconnect24/acw-patcher.svg)
+![License](https://img.shields.io/github/license/riiconnect24/acw-patcher.svg)
 
 This patcher is for Animal Crossing: City Folk, which will allow Wiimmfi and RiiConnect24 support and patch the messages in the game.
 
