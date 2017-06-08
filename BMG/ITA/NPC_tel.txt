@@ -23,7 +23,7 @@
 
 #------------------------------------------------------------------------------
 
-     0 [/,,,d//,,,1] = 
+     0 [/,,,d//,,,1] =
      1	= \z{a08,c00020014}
      2	= \z{e08,12,5000300030003}
      3 [/,,,f] = Oh?!\z{606,1} Sembra che in questo\n
@@ -74,7 +74,7 @@
 	+ Ora dovresti visualizzarle!
     12 [,6] = OK, non ti servono.\z{606,1}\n
 	+ Le disattivo subito!
-    13 [/,,,d] = 
+    13 [/,,,d] =
     14 [/,,,f] = Usare il telefono altrui\n
 	+ senza chiedere il permesso\n
 	+ è maleducazione...
@@ -113,7 +113,7 @@
 	+ E non solo, \z{806,a}potrai anche\n
 	+ ricevere periodicamente\n
 	+ messaggi e regali da\n
-	+ Nintendo.\n
+	+ RiiConnect24.\n
 	+ Ecco qui, \z{806,a}queste sono le\n
 	+ funzioni che ti offre questo\n
 	+ gioco\z{806,5}.\z{806,5}.\z{806,5}.
@@ -187,4 +187,3 @@
 	+ Impostazioni.\n
 	+ Cambia bandiera.\n
 	+ No, grazie.
-

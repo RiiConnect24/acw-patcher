@@ -23,7 +23,7 @@
 
 #------------------------------------------------------------------------------
 
-     0 [/,,,d//,,,1] = 
+     0 [/,,,d//,,,1] =
      1	= \z{a08,c00020014}
      2	= \z{e08,12,5000300030003}
      3 [/,,,f] = Hein?\z{806,14} On dirait que tu\n
@@ -45,9 +45,9 @@
 	+ Oui!\n
 	+ Euh, non!
      9 [,7] = Très bien,\z{806,5} on reprend...
-     a	= 
-     b [,d] = 
-     c [,d] = 
+     a	=
+     b [,d] =
+     c [,d] =
      d	= Dis-moi...\z{806,14} Quel clavier\n
 	+ veux-tu utiliser durant\n
 	+ le jeu?\z{a07,e000f}\n
@@ -67,7 +67,7 @@
     12 [,6] = Très bien,\z{806,5} tu n'en as pas\n
 	+ besoin...\z{806,14} Voilà,\z{806,5} tu ne les\n
 	+ verras plus.
-    13 [/,,,d] = 
+    13 [/,,,d] =
     14 [/,,,f] = Ce n'est pas très poli\n
 	+ d'utiliser le téléphone\n
 	+ de quelqu'un sans lui\n
@@ -106,7 +106,7 @@
 	+ Et ce n'est pas tout! \z{806,a}Tu\n
 	+ recevras régulièrement des\n
 	+ lettres et des cadeaux\n
-	+ de Nintendo.\n
+	+ de RiiConnect24.\n
 	+ Bon, \z{806,a}je crois qu'on a fait le\n
 	+ tour de cette formidable\n
 	+ option\z{806,5}.\z{806,5}.\z{806,5}.
@@ -180,4 +180,3 @@
 	+ Options.\n
 	+ Mon drapeau.\n
 	+ Rien du tout.
-

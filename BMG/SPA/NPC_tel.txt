@@ -70,7 +70,7 @@
     12 [,6] = ¿No las necesitas? Bien.\z{606,1}\n
 	+ Pues ya deberían estar\n
 	+ desactivadas.
-    13 [/,,,d] = 
+    13 [/,,,d] =
     14 [/,,,f] = Es de muy mala educación\n
 	+ usar el teléfono de otra\n
 	+ persona sin permiso...
@@ -112,7 +112,7 @@
 	+ jugando. Qué bien, ¿eh?\n
 	+ ¡Y aún hay más! De vez en\n
 	+ cuando, recibirás cartas y\n
-	+ regalos de Nintendo.\n
+	+ regalos de RiiConnect24.\n
 	+ \n
 	+ Bueno, estas son las\n
 	+ funciones del servicio.\n
@@ -180,4 +180,3 @@
 	+ Opciones\n
 	+ Cambiar bandera\n
 	+ Nada, gracias
-

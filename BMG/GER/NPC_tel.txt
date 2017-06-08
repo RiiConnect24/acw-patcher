@@ -68,7 +68,7 @@
     12 [,6] = Alles klar, kein Bedarf.\z{606,1} Sie\n
 	+ müssten jetzt ausgeblendet\n
 	+ sein.
-    13 [/,,,d] = 
+    13 [/,,,d] =
     14 [/,,,f] = Ein fremdes Telefon zu\n
 	+ verwenden, ohne vorher zu\n
 	+ fragen, ist ziemlich\n
@@ -108,7 +108,7 @@
 	+ Nicht nur das - \z{806,a}du kannst\n
 	+ außerdem regelmäßig\n
 	+ Briefe und Geschenke von\n
-	+ Nintendo erhalten.\n
+	+ RiiConnect24 erhalten.\n
 	+ So, \z{806,a}jetzt weißt du über\n
 	+ alle Zusatzfunktionen\n
 	+ Bescheid\z{806,5}.\z{806,5}.\z{806,5}.
@@ -181,4 +181,3 @@
 	+ Spieleinstellungen.\n
 	+ Flaggen-Design.\n
 	+ Nichts.
-
