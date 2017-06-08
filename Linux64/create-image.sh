@@ -53,106 +53,106 @@ fi
 
 if [ "$BMG" = "USA" ]
 then
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/ENG/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_periko.bmg --patch replace=./BMG/ENG/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_perimi.bmg --patch replace=./BMG/ENG/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_tel.bmg --patch replace=./BMG/ENG/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/ENG/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/ENG/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Start.bmg --patch replace=./BMG/ENG/SYS_Start.txt
-	cp ./BMG/ENG/script.arc ./accf-data/files/Script/ENG/script.arc
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/FRA/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_periko.bmg --patch replace=./BMG/FRA/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_perimi.bmg --patch replace=./BMG/FRA/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_tel.bmg --patch replace=./BMG/FRA/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/FRA/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/FRA/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Start.bmg --patch replace=./BMG/FRA/SYS_Start.txt
-	cp ./BMG/FRA/script.arc ./accf-data/files/Script/FRA/script.arc
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/SPA/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_periko.bmg --patch replace=./BMG/SPA/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_perimi.bmg --patch replace=./BMG/SPA/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_tel.bmg --patch replace=./BMG/SPA/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/SPA/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/SPA/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Start.bmg --patch replace=./BMG/ENG/SYS_Start.txt
-	cp ./BMG/SPA/script.arc ./accf-data/files/Script/SPA/script.arc
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/ENG/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_periko.bmg --patch replace=../BMG/ENG/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_perimi.bmg --patch replace=../BMG/ENG/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_tel.bmg --patch replace=../BMG/ENG/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/ENG/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/ENG/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Start.bmg --patch replace=../BMG/ENG/SYS_Start.txt
+	cp ../BMG/ENG/script.arc ./accf-data/files/Script/ENG/script.arc
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/FRA/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_periko.bmg --patch replace=../BMG/FRA/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_perimi.bmg --patch replace=../BMG/FRA/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_tel.bmg --patch replace=../BMG/FRA/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/FRA/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/FRA/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Start.bmg --patch replace=../BMG/FRA/SYS_Start.txt
+	cp ../BMG/FRA/script.arc ./accf-data/files/Script/FRA/script.arc
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/SPA/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_periko.bmg --patch replace=../BMG/SPA/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_perimi.bmg --patch replace=../BMG/SPA/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_tel.bmg --patch replace=../BMG/SPA/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/SPA/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/SPA/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Start.bmg --patch replace=../BMG/ENG/SYS_Start.txt
+	cp ../BMG/SPA/script.arc ./accf-data/files/Script/SPA/script.arc
 fi
 
 if [ "$BMG" = "JPN" ]
 then
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/JPN/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_periko.bmg --patch replace=./BMG/JPN/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_perimi.bmg --patch replace=./BMG/JPN/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_tel.bmg --patch replace=./BMG/JPN/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/JPN/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/JPN/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Start.bmg --patch replace=./BMG/JPN/SYS_Start.txt
-	cp ./BMG/JPN/script.arc ./accf-data/files/Script/JPN/script.arc
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/JPN/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_periko.bmg --patch replace=../BMG/JPN/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_perimi.bmg --patch replace=../BMG/JPN/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_tel.bmg --patch replace=../BMG/JPN/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/JPN/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/JPN/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Start.bmg --patch replace=../BMG/JPN/SYS_Start.txt
+	cp ../BMG/JPN/script.arc ./accf-data/files/Script/JPN/script.arc
 fi
 
 if [ "$BMG" = "KOR" ]
 then
-	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/KOR/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_periko.bmg --patch replace=./BMG/KOR/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_perimi.bmg --patch replace=./BMG/KOR/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_tel.bmg --patch replace=./BMG/KOR/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/KOR/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/KOR/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_Start.bmg --patch replace=./BMG/KOR/SYS_Start.txt
-	cp ./BMG/KOR/script.arc ./accf-data/files/Script/KOR/script.arc
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/JPN/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_periko.bmg --patch replace=./BMG/JPN/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_perimi.bmg --patch replace=./BMG/JPN/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_tel.bmg --patch replace=./BMG/JPN/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/JPN/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/JPN/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Start.bmg --patch replace=./BMG/JPN/SYS_Start.txt
-	cp ./BMG/JPN/script.arc ./accf-data/files/Script/JPN/script.arc
+	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/KOR/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_periko.bmg --patch replace=../BMG/KOR/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_perimi.bmg --patch replace=../BMG/KOR/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/npc_SP/NPC_tel.bmg --patch replace=../BMG/KOR/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/KOR/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/KOR/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/KOR/sys_MESS/SYS_Start.bmg --patch replace=../BMG/KOR/SYS_Start.txt
+	cp ../BMG/KOR/script.arc ./accf-data/files/Script/KOR/script.arc
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/JPN/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_periko.bmg --patch replace=../BMG/JPN/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_perimi.bmg --patch replace=../BMG/JPN/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/npc_SP/NPC_tel.bmg --patch replace=../BMG/JPN/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/JPN/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/JPN/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/JPN/sys_MESS/SYS_Start.bmg --patch replace=../BMG/JPN/SYS_Start.txt
+	cp ../BMG/JPN/script.arc ./accf-data/files/Script/JPN/script.arc
 fi
 
 if [ "$BMG" = "EUR" ]
 then
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/ENG/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_periko.bmg --patch replace=./BMG/ENG/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_perimi.bmg --patch replace=./BMG/ENG/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_tel.bmg --patch replace=./BMG/ENG/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/ENG/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/ENG/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Start.bmg --patch replace=./BMG/ENG/SYS_Start.txt
-	cp ./BMG/ENG/script.arc ./accf-data/files/Script/ENG/script.arc
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/FRA/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_periko.bmg --patch replace=./BMG/FRA/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_perimi.bmg --patch replace=./BMG/FRA/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_tel.bmg --patch replace=./BMG/FRA/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/FRA/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/FRA/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Start.bmg --patch replace=./BMG/FRA/SYS_Start.txt
-	cp ./BMG/FRA/script.arc ./accf-data/files/Script/FRA/script.arc
-	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/GER/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_periko.bmg --patch replace=./BMG/GER/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_perimi.bmg --patch replace=./BMG/GER/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_tel.bmg --patch replace=./BMG/GER/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/GER/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/GER/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_Start.bmg --patch replace=./BMG/GER/SYS_Start.txt
-	cp ./BMG/GER/script.arc ./accf-data/files/Script/GER/script.arc
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/SPA/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_periko.bmg --patch replace=./BMG/SPA/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_perimi.bmg --patch replace=./BMG/SPA/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_tel.bmg --patch replace=./BMG/SPA/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/SPA/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/SPA/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Start.bmg --patch replace=./BMG/SPA/SYS_Start.txt
-	cp ./BMG/SPA/script.arc ./accf-data/files/Script/SPA/script.arc
-	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_gatekeeperA.bmg --patch replace=./BMG/ITA/NPC_gatekeeperA.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_periko.bmg --patch replace=./BMG/ITA/NPC_periko.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_perimi.bmg --patch replace=./BMG/ITA/NPC_perimi.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_tel.bmg --patch replace=./BMG/ITA/NPC_tel.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_Bus.bmg --patch replace=./BMG/ITA/SYS_Bus.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_NetworkError.bmg --patch replace=./BMG/ITA/SYS_NetworkError.txt
-	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_Start.bmg --patch replace=./BMG/ITA/SYS_Start.txt
-	cp ./BMG/ITA/script.arc ./accf-data/files/Script/ITA/script.arc
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/ENG/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_periko.bmg --patch replace=../BMG/ENG/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_perimi.bmg --patch replace=../BMG/ENG/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/npc_SP/NPC_tel.bmg --patch replace=../BMG/ENG/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/ENG/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/ENG/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/ENG/sys_MESS/SYS_Start.bmg --patch replace=../BMG/ENG/SYS_Start.txt
+	cp ../BMG/ENG/script.arc ./accf-data/files/Script/ENG/script.arc
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/FRA/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_periko.bmg --patch replace=../BMG/FRA/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_perimi.bmg --patch replace=../BMG/FRA/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/npc_SP/NPC_tel.bmg --patch replace=../BMG/FRA/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/FRA/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/FRA/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/FRA/sys_MESS/SYS_Start.bmg --patch replace=../BMG/FRA/SYS_Start.txt
+	cp ../BMG/FRA/script.arc ./accf-data/files/Script/FRA/script.arc
+	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/GER/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_periko.bmg --patch replace=../BMG/GER/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_perimi.bmg --patch replace=../BMG/GER/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/GER/npc_SP/NPC_tel.bmg --patch replace=../BMG/GER/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/GER/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/GER/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/GER/sys_MESS/SYS_Start.bmg --patch replace=../BMG/GER/SYS_Start.txt
+	cp ../BMG/GER/script.arc ./accf-data/files/Script/GER/script.arc
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/SPA/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_periko.bmg --patch replace=../BMG/SPA/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_perimi.bmg --patch replace=../BMG/SPA/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/npc_SP/NPC_tel.bmg --patch replace=../BMG/SPA/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/SPA/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/SPA/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/SPA/sys_MESS/SYS_Start.bmg --patch replace=../BMG/SPA/SYS_Start.txt
+	cp ../BMG/SPA/script.arc ./accf-data/files/Script/SPA/script.arc
+	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_gatekeeperA.bmg --patch replace=../BMG/ITA/NPC_gatekeeperA.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_periko.bmg --patch replace=../BMG/ITA/NPC_periko.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_perimi.bmg --patch replace=../BMG/ITA/NPC_perimi.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/npc_SP/NPC_tel.bmg --patch replace=../BMG/ITA/NPC_tel.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_Bus.bmg --patch replace=../BMG/ITA/SYS_Bus.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_NetworkError.bmg --patch replace=../BMG/ITA/SYS_NetworkError.txt
+	./wbmgt patch ./accf-data/files/Script/ITA/sys_MESS/SYS_Start.bmg --patch replace=../BMG/ITA/SYS_Start.txt
+	cp ../BMG/ITA/script.arc ./accf-data/files/Script/ITA/script.arc
 fi
 
 mkdir wiimmfi-images
