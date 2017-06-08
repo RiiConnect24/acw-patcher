@@ -26,9 +26,9 @@
      0 [///,,,1] = SYS_Bus.gmm
      1 [,2] = \z{602,46}The first step in starting your\n
 	+ new life is getting on the bus!
-     2	= 
-     3 [,5] = 
-     4 [,5] = 
+     2	=
+     3 [,5] =
+     4 [,5] =
      5	= Hey, if you don't mind my\n
 	+ asking...\z{806,a} \z{602,43}Is it \z{603,2} \z{603,1},\n
 	+ \z{603,0}, today?\z{806,a} And is it\n
@@ -40,7 +40,7 @@
 	+ do I have wrong?!
      7	= Okeydokey, so it's\n
 	+ \z{603,2} \z{603,1}, \z{603,0}\z{806,5} at\n
-	+ \z{603,3}:\z{603,4} \z{1204,4100,4d002f0050004d00}\z{606,1} 
+	+ \z{603,3}:\z{603,4} \z{1204,4100,4d002f0050004d00}\z{606,1}
 	+ \z{602,43}Please tell\n
 	+ me THAT'S right!\z{a07,a0008}\n
 	+ Perfect!\n
@@ -190,7 +190,7 @@
 	+ serious money\z{806,5}.\z{806,5}.\z{806,5}.\z{a07,250026}\n
 	+ Yeah...\n
 	+ Don't worry.
-    1e [///,,,1] = 
+    1e [///,,,1] =
     1f [,27] = \z{602,46}Nice! \z{806,f}How exciting for you!\z{606,1}\n
 	+ I hope whatever house you\n
 	+ buy lives up to your\n
@@ -292,15 +292,15 @@
 	+ \z{602,43}Aren't you excited?!\z{a07,18001b}\n
 	+ Oh, yeah!\n
 	+ Not really.
-    2a [///,,,1] = 
-    2b [///,,,1] = 
-    2c [///,,,1] = 
-    2d [///,,,1] = 
-    2e [///,,,1] = 
-    2f [///,,,1] = 
-    30 [///,,,1] = 
-    31 [///,,,1] = 
-    32 [///,,,1] = 
+    2a [///,,,1] =
+    2b [///,,,1] =
+    2c [///,,,1] =
+    2d [///,,,1] =
+    2e [///,,,1] =
+    2f [///,,,1] =
+    30 [///,,,1] =
+    31 [///,,,1] =
+    32 [///,,,1] =
     33 [,34] = \z{80b,40700}Yar, next stop...\z{806,a}\z{8ff,800}\n
 	+   \z{60c,3}\z{605,5}\z{8ff,0}...\z{8ff,800}\z{806,a}\n
 	+     \z{60c,3}\z{605,5}\z{8ff,0} be next...\z{60b,5}
@@ -309,13 +309,13 @@
     35	= \z{602,46}All righty then!\z{806,f} I hope we\n
 	+ get a chance to chat again\n
 	+ sometime!
-    36 [///,,,1] = 
-    37 [///,,,1] = 
-    38 [///,,,1] = 
-    39 [///,,,1] = 
-    3a [///,,,1] = 
+    36 [///,,,1] =
+    37 [///,,,1] =
+    38 [///,,,1] =
+    39 [///,,,1] =
+    3a [///,,,1] =
     3b [,1] = Whew!\z{806,f} Just made it!
-    3c [///,,,1] = 
+    3c [///,,,1] =
     3d [,3e/,,10] = So, \z{605,0},\z{806,f}\z{602,43} this town\n
 	+ you're moving to... What's\n
 	+ it called?
@@ -340,8 +340,8 @@
 	+ to become a popular spot\n
 	+ for folks like yourself to\n
 	+ move to!
-    41 [///,,,1] = 
-    42 [///,,,1] = 
+    41 [///,,,1] =
+    42 [///,,,1] =
     43 [,44/,,12] = \z{806,a}\z{602,42}\z{806,a}Oh, yeah!\z{806,f} Check this out!
     44 [,33] = If you've got questions\n
 	+ about moving,\z{806,a} I'd head to\n
@@ -369,10 +369,10 @@
 	+ Kinda reminded me of you!\n
 	+ I guess \z{806,5}that town\z{806,5} must be\n
 	+ really popular these days.
-    46 [///,,,1] = 
-    47 [///,,,1] = 
-    48 [///,,,1] = 
-    49 [///,,,1] = 
+    46 [///,,,1] =
+    47 [///,,,1] =
+    48 [///,,,1] =
+    49 [///,,,1] =
     4a [,4b] = Oh\z{806,5}.\z{806,5}.\z{806,5}.\z{806,f}\z{605,0}\z{806,5}.\z{806,5}.
 	+ \z{806,5}.?
     4b	= \z{602,46}Ha!\z{806,a} I KNEW that was you!\z{606,1}\n
@@ -414,7 +414,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ the RiiConnect24 Team.\n
+	+ RiiConnect24.\n
 	+ \z{602,43}Are you interested in using\n
 	+ this feature?\z{606,1} Of course, \z{806,a}you\n
 	+ can always change your\n
@@ -497,7 +497,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ Nintendo.\n
+	+ RiiConnect24.\n
 	+ \z{602,0}Anyway, \z{806,a}these are the\n
 	+ included features\z{806,5}.\z{806,5}.\z{806,5}.\n
 	+ \n
@@ -513,25 +513,24 @@
 	+ messages to friends' \z{8ff,200}Wii \n
 	+ Message Boards\z{8ff,0} if they're\n
 	+ in your \z{8ff,200}Wii Address Book\z{8ff,0}.
-    50 [///,,,1] = 
-    51 [///,,,1] = 
-    52 [///,,,1] = 
-    53 [///,,,1] = 
-    54 [///,,,1] = 
-    55 [///,,,1] = 
-    56 [///,,,1] = 
-    57 [///,,,1] = 
-    58 [///,,,1] = 
-    59 [///,,,1] = 
-    5a [///,,,1] = 
-    5b [///,,,1] = 
-    5c [///,,,1] = 
-    5d [///,,,1] = 
-    5e [///,,,1] = 
-    5f [///,,,1] = 
-    60 [///,,,1] = 
-    61 [///,,,1] = 
-    62 [///,,,1] = 
-    63 [///,,,1] = 
-    64 [///,,,1] = 
-
+    50 [///,,,1] =
+    51 [///,,,1] =
+    52 [///,,,1] =
+    53 [///,,,1] =
+    54 [///,,,1] =
+    55 [///,,,1] =
+    56 [///,,,1] =
+    57 [///,,,1] =
+    58 [///,,,1] =
+    59 [///,,,1] =
+    5a [///,,,1] =
+    5b [///,,,1] =
+    5c [///,,,1] =
+    5d [///,,,1] =
+    5e [///,,,1] =
+    5f [///,,,1] =
+    60 [///,,,1] =
+    61 [///,,,1] =
+    62 [///,,,1] =
+    63 [///,,,1] =
+    64 [///,,,1] =
