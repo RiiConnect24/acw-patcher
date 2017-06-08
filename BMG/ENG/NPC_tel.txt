@@ -66,7 +66,7 @@
     12 [,6] = All righty, none needed.\z{606,1}\n
 	+ You shouldn't see them \n
 	+ anymore.
-    13 [/,,,d] = 
+    13 [/,,,d] =
     14 [/,,,f] = Using other people's\n
 	+ phones without permission\n
 	+ is kind of rude...
@@ -105,7 +105,7 @@
 	+ Not only that, \z{806,a}but you can\n
 	+ also periodically receive\n
 	+ letters and presents from\n
-	+ Nintendo.
+	+ RiiConnect24.
     16 [,18/4//,,,1] = Oh,\z{806,f} but you can't change\n
 	+ your settings if the\n
 	+ \z{8ff,200}RiiConnect24 \z{8ff,0}settings on\n
@@ -170,4 +170,3 @@
 	+ Game settings.\n
 	+ Flag design.\n
 	+ Never mind.
-
