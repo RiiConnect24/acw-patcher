@@ -6,9 +6,9 @@ echo "This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For
 echo "Extracting..."
 ./wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA --wiimmfi -ovv
 
-ID="$(./wit id8 *.wbfs)"
+VERSION="$(./wit id8 *.wbfs)"
 
-if [ "$ID" = "RUUE01 00.00" ]
+if [ "$VERSION" = "RUUE01 00.00" ]
 then
 	OFFSET="80474CB8"
 	BMG="USA"
