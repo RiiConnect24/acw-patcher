@@ -10,32 +10,32 @@ wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA -ovv --wiimmfi
 
 for /f %%i in ('wit id8 *.wbfs') do set VERSION=%%i
 
-if %VERSION%==RUUE01 00.00 (
+if "%VERSION%"=="RUUE01 00.00" (
 	set OFFSET=80474CB8
 	set BMG=USA
 	GOTO PATCH
 	)
-if %VERSION%==RUUE01 00.01 (
+if "%VERSION%"=="RUUE01 00.01" (
 	set OFFSET=80474F38
 	set BMG=USA
 	GOTO PATCH
 	)
-if %VERSION%==RUUJ01 00.01 (
+if "%VERSION%"=="RUUJ01 00.01" (
 	set OFFSET=80474DE8
 	set BMG=JPN
 	GOTO PATCH
 	)
-if %VERSION%==RUUK01 00.01 (
+if "%VERSION%"=="RUUK01 00.01" (
 	set OFFSET=8047DE98
 	set BMG=KOR
 	GOTO PATCH
 	)
-if %VERSION%==RUUP01 00.00 (
+if "%VERSION%"=="RUUP01 00.00" (
 	set OFFSET=804753F8
 	set BMG=EUR
 	GOTO PATCH
 	)
-if %VERSION%==RUUP01 00.01 (
+if "%VERSION%"=="RUUP01 00.01" (
 	set OFFSET=80475678
 	set BMG=EUR
 	GOTO PATCH
