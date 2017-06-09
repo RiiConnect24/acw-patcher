@@ -1,7 +1,7 @@
 echo "Wiimmfi Patcher for Animal Crossing: City Folk."
 echo "Patcher by PokeAcer and Larsenv. SZS and ISO tools by Wiimm."
 echo "This will both patch the server URLs and change the text from Nintendo WFC to Wiimmfi."
-echo "This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For more information, please go to http://riiconnect24.net."
+echo "This also patches Nintendo's DLC key to receive DLC from RiiConnect24. For more information, please go to http://rc24.xyz."
 
 echo "Extracting..."
 ./wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA --wiimmfi -ovv
