@@ -11,7 +11,7 @@ goto begin
 :error_files
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo It seems that error has occurred.
@@ -120,7 +120,7 @@ goto 3
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
 echo This program has been created by: KcrPL, Larsenv, PokeAcer549 and Shutterbug2000.
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Do you want to start patching?
 echo.
@@ -135,7 +135,7 @@ goto 3
 :error_file_game
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo It seems that error has occurred.
@@ -151,7 +151,7 @@ goto exit_patcher
 :4_error_accf
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] Info.
 echo.
 echo Folder accf-data must be removed before patching.
@@ -169,7 +169,7 @@ goto 4_error_accf
 :4_rem_accf
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] Info.
 echo.
 echo Please wait...
@@ -180,7 +180,7 @@ if exist accf-data goto 4_error_accf
 if not exist *.wbfs goto error_file_game
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now extracting your copy of Animal Crossing.
 wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA -ovv --wiimmfi
@@ -189,7 +189,7 @@ goto 4_analyze
 set checkforver=0
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now analyzing your copy of Animal Crossing...
 for /f %%i in ('wit id8 *.wbfs') do set VERSION=%%i
@@ -235,7 +235,7 @@ goto 5
 :5_error
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo This game isn't Animal Crossing: City Folk.
@@ -249,7 +249,7 @@ goto exit_patcher
 if %checkforver%==0 goto 5_error
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now patching your copy of Animal Crossing...
 wit dolpatch accf-data/sys/main.dol %OFFSET%=B1E7F92ACACD2034E602C73DF43CCE515731279711F4E105CB7E5E1D69EA2A56170E72E1F81CA9FA9EEFAC654BD6C6DC5E4AD1780C8F774BC3190CB618BA5483757D6734F8A1121B01986C6F28F1FAB6AFD2CFAC4570415F23C9B3D3F489934274CE61A93978E0C90A7584AC43330F73B09A8E3A75344D3C90BE67E70E0C1AB8A1C19396F5373EB92251D15EA13719D973A2E0143292ED28F86B16DC9A96D3F6271EAD8CE0764C7D4F88DBB2FD5E4C5CBC426D89434FA9D04E28EAF6C11E7B4C93A6701D344D891A65CB4C7C74FFC3551C5949A2D0368C6A68B81E8B985EB8665C72C3E6FF98A4B1AE4D5D7910729494A1E6F26D5AB2824262EC0482BDCE324D >NUL
@@ -353,7 +353,7 @@ if %BMG%==EUR (
 mkdir wiimmfi-images
 cls
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now completing patching...
 wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
@@ -372,7 +372,7 @@ cls
 cls
 echo.
 echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞΞ
+echo ------------------------------------------------------------------------------------------------------------------------
 echo  [*] Thanks for using that Patcher! :)
 echo.
 if %patchingok%==1 echo Patching is successfull.
