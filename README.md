@@ -5,7 +5,7 @@
 
 This patcher is for Animal Crossing: City Folk, which will allow Wiimmfi and RiiConnect24 support and patch the messages in the game.
 
-To get DLC items in the game, you need to <a href="https://riiconnect24.net/">install RiiConnect24</a> and delete `wc24pubk.mod` from your savedata (instructions will come later).
+To get DLC items in the game, you need to <a href="https://wii.guide/riiconnect24">install RiiConnect24</a>.
 
 ## Usage
 Place your WBFS image in the folder corresponding to your operating system then run the create-image script.
