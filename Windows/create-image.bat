@@ -1,17 +1,19 @@
 color b
 @echo off
 cls
-set version=2.1.0
-mode 120,30
+set version=2.1.1
+set last_build=2017/10/20
+set at=21:52
+title v.%version% Created by @KcrPL, @Larsenv, @PokeAcer549 and @Shutterbug2000
+set mode=126,36
+mode %mode%
 set patchingok=1
-chcp 65001
-set language=English
-title Animal Crossing: City Folk - Wiimmfi+RC24 patcher
 goto begin
 :error_files
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo It seems that error has occurred.
@@ -118,9 +120,9 @@ if not exist ../BMG/SPA/SYS_Start.txt goto error_files
 goto 3
 :3
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo This program has been created by: KcrPL, Larsenv, PokeAcer549 and Shutterbug2000.
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Do you want to start patching?
 echo.
@@ -134,13 +136,14 @@ if %s%==2 goto exit_patcher
 goto 3
 :error_file_game
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo It seems that error has occurred.
 echo.
-echo There are no WBFS files present in that folder.
+echo There are no WBFS files present in that folder. (If you have ISO file, please convert it to WBFS)
 echo.
 echo Cannot continue, press anything to exit patcher.
 echo.
@@ -150,8 +153,9 @@ goto exit_patcher
 
 :4_error_accf
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] Info.
 echo.
 echo Folder accf-data must be removed before patching.
@@ -168,8 +172,9 @@ if %s%==2 goto exit_patcher
 goto 4_error_accf
 :4_rem_accf
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] Info.
 echo.
 echo Please wait...
@@ -179,8 +184,9 @@ goto 4
 if exist accf-data goto 4_error_accf
 if not exist *.wbfs goto error_file_game
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now extracting your copy of Animal Crossing.
 wit extract . -n RUU.01 --DEST ./accf-data/ --psel=DATA -ovv --wiimmfi
@@ -188,8 +194,9 @@ goto 4_analyze
 :4_analyze
 set checkforver=0
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now analyzing your copy of Animal Crossing...
 for /f %%i in ('wit id8 *.wbfs') do set VERSION=%%i
@@ -234,8 +241,9 @@ if "%VERSION%"=="RUUP01" (
 goto 5
 :5_error
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] ERROR.
 echo.
 echo This game isn't Animal Crossing: City Folk.
@@ -248,8 +256,9 @@ goto exit_patcher
 :5
 if %checkforver%==0 goto 5_error
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now patching your copy of Animal Crossing...
 wit dolpatch accf-data/sys/main.dol %OFFSET%=B1E7F92ACACD2034E602C73DF43CCE515731279711F4E105CB7E5E1D69EA2A56170E72E1F81CA9FA9EEFAC654BD6C6DC5E4AD1780C8F774BC3190CB618BA5483757D6734F8A1121B01986C6F28F1FAB6AFD2CFAC4570415F23C9B3D3F489934274CE61A93978E0C90A7584AC43330F73B09A8E3A75344D3C90BE67E70E0C1AB8A1C19396F5373EB92251D15EA13719D973A2E0143292ED28F86B16DC9A96D3F6271EAD8CE0764C7D4F88DBB2FD5E4C5CBC426D89434FA9D04E28EAF6C11E7B4C93A6701D344D891A65CB4C7C74FFC3551C5949A2D0368C6A68B81E8B985EB8665C72C3E6FF98A4B1AE4D5D7910729494A1E6F26D5AB2824262EC0482BDCE324D >NUL
@@ -352,8 +361,9 @@ if %BMG%==EUR (
 	)
 mkdir wiimmfi-images
 cls
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo.
 echo Please wait. Patcher is now completing patching...
 wit copy accf-data wiimmfi-images --update --psel=DATA --wiimmfi -ovv
@@ -367,12 +377,12 @@ set /a timeouterror=1
 timeout 1 /nobreak >NUL && set /a timeouterror=0
 goto end1
 :end1
-mode 120,30
-cls
+mode %mode%
 cls
 echo.
-echo                                      Animal Crossing: City Folk - Wiimmfi/RC24 Patcher
-echo ------------------------------------------------------------------------------------------------------------------------
+echo Animal Crossing Patcher for Wiimmfi/RiiConnect24 - (C)KcrPL, (C)Larsenv, (C)PokeAcer549 and (C)Shutterbug2000
+echo v%version%. (Compiled on %last_build% at %at%)
+echo ------------------------------------------------------------------------------------------------------------------------------
 echo  [*] Thanks for using that Patcher! :)
 echo.
 if %patchingok%==1 echo Patching is successfull.
